@@ -1,0 +1,98 @@
+---
+title: "Shiny App Phosphosites"
+author: "Andri Widmer"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+
+#Use this snippet to start launch the created site (shiny). It allows you to explore phosphosites of Groups 1,2,3 and 13. More data will follow...
+
+library(tableHTML)
+library(htmltools)
+library(shiny)
+library(bslib)
+library(xml2)
+
+# Load data from GitHub
+MSA_as_df_test = readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/MSA_as_df_test.rds"))
+
+# Use only the first 3 groups for display
+msa_list = MSA_as_df_test[c(1:3,13)]
+names(msa_list) = paste0("Group ", c(1:3,13))
+
+# Extract real group numbers for correct linking
+numbers = sapply(msa_list, function(df) df$Group_Nr[1])
+fasta_links = paste0("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/Modified_MSA_group_ClustalO_", numbers, ".fasta")
+
+# UI layout
+ui = fluidPage(
+  titlePanel("Phosphosites in Orthologous Proteins of Yeast, Arabidopsis and Human"),
+  
+  p("This tool allows you to explore multiple sequence alignments (MSAs) and associated phosphosite annotations across Homo sapiens, Saccharomyces cerevisiae, and Arabidopsis thaliana. The Phosphorylation information comes from EPSD and was downloaded on February 26, 2025.
+    \n\nPress 'Open in Jalview' to display the MSA (may take a few seconds). Click on a UniProt ID to view protein details.
+    \n\nWhen displaying the MSA, there are capitalized and small letters. Capitalized letters represent known phosrphorylated sites.
+    There is a guiding sequence for each alingment consitsting of '-' and '^'. The cicumflex (^) shows the positions, which have at least one phosphosite. Combined with the Jalview colour scheme (Colour->By Annotation->Conservation), it is an approach to see the conserved phosphosites. Still working on a better and nicer solution."),
+  br(),
+  
+  selectInput("msa_choice", "Select Group:", choices = names(msa_list)),
+  uiOutput("jalview_link"),
+  br(),
+  
+  uiOutput("group_title"),
+  htmlOutput("msa_table")
+)
+
+# Server logic
+server = function(input, output, session) {
+  
+  output$group_title = renderUI({
+    req(input$msa_choice)
+    index = which(names(msa_list) == input$msa_choice)
+    h4(paste0("Information for Group ", numbers[index]))
+  })
+  
+output$msa_table = renderUI({
+  req(input$msa_choice)
+  df = msa_list[[input$msa_choice]]
+  
+  # Only first 4 columns
+  df = df[, 1:4]
+  
+  # Make UniProt ID in first column clickable
+  df[[1]] = paste0('<a href="https://www.uniprot.org/uniprotkb/', df[[1]], '/entry" target="_blank">', df[[1]], '</a>')
+  
+  # Inline color styling in 4th column (cell by cell)
+  df[[4]] = ifelse(df[[4]] == "P-Sites from EPSD",
+                   paste0('<div style="background-color: lightgreen;">', df[[4]], '</div>'),
+                   paste0('<div style="background-color: lightcoral;">', df[[4]], '</div>'))
+  
+  # Build HTML table
+  tableHTML(df,
+            widths = c(200, 100, 300, 150),
+            rownames = FALSE,
+            escape = FALSE)
+})
+
+
+  output$jalview_link = renderUI({
+    req(input$msa_choice)
+    index = which(names(msa_list) == input$msa_choice)
+    fasta_url = URLencode(fasta_links[[index]])
+    
+    tags$a("Open in JalviewJS",
+           href = paste0("https://jalview.github.io/jalview-js/JalviewJS.html?open%20", fasta_url),
+           target = "_blank",
+           style = "padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;")
+  })
+}
+
+shinyApp(ui, server)
+
+
+rm(fasta_links,numbers)
+
+
+```
+```
