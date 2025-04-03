@@ -16,11 +16,11 @@ library(bslib)
 library(xml2)
 
 # Load data from GitHub
-MSA_as_df_test = readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/MSA_as_df_test.rds"))
+MSA_as_df_git=readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/MSA_as_df_git.rds"))
 
-# Use only the first 3 groups for display
-msa_list = MSA_as_df_test[c(1:3,13)]
-names(msa_list) = paste0("Group ", c(1:3,13))
+# Use only the first 3 groups and 13 for display
+msa_list = MSA_as_df_git[c(1:3,15)]
+names(msa_list) = paste0("Group ", c(1:3,15))
 
 # Extract real group numbers for correct linking
 numbers = sapply(msa_list, function(df) df$Group_Nr[1])
@@ -30,10 +30,14 @@ fasta_links = paste0("https://raw.githubusercontent.com/WidmerAndri/msa_files/re
 ui = fluidPage(
   titlePanel("Phosphosites in Orthologous Proteins of Yeast, Arabidopsis and Human"),
   
-  p("This tool allows you to explore multiple sequence alignments (MSAs) and associated phosphosite annotations across Homo sapiens, Saccharomyces cerevisiae, and Arabidopsis thaliana. The Phosphorylation information comes from EPSD and was downloaded on February 26, 2025.
-    \n\nPress 'Open in Jalview' to display the MSA (may take a few seconds). Click on a UniProt ID to view protein details.
-    \n\nWhen displaying the MSA, there are capitalized and small letters. Capitalized letters represent known phosrphorylated sites.
-    There is a guiding sequence for each alingment consitsting of '-' and '^'. The cicumflex (^) shows the positions, which have at least one phosphosite. Combined with the Jalview colour scheme (Colour->By Annotation->Conservation), it is an approach to see the conserved phosphosites. Still working on a better and nicer solution."),
+  HTML("
+  <p>This tool allows you to explore multiple sequence alignments (MSAs) and associated phosphosite annotations across <b>Homo sapiens</b>, <b>Saccharomyces cerevisiae</b>, and <b>Arabidopsis thaliana</b>.</p>
+  <p>The phosphorylation information comes from EPSD and was downloaded on February 26, 2025.</p>
+  <p><b>Open in Jalview</b> to display the MSA (may take a few seconds). Click on a UniProt ID to view protein details.</p>
+  <p>Capitalized letters represent known phosphorylated sites. The guiding sequence uses <code>-</code> and <code>^</code> to show conserved phosphosites. Use Jalview's colour scheme <i>(Colour → By Annotation → Conservation)</i> for better insight.</p>
+  <p>For easier identification of phosphosites, press <b>Open in Viewer</b>. The greener, the higher the score.</p>
+"),
+
   br(),
   
   selectInput("msa_choice", "Select Group:", choices = names(msa_list)),
@@ -75,16 +79,25 @@ output$msa_table = renderUI({
             escape = FALSE)
 })
 
-
   output$jalview_link = renderUI({
     req(input$msa_choice)
     index = which(names(msa_list) == input$msa_choice)
-    fasta_url = URLencode(fasta_links[[index]])
+    # "Group 1" → 1
+    group_label = input$msa_choice
+    group_nr = as.numeric(gsub("Group ", "", group_label))
+    fasta_url=URLencode(paste0("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/Modified_MSA_group_ClustalO_", group_nr, ".fasta"))
     
+    tagList(
     tags$a("Open in JalviewJS",
            href = paste0("https://jalview.github.io/jalview-js/JalviewJS.html?open%20", fasta_url),
            target = "_blank",
-           style = "padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;")
+           style = "margin-right: 10px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;"),
+    
+    tags$a("Open in Viewer",
+           href = paste0("https://widmerandri.github.io/msa_files/MSA_htmls/Versuch", group_nr, ".html"),
+           target = "_blank",
+           style = "padding: 6px 12px; background-color: red; color: white; text-decoration: none; border-radius: 5px;")
+  )
   })
 }
 
@@ -93,6 +106,5 @@ shinyApp(ui, server)
 
 rm(fasta_links,numbers)
 
+```
 
-```
-```
