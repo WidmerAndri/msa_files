@@ -1,0 +1,10 @@
+>sp|O81153|PSB3B_ARATH Proteasome subunit beta type-3-B OS=Arabidopsis thaliana OX=3702 GN=PBC2 PE=1 SV=1
+-msifeyngsavvamvgkncfaiasdrrlgvqlqtiatdfqriskihdhlfiglsglatdvqtlyqrlvfrhklyqlreerdmkpetfaslvsailyekrfgpflcqpviaglgdd-nkpfictmdsigakelakdfvvsgtaseslygaceamfkpdmeaeelfetisqallssvdrdclsgwgghvyvvtpkevkerilkgrmd
+>sp|P25451|PSB3_YEAST Proteasome subunit beta type-3 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=PUP3 PE=1 SV=1
+mSdpssinggivvamtgkdcvaiacdlrlgSqSlgvSnkfekifhyg-hvflgitglatdvttlnemfryktnlyklkeeraiepetftqlvssslyerrfgpyfvgpvvaginsksgkpfiagfdligcideakdfivsgtasdqlfgmceslyepnlepedlfetisqallnaadrdalsgwgavvyiikkdevvkrylkmrqd
+>sp|P49720|PSB3_HUMAN Proteasome subunit beta type-3 OS=Homo sapiens OX=9606 GN=PSMB3 PE=1 SV=2
+-mSimSYnggavmamkgkncvaiaadrrfgiqaqmvTTdfqkifpmgdrlYiglaglatdvqtvaqrlkfrlnlYelkegrqikpYTlmSmvanllYekrfgpYYTepviagldpktfkpficsldligcpmvtddfvvsgtcaeqmygmceslwepnmdpdhlfetiSqamlnavdrdavsgmgvivhiiekdkittrtlkarmd
+>sp|Q9XI05|PSB3A_ARATH Proteasome subunit beta type-3-A OS=Arabidopsis thaliana OX=3702 GN=PBC1 PE=1 SV=2
+-msifeyngsavvamvgkncfaiasdrrlgvqlqtiatdfqriskihdrvfiglsglatdvqtlyqrlvfrhklyqlreerdmkpetfaslvsailyekrfgpylcqpviaglgdd-dkpfictmdsigakelakdfvvsgtaseslygaceamykpdmeaeelfetisqallssvdrdclsgwgghvyivtpteikerilkgrmd
+>guidseq
+-^^--^^-----------------------^-^---^^------------^-----------------------^----------^^--^------^------^^^--------------------------------------------------------------^-------------------------------------

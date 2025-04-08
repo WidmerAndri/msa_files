@@ -1,0 +1,10 @@
+>sp|O81055|ASK16_ARATH SKP1-like protein 16 OS=Arabidopsis thaliana OX=3702 GN=ASK16 PE=1 SV=1
+mssnkivltssddesfeveeavarklkviahmidd-----------------------------------dcadkaiplenvtgnilalvieyckkhvlddvddsddsteatsenvneeaknelrtwdaefmkefdmetvmklilavnylnvqdllgltcqtvadhmkdmspeevrelfniendytpee-edairkenawafedlk-------
+>sp|P52286|SKP1_YEAST Suppressor of kinetochore protein 1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=SKP1 PE=1 SV=2
+mvTSnvvlvsgegerftvdkkiaerslllknYlndmhdSnlqnnSdSeSdSdSeTnhkSkdnnngddddedddeivmpvpnvrssvlqkviewaehhrdsnfpdeddd-d-------SrkSapvdswdreflk-vdqemlyeiilaanylnikplldagckvvaemirgrSpeeirrTfnivndfTpee-eaairrenewaedr---------
+>sp|P63208|SKP1_HUMAN S-phase kinase-associated protein 1 OS=Homo sapiens OX=9606 GN=SKP1 PE=1 SV=2
+--mpSiklqssdgeifevdveiakqSvTikTmledlg----------------------------mdd--egdddpvplpnvnaailkkviqwcThhkddppppeddenk-------ekrtddipvwdqeflk-vdqgtlfelilaanYldikglldvtcktvanmikgkTpeeirktfnikndfTeee-eaqvrkenqwceek---------
+>sp|Q1PEL7|ASK15_ARATH SKP1-like protein 15 OS=Arabidopsis thaliana OX=3702 GN=ASK15 PE=2 SV=2
+mssnkivltssdgesfqveevvarklqivkhlled-----------------------------------dcvineiplqnvtgnilsivleyckkhvddvvdd-daseepkkkkpddeakqnldawdaefmknidmetifklilaanylnvegllgltcqtvadyikdktpeevrelfniendftheeeeeairkenawafeadtkhedpkp
+>guidseq
+--^^^--------------------^-^--^^------^-----^-^-^-^-^-^---^-----------------------------------^----------------------^--^---------------------------^---------------------^------^-------^---------------------------
