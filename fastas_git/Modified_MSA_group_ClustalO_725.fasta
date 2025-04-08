@@ -1,0 +1,8 @@
+>sp|O81769|DPH5_ARATH Probable diphthine methyl ester synthase OS=Arabidopsis thaliana OX=3702 GN=At4g31790 PE=2 SV=1
+mlyiiglglgdekditlrgleavkksqkvymeaytsllsfglsadglsnlekfygkpiiladremveekagdmideaidndvaflvvgdpfgatthsdlvvraktlgvkvevvhnasvmnavgicglqlyhygetvsipfftetwrpdsfyekikknrslglhtlclldirvkeptfeslcrggkkqyepprymsvntaieqlleveqkh----gdsvygedtqcvgfarlgsedqtivagtmkqlesvdfgaplhclvivg-ethpveeemlefykyksgn---------------------------
+>sp|P32469|DPH5_YEAST Diphthine methyl ester synthase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=DPH5 PE=1 SV=1
+mlYliglglsyksditvrgleaikkcsrvylehytsilmaa----sqeelesyygkeiiladrelvetgskqilnnadkedvaflvvgdpfgatthtdlvlrakreaipveiihnasvmnavgacglqlynfgqtvsmvfftdnwrpdswydkiwenrkiglhtlvlldikvkeqSienmar-grliyepprymsiaqcceqlleieekr----gtkayTpdTpavaiSrlgSSSqSfksgtiselanydsgeplhslvilgrqcheleleyllefaddkekfgkdvandqeYfkpaawvppTeddSde
+>sp|Q9H2P9|DPH5_HUMAN Diphthine methyl ester synthase OS=Homo sapiens OX=9606 GN=DPH5 PE=1 SV=2
+mlYliglglgdakdiTvkglevvrrcsrvYleaYTSvlTvgk-----ealeefygrklvvadreeveqeadnilkdadisdvaflvvgdpfgatthsdlvlratklgipyrvihnasimnavgccglqlykfgetvsivfwtdtwrpesffdkvkknrqngmhtlclldikvkeqSlenlik-grkiYepprYmsvnqaaqqlleivqnqrirgeepavteetlcvglarvgaddqkiaagTlrqmctvdlgeplhsliitggsihpmememlslfsipenssesqsingl------------------
+>guidseq
+--^------------^-------------^---^^^--^----------------------------------------------------------------------------------------------------------------------------------------^-----------^----^--------------------------^--^-----^---^^^-^----^--------------------------------------------------^---------^---^--

@@ -1,0 +1,10 @@
+>tr|A0A654FDQ5|A0A654FDQ5_ARATH (thale cress) hypothetical protein OS=Arabidopsis thaliana OX=3702 GN=At3g18430 PE=4 SV=1
+mgntssmltqydieevqshchdlfeqqeilslyqrfcqldrnakgfisadeflsvpefamnplsqrllkmvd-----glnfkdfvaflsafsakaslrqkvqlifkvydsdcngkvsfkdimevlrdlsgsfmsdeqreqvlsqvlkesgytsdsfltledfikifgssrpemdveipvd-
+>sp|P25296|CANB_YEAST Calcineurin subunit B OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=CNB1 PE=1 SV=3
+mgaapskivdg------lledtnfdrdeierlrkrfmkldrdSsgsidknefmSipgvssnplagrimevfdadnsgdvdfqefitglsifsgrgskdeklrfafkiydidkdgfisngelfivlkimvgsnlddeqlqqivdrtivendSdgdgrlsfeefknaietTevakSlTlqYdv
+>sp|P63098|CANB1_HUMAN Calcineurin subunit B type 1 OS=Homo sapiens OX=9606 GN=PPP3R1 PE=1 SV=2
+mgneasY---p------lemcShfdadeikrlgkrfkkldldnSgSlSveefmSlpelqqnplvqrvidifdTdgngevdfkefiegvsqfSvkgdkeqklrfafriydmdkdgYiSngelfqvlkmmvgnnlkdtqlqqivdktiinadkdgdgrisfeefcavvggldihkkmvvdv--
+>sp|Q96LZ3|CANB2_HUMAN Calcineurin subunit B type 2 OS=Homo sapiens OX=9606 GN=PPP3R2 PE=1 SV=3
+mgneasy---p------aemcshfdndeikrlgrrfkkldldksgslsveefmslpelrhnplvrrvidvfdtdgdgevdfkefilgTSqfSvkgdeeqklrfafSiYdmdkdgYiSngelfqvlkmmvgnnltdwqlqqlvdktiiildkdgdgkisfeefSavvrdleihkklvliv--
+>guidseq
+------^--------------^--------------------^^-^-^-----^------------------^--------------^^--^-------------^-^------^-^---------------------------------^-----------^-----^----^-^--^--

@@ -1,0 +1,14 @@
+>sp|O22711|PRX2D_ARATH Peroxiredoxin-2D OS=Arabidopsis thaliana OX=3702 GN=PRXIID PE=2 SV=2
+---------------------------------------------------------mapitvgdvvpdgt-------isffden----dqlqtvs-vhsiaagkkvilfgvpgaftptcsmshvpgfigkaeel-kskgideiicfsvndpfvmkawgktyqen--khvkfvadgsgeythllgleldlkdkg--lgirsrrfallldnlkvtvanven-gg-eftvssaedilkal
+>sp|P30044|PRDX5_HUMAN Peroxiredoxin-5, mitochondrial OS=Homo sapiens OX=9606 GN=PRDX5 PE=1 SV=4
+-----mglagvcalrrSagYilvggaggqsaaaaarrySegewasggvrsfSraaaamapikvgdaipave-------vfege-------pgnkvn-laelfkgkkgvlfgvpgafTpgcSkThlpgfveqaeal-kakgvqvvaclsvndafvtgewgrahkae--gkvrlladptgafgkeTdlllddSlvSifgnrrlkrfSmvvqdgivkalnvep-dgtgltcslapniisql
+>sp|P38013|AHP1_YEAST Peroxiredoxin AHP1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=AHP1 PE=1 SV=4
+---------------------------------------------------------mS-dlvnkkfpagdYkfqyiaiSqSdadSeSckmpqTvewSkliSenkkviiTgapaafSpTctvShipgyinyldelvkekevdqvivvtvdnpfanqawakSlgvkdTthikfaSdpgcafTksigfelavgdgv----ywsgrwamvvengivtyaakeTnpgTdvTvSSveSvlahl
+>sp|Q9M7T0|PRX2F_ARATH Peroxiredoxin-2F, mitochondrial OS=Arabidopsis thaliana OX=3702 GN=PRXIIF PE=1 SV=2
+mamsilklrnlsalrsaansarigv---------------------ssrgfsklaeg---Tditsaapgvslqk--arSwdegvs----skfsttp-lsdifkgkkvvifglpgayTgvcsqqhvpsykshidkf-kakgidsvicvsvndpfaingwaeklgak--daiefYgdfdgkfhkSlgldkdls--aallgprserwsayvedgkvkavnvee-apsdfkvtgaevilgqi
+>sp|Q9SRZ4|PRX2C_ARATH Peroxiredoxin-2C OS=Arabidopsis thaliana OX=3702 GN=PRXIIC PE=1 SV=1
+---------------------------------------------------------mapitvgdvvpdgt-------isffden----dqlqtvs-vhsiaagkkvilfgvpgaftptcsmshvpgfigkaeel-kskgideiicfsvndpfvmkawgktypen--khvkfvadgsgeythllgleldlkdkg--lgirsrrfallldnlkvtvanves-gg-eftvssaedilkal
+>sp|Q9XEX2|PRX2B_ARATH Peroxiredoxin-2B OS=Arabidopsis thaliana OX=3702 GN=PRXIIB PE=1 SV=1
+---------------------------------------------------------mapiavgdvvpdgt-------isffden----dqlqtas-vhslaagkkvilfgvpgaftptcsmkhvpgfiekaeel-kskgvdeiicfsvndpfvmkawgktypen--khvkfvadgsgeythllgleldlkdkg--lgvrsrrfalllddlkvtvanves-gg-eftvssaddilkal
+>guidseq
+----------------^--^------------------^------------^------^-^----------^------^^-^---^-^-----^---^---^-------^------^-^-^-^-------------------------------------^-----^-----^^------^-^^------^--^----------^--------------^---^--^-^^--^-----
