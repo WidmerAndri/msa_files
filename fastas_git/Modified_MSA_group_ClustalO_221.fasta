@@ -1,0 +1,10 @@
+>sp|O82514|KAD4_ARATH Adenylate kinase 4 OS=Arabidopsis thaliana OX=3702 GN=ADK1 PE=1 SV=2
+-maTggaaadledvqtvdlmsellrrlkcsqkpdkrlifigppgsgkgtqspvvkdeyclchlstgdmlraavasktplgvkakeamekgelvSddlvvgiideam-nkpkcqkgfildgfprtvtqaekldemlkrrgteidkvlnfaiddaileeritgrwihpSSgrsyhtkfappktpgvdditgepliqrkddnadvlksrlaafhsqtqpvidyyakkavltniqaekapqevTSevkkals-----------
+>sp|P07170|KAD2_YEAST Adenylate kinase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ADK1 PE=1 SV=2
+----------------------------mSSSeSirmvligppgagkgTqapnlqerfhaahlatgdmlrsqiakgTqlgleakkimdqgglvsddimvnmikdeltnnpackngfildgfprtipqaekldqmlkeqgTplekaielkvddellvariTgrlihpaSgrSYhkifnppkedmkddvTgealvqrSddnadalkkrlaayhaqtepivdfYkktgiwagvdasqppatvwadilnklgkd---------
+>sp|P54819|KAD2_HUMAN Adenylate kinase 2, mitochondrial OS=Homo sapiens OX=9606 GN=AK2 PE=1 SV=2
+-------------------mapSvpaaepeYpkgiravllgppgagkgTqaprlaenfcvchlaTgdmlramvaSgSelgkklkaTmdagklvSdemvvelieknl-eTplckngflldgfprtvrqaemlddlmekrkekldsviefsipdSllirritgrlihpkSgrSYheefnppkepmkdditgeplirrSddnekalkirlqaYhTqTTplieYYrkrgihSaidaSqTpdvvfaSilaafSkatckdlvmfi
+>sp|Q9FK35|KAD3_ARATH Adenylate kinase 3 OS=Arabidopsis thaliana OX=3702 GN=ADK2 PE=1 SV=1
+matssaasvdmediqtvdlmsellrrmkcaskpdkrlvfigppgsgkgtqspvikdefclchlstgdmlraavaaktplgvkakeamdkgelvsddlvvgimdeam-nrpkcqkgfildgfprtvtqaekldemlnrrgaqidkvlnfaiddsvleeritgrwihpSSgrsyhtkfappkvpgvddltgepliqrkddnadvlrsrldafhkqtqpvidyyakkenlvnipaekapeevtkvvkkvvst----------
+>guidseq
+---^------------------^------^^^-^--------------^---------------^---------^-^--------^-------^--------------^------------------------------^------------^------^------^^--^^---------------^-------^-------------^-^-^^----^^------^----^-^----^^^-----^-----------

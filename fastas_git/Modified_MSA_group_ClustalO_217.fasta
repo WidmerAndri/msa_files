@@ -1,0 +1,8 @@
+>sp|P0CX55|RS18A_YEAST Small ribosomal subunit protein uS13A OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS18A PE=1 SV=1
+mSlvvqeqgSfqhilrllnTnvdgnikivYalTTikgvgrrYSnlvckkadvdlhkragelTqeelerivqimqnpThykipawflnrqndiTdgkdyhTlannveSklrddlerlkkirahrgirhfwglrvrgqhtkttgrrra--------
+>sp|P34788|RS18_ARATH Small ribosomal subunit protein uS13z/uS13y/uS13x OS=Arabidopsis thaliana OX=3702 GN=RPS18A PE=1 SV=1
+mSlva--neefqhilrvlntnvdgkqkimfaltsikgigrrlanivckkadvdmnkragelsaaeidnlmtivanprqfkipdwflnrqkdykdgkysqvvsnaldmklrddlerlkkirnhrglrhywglrvrgqhtkttgrrgktvgvskkr
+>sp|P62269|RS18_HUMAN Small ribosomal subunit protein uS13 OS=Homo sapiens OX=9606 GN=RPS18 PE=1 SV=3
+mSlvi--pekfqhilrvlnTnidgrrkiafaiTaikgvgrrYahvvlrkadidlTkragelTedeverviTimqnprqykipdwflnrqkdvkdgkYSqvlangldnklredlerlkkirahrglrhfwglrvrgqhtkttgrrgrtvgvSkkk
+>guidseq
+-^-------^---------^---------^--^^-------^^-----------^------^--------^-----^---------------^---^^-^------^-------------------------------------------^---

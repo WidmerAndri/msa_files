@@ -1,0 +1,8 @@
+>tr|A0A654FQP8|A0A654FQP8_ARATH D-aminoacyl-tRNA deacylase OS=Arabidopsis thaliana OX=3702 GN=At4g18460 PE=3 SV=1
+mraviqrvssssvtvdgrivseigpgllvligihesdtesdadyicrkvlnmrlfsnettgkgwdqnvmqrnygvllvsqftlygf-lkgnkpdfhvamppdkakpfyaslvekfqkaynpdavkdgvfgammqvnlvndgpvtmqldspqstk---------------------------------------------------------
+>sp|Q07648|DTD_YEAST D-aminoacyl-tRNA deacylase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=DTD1 PE=1 SV=1
+mkivlqkvsqasvvvdskvissikhgymllvgisiddsmaeidklskkvlslrifede-srnlwkknikeangeilsvsqftlmaktkkgtkpdfhlaqkghiakelyeeflkllrsdlgeekvkdgefgammScSltnegpvtiildSdq------------------------------------------------------------
+>sp|Q8TEA8|DTD1_HUMAN D-aminoacyl-tRNA deacylase 1 OS=Homo sapiens OX=9606 GN=DTD1 PE=1 SV=2
+mkavvqrvtraSvtvggeqiSaigrgicvllgisledtqkelehmvrkilnlrvfede-SgkhwSkSvmdkqYeilcvsqftlqcv-lkgnkpdfhlampteqaegfynsfleqlrktyrpelikdgkfgaymqvhiqndgpvtielespapgtatsdpkqlsklekqqqrkektrakgpSeSSkernTprkedrSaSSgaegdvSSerep
+>guidseq
+-----------^--------^--------------------------------------^----^-^-----^------------------------------------------------------------^-^------------^-------------------------------^-^^----^------^-^^------^^----

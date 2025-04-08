@@ -1,0 +1,10 @@
+>sp|P09457|ATPO_YEAST ATP synthase subunit 5, mitochondrial OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ATP5 PE=1 SV=1
+----------mfn---------rvftrsfaSslr------aaaskaaapppvrlf------------gvegtyatalyqaaaknSSidaafqslqkveStvkknpklghlllnpalslkdrnSvidaivethknldgyvvnllkvlsennrlgcfekiaSdfgvlndahngllkgTvTsaepldpksfkriekalsaSklvgqgkslklenvvkpeikgglivelgd---kTvdlSiSTkiqklnkvleds-i-----
+>sp|P48047|ATPO_HUMAN ATP synthase subunit O, mitochondrial OS=Homo sapiens OX=9606 GN=ATP5PO PE=1 SV=1
+maapav--------------------SglSrqvrcfstsvvrpfaklvrppvqvY------------giegrYaTalYSaaSkqnkleqvekellrvaqilke-pkvaaSvlnpYvkrSikvkSlndiTak-erfsplttnlinllaengrlsnTqgvvsafstmmsvhrgevpcTvtsaSpleeaTlSelktvl--kSflSqgqvlkleakTdpSilggmivrige---kYvdmSvkTkiqklgramrei-v-----
+>sp|Q96251|ATPO_ARATH ATP synthase subunit O, mitochondrial OS=Arabidopsis thaliana OX=3702 GN=At5g13450 PE=1 SV=2
+manrfrsgisffktiavtdsvssvrskslfpalrtyatasa-qttanvkvpialv------------gengnfaswlyiaavkmnslekieTdlsemieamkTapifaqftkdpsvprgtrlaairdacdq-akfaeptknflSllaengklknldaivkkfmqltnahrgdvkvlvttviplppaeekelTetl--qeiigagkkitveqkidpsiygglivefqq---kvldmsirtraqqmerllrep-vdfnnl
+>sp|Q9SSS9|ATPD_ARATH ATP synthase subunit delta, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=ATPD PE=1 SV=1
+maslqq----------------tlf--slqsklppssfqiarslplrktfpirinnggnaagarmsaTaaSsYamaladvakrndtmeltvtdiekleqvfs-dpqvlnffanptitvekkrqviddivkS-SSlqShTSnflnvlvdanrinivteivkefelvynkltdtqlaevrsvvkleapqlaqiakqv--qkl-tgaknvrvktvidaslvagftirygesgSklidmsvkkqlediasqlelgeiqlaT-
+>guidseq
+--------------------------^--^^-----------------------^------------^--^-^-^--^^--^--^^-----^------^---^------^----^---^---^^----^-^-^^--^-^^---^----------^----^---------------^-^--^-----^-^--^-----^^--^----------^--^-------------^-^---^-^^-----------------^-

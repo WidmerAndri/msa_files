@@ -1,0 +1,10 @@
+>sp|Q03390|VPS60_YEAST Vacuolar protein-sorting-associated protein 60 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=VPS60 PE=1 SV=2
+mnrifgygnkkShdqllqeSnqSmnqaqqslsnrisqldtqiaqlnfqlqniqknlqrSnnkqpSlrkqalkilnkrkqlenmkdsldsqswsmtqaqltndnlqntmitinalkqtnnamkaqygkinidklqdmqdemldlieqgdelqevlamnnnSgelddiSdaeldaeldalaqedftlptsenslgndmpsyllganappa--------fideepnldtedknkalesaq------------
+>sp|Q9FMC5|VP602_ARATH Vacuolar protein sorting-associated protein 60.2 OS=Arabidopsis thaliana OX=3702 GN=VPS60-2 PE=2 SV=1
+mkrifgaknnkepppsiqdasdrinkrgdsveekvkrldaelckykdqikrt-----rpgpaleaikaramrvlkqkkmyegqrdmlynqtfnldqvsfaaeglkdaqqtmtalksankelkgmmktvkiqdidnlqddmmdlmdesseiqetlgrsynv--pddideddllgeldaleadm-----gneteadgvpsylqpdkepdlndelnlpsapmghtg-a-ppgraqaedewglpavpraslrg
+>sp|Q9LPN5|VP601_ARATH Vacuolar protein sorting-associated protein 60.1 OS=Arabidopsis thaliana OX=3702 GN=VPS60-1 PE=1 SV=1
+mrrvfgakkntepppsiqdasdrinkrgdsvedkikkldvelckykeqlkkt-----rpgpaqeavkaramrvlkqkkmyegqrdmlynqtfnldqvsfaaeglkdaqqtmtalksankelkgmmktvkiqdidnlqdemmdlmdvsseiqeslgrsyni--pdgldeddlmgeldaleadm-----gneteadgmpsylqpdtetdydselnlpaaptghng-a-phgraqaedefglpavpraslrg
+>sp|Q9NZZ3|CHMP5_HUMAN Charged multivesicular body protein 5 OS=Homo sapiens OX=9606 GN=CHMP5 PE=1 SV=1
+mnrlfgkakpkapppSlTdcigTvdSraeSidkkiSrldaelvkykdqikkm-----regpaknmvkqkalrvlkqkrmyeqqrdnlaqqSfnmeqanYTiqSlkdTkttvdamklgvkemkkaykqvkidqiedlqdqledmmedaneiqealSrSYgt--pe-ldeddleaeldalgdel---------ladedSsylde--------aasapaipegvpt-dtknkdgvlvdefglpqipaS----
+>guidseq
+-----------^---^-^-^--^--^---^-----^----------------------^-----^-------------------------^-------^^--^---^-----------------------------------------------^-^^-^------^-----------------------------^-----------------------------------------------^----

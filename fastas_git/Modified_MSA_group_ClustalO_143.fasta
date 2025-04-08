@@ -1,0 +1,10 @@
+>sp|O60725|ICMT_HUMAN Protein-S-isoprenylcysteine O-methyltransferase OS=Homo sapiens OX=9606 GN=ICMT PE=1 SV=1
+magcaarappgsearlSlatfllgasvlalplltraglqgrtglalyvaglnalllllyrppryqiairacflgfvfgcgtllsfsqsswshfgwymcslslfhyseylvtav-nnpkslsldsfllnhsleytvaalsswleftlenifwpelkqiTwl------Svtgllmvvfgeclrkaamftagsnfnhvvqneksdthtlvtsgvyawfrhpsyvgwfywsigtqvmlcnpicgvsyaltvwrffrdrteeeeislihffgeeyleykkrvptglpfikgvkvdl
+>sp|P32584|STE14_YEAST Protein-S-isoprenylcysteine O-methyltransferase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=STE14 PE=1 SV=1
+---------------------------------mhqdfqed----------eheypdirrnplhevtmtsyilgillgi-fvglfpqirfknfnlfiialslfhfleyyitak-ynplkvhseSfllnngksymaahsfaileclvesflfpdlkifsyslatklctvlgcllvilgqytrtiamhtaghsfshivktkkesdhvlvktgvySwSrhpsylgffwwaigtqllllnplslvififvlwkffsdrirveekYlieffSaeYieYknkvgvgipfi-------
+>sp|Q93W54|ICMTB_ARATH Protein-S-isoprenylcysteine O-methyltransferase B OS=Arabidopsis thaliana OX=3702 GN=ICMTB PE=1 SV=1
+--------------------------------------------------------------------------------mteifsdtgfrqltqmflaiiffhtseyilaiaihgaskvtlsslli--skhyalamlisvleyiaeivffpglkqhwwi------snfgltmiilgeilrktaiitagrsfthlikirreehhklvtegvyqimrhpsysgfliwsvgtqvmlcnpisaiafavvvwrffaeripyeehylkqffgrqyveyaqrvpsgvpfvn------
+>sp|Q9FMW9|ICMTA_ARATH Protein-S-isoprenylcysteine O-methyltransferase A OS=Arabidopsis thaliana OX=3702 GN=ICMTA PE=1 SV=1
+--------------------------------------------------------------------------------mteifsdtsirqlsqmllsliffhiseyilaitihgasnvtlsslli--tkhyalamllslleylteiilfpglkqhwwv------snfglimiivgeiirkaaiitagrsfthlikinyeehhglvthgvyrlmrhpsycgfliwsvgtqvmlcnpvsavafavvvwrffaqripyeeyflnqffgvqyleyaesvasgvpfvn------
+>guidseq
+----------------^----------------------------------------------------------------------------------------------------------^---------------------------------^--------^---------------------------------------------^-^---------------------------------------------^-----^--^--^------------------

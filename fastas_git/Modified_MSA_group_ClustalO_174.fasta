@@ -1,0 +1,10 @@
+>sp|P0DI74|S61G1_ARATH Protein transport protein Sec61 subunit gamma-1 OS=Arabidopsis thaliana OX=3702 GN=SEC61G1 PE=1 SV=1
+--------------mdaidsvvdplrdfakdsirlvkrchkpdrkeftkvavrtaigfvvmgfvgffvklifipinniivgat
+>sp|P35179|SC61G_YEAST Protein transport protein SSS1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=SSS1 PE=1 SV=2
+maraSekgeekkqSnnqveklveapvefvregTqflakckkpdlkeytkivkavgigfiavgiigYaiklihipiryviv---
+>sp|P60059|SC61G_HUMAN Protein transport protein Sec61 subunit gamma OS=Homo sapiens OX=9606 GN=SEC61G PE=1 SV=1
+--------------mdqvmqfvepsrqfvkdSirlvkrctkpdrkefqkiamataigfaimgfigffvklihipinniivgg-
+>sp|Q9SMP2|S61G3_ARATH Protein transport protein Sec61 subunit gamma-3 OS=Arabidopsis thaliana OX=3702 GN=SEC61G3 PE=1 SV=1
+--------------meaidsaidplrdfakssvrlvqrchkpdrkeftkvavrtaigfvvmgfvgffvklvfipinniivgss
+>guidseq
+----^--------^-----------------^^--------------------------------^-----------------
