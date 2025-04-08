@@ -1,0 +1,10 @@
+>sp|P53680|AP2S1_HUMAN AP-2 complex subunit sigma OS=Homo sapiens OX=9606 GN=AP2S1 PE=1 SV=2
+-mirfiliqnragktrlakwYmqfddde--kqklieevhavvtvrdakh-tnfvefrn-fkiiyrryaglyfcicvdvndnnlayleaihnfvevlneyfhnvceldlvfnfykvyTvvdemflageiretSqTkvlkqllmlqSle------------
+>sp|Q00381|AP2S_YEAST AP-2 complex subunit sigma OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=APS2 PE=1 SV=1
+mavqfilcfnkqgvvrlvrwfdvhssdpqrsqdaiaqiyrlissrdhkhqsnfvefsdstkliyrryaglyfvmgvdllddepiylchihlfvevldaffgnvceldivfnfykvymimdemfiggeiqeiskdmllerlsildrld------------
+>sp|Q84WL9|AP2S_ARATH AP-2 complex subunit sigma OS=Arabidopsis thaliana OX=3702 GN=AP17 PE=2 SV=1
+-mirfillqnrqgktrlakYYvpleese--khkveyevhrlvvnrdakf-tnfvefrt-hkviyrryaglffsvcvditdnelaylesihlfveildhffsnvceldlvfnfhkvylildefilagelqetskraiiermSeleklq------------
+>sp|Q96PC3|AP1S3_HUMAN AP-1 complex subunit sigma-3 OS=Homo sapiens OX=9606 GN=AP1S3 PE=1 SV=1
+-mihfillfsrqgklrlqkwyitlpdke--rkkitreivqiilsrghrt-Ssfvdwke-lklvykryaSlyfccaienqdnelltleivhrYvelldkyfgnvceldiifnfekayfildefiiggeiqetskkiavkaiedsdmlqevstvsqtmger
+>guidseq
+-------------------^^-----------------------------^-----------------^----------------------^------------------------^--------------^-^------^---^--------------

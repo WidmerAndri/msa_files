@@ -1,0 +1,10 @@
+>sp|O60830|TI17B_HUMAN Mitochondrial import inner membrane translocase subunit Tim17-B OS=Homo sapiens OX=9606 GN=TIMM17B PE=1 SV=1
+--meeyarepcpwrivddcggaftmgvigggvfqaikgfrnapvgirhrlrgsanavrirapqiggsfavwgglfstidcglvrlrgkedpwnsitsgaltgavlaarsgplamvgsammggillaliegvgillTrytaqqfrnappfledpsql-------------ppkdgtpapgypsyqqyh-----------------------------------
+>sp|P39515|TIM17_YEAST Mitochondrial import inner membrane translocase subunit TIM17 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=TIM17 PE=1 SV=1
+-msadhsrdpcpivilndfggafamgaiggvvwhgikgfrnsplge--rgsgamsaikarapvlggnfgvwgglfstfdcavkavrkredpwnaiiagfftggalavrggwrhtrnssitcacllgviegvglmfqryaawqa--kp------m--------------applpeapssqplqa---------------------------------------
+>sp|Q99595|TI17A_HUMAN Mitochondrial import inner membrane translocase subunit Tim17-A OS=Homo sapiens OX=9606 GN=TIMM17A PE=1 SV=1
+--meeyarepcpwrivddcggaftmgtigggifqaikgfrnSpvgvnhrlrgsltaiktrapqlggsfavwgglfsmidcsmvqvrgkedpwnsitsgaltgailaarngpvamvgsaamggillaliegagilltrfasaqfpngpqfaedpsql-------------psTql-psSpfgdyrqyq-----------------------------------
+>sp|Q9LN27|TI171_ARATH Mitochondrial import inner membrane translocase subunit TIM17-1 OS=Arabidopsis thaliana OX=3702 GN=TIM17-1 PE=2 SV=1
+mgtpessrepcpdrilddvggafamgavggsayhlirgiynspgga--rlsggvqalrmsgprsggsfsvwgglystfdcalvyarqkedpwnsilsgaatggflslrqglgasarsalvggvllamiegvgimlnkvqstah--neqfmedhaatslpygmgqisgqsvpvpetsssssgsvswfgslfkkkketedhhsesrthilesfdappvptyefk
+>guidseq
+-----------------------------------------^---------------------------------------------------------------------------------------------^-----------------------------------^-----^--------------------------------------------

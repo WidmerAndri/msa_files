@@ -1,0 +1,8 @@
+>tr|A0A178UYA3|A0A178UYA3_ARATH ER membrane protein complex subunit 3 OS=Arabidopsis thaliana OX=3702 GN=AXX17_At4g14210 PE=3 SV=1
+-maedlvldtairdwvliplsvvmvligilryfvsklmrstptpdak---mvkegqvvirarnlkvganfippksfrarrfyfsneengllhvpk-----geaqnpqaamfsdpnma---mdmmkknlsmiipqtltfawvnfffsgfvaakipfpltqrfrsmlqngidlstvdvsyvssrswyflnlfglrglfslilgdenaiddtqrmmq-mgg-------fgfdaskslgaekdgldiiqhewalprfeqraesvl-------rklvk----
+>sp|P36039|EMC3_YEAST ER membrane protein complex subunit 3 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=EMC3 PE=1 SV=3
+-----mllddqlkywvllpisivmvltgvlkqyimtlitgssaneaqprvkltewqylqwaqllignggnlssdafaakkeflvkdlteerhlakakqqdgsqagevpnpfndpsmsnammnmakgnmasfipqtiimwwvnhffagfilmqlpfpltakfkemlqtgiicqdldvrwvssiswyfisvlglnpvynliglndqdmg----iqagiggpqgpqgppqsqvdkamhamandltiiqhetcldnveqrvlkqym---------------
+>sp|Q9P0I2|EMC3_HUMAN ER membrane protein complex subunit 3 OS=Homo sapiens OX=9606 GN=EMC3 PE=1 SV=3
+magpellldSnirlwvvlpiviitffvgmirhYvSillqSdkkltqe---qvsdsqvlirsrvlrengkyipkqsfltrkyyfnnpedgffkkTk-----rkvvpp--SpmTdptml---TdmmkgnvtnvlpmiliggwinmtfsgfvttkvpfplTlrfkpmlqqgielltldaswvssaswyflnvfglrsiyslilgqdnaadqsrmmqeqmTgaam---ampadtnkafktewealeltdhqwalddveeelmakdlhfegmfkkelqtsif
+>guidseq
+---------^----------------------^-^----^-----------------------------------------------------^--------------^--^--------^------------------------------------^----------------------------------------------------------^------------------------------------------------------------
