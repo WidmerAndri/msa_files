@@ -1,0 +1,14 @@
+>tr|A0A178UYP0|A0A178UYP0_ARATH (thale cress) hypothetical protein OS=Arabidopsis thaliana OX=3702 GN=AXX17_At4g41530 PE=3 SV=1
+----mr---nlriisshfsrvlk---------stetrsssvqlft----------------------iqsrsy------sspatqsenvskivnelsnltlletmdlteilrqklniselpvmaammpgmsl----pgsgask-----saggegkekkkeaktafdvmlqaydavskikvikevrti-talglkeakdlvekaptllkkgvskeeaekiieklkavgakvame
+>tr|A0A654EMR9|A0A654EMR9_ARATH Ribosomal protein L7/L12 C-terminal domain-containing protein OS=Arabidopsis thaliana OX=3702 GN=At1g70190 PE=3 SV=1
+mslvlrfrqhlsqtssrlsllsriggyrsytqpakiedeeeeefdq----rklptd-----------ydpatfd---ptehrspptdrvfrlvdeissltlleiselgsiimkkkgmtelptvavmkpgagggvgvgggggmv-----sqsg-vseeakvektvfeiklesfeasakikiikelrsf-tdlglkeakalvektpailkaglskeegekileklkalgakvvle
+>sp|P36210|RK121_ARATH Large ribosomal subunit protein bL12cz OS=Arabidopsis thaliana OX=3702 GN=RPL12A PE=2 SV=1
+------------masTtlsiaTT---irsssypt---lasinhfpsrtttiefpsrfgggssst---lthrat--hlrpiaaveapekiekigSeiSSltleearilvdylqdkfgvsplsla--paaaava--apadg--------------gaaavveeqtefdvvinevpsssriavikavral-TSlalkeakelieglpkkfkegitkdeaeeakktleeagakvSia
+>sp|P36212|RK123_ARATH Large ribosomal subunit protein bL12cx OS=Arabidopsis thaliana OX=3702 GN=RPL12C PE=2 SV=2
+------------masTtlsiaTT---irsssplt---sasthhflskptaiefpfrlsss-------sshrai--nlrpisaveapekiekigSeiSSltleearilvdylqdkfgvsplsla--paaaava--apadg--------------gaaavveeqtefdvvinevpsssriavikavral-TSlalkeakelieglpkkfkegitkdeaeeakktleeagakvSia
+>sp|P52815|RM12_HUMAN Large ribosomal subunit protein bL12m OS=Homo sapiens OX=9606 GN=MRPL12 PE=1 SV=2
+------------mlpaaarplwg---------pclglraaafrlar----rqvpcvcavrhmrssghqrcealagapldnapkeyppkiqqlvqdiasltlleisdlnellkktlkiqdvgl--vpmggvmsgavpaaaaqea--------veedipiakerthftvrlteakpvdkvklikeiknYiqginlvqakklveslpqeikanvakaeaekikaaleavggTvvle
+>sp|P53163|MNP1_YEAST Large ribosomal subunit protein bL12m OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=MNP1 PE=1 SV=1
+--------mslrilakrSSSiwm----ktrvtpa--------liSp----itittr-----------fnsttttapshkddvrpvdpkiskivqdisqltlletsslinelktvlnipeis---mpmggfmagaagagagnvpssTgeagSgaeeeakpeaktvftvkldSfdTktkakvikevkgl-lglslveakkfveaapkvlkenvakddaekikktledlgakvsle
+>guidseq
+---------------^-^^^-^^---------------------^------------------------------------------------^--^^-----------------------------------------------^----^-------------------^--^------------^-^^--------------------------------------^-^--

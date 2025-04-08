@@ -1,0 +1,10 @@
+>sp|P0CX31|RS24A_YEAST Small ribosomal subunit protein eS24A OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS24A PE=1 SV=1
+-mSdavTirTrkviSnpllarkqfvvdvlhpnranvSkdelreklaevYka-ekdavSvfgfrTqfgggkSvgfglvynsvaeakkfeptyrlvrYglaekvekaSrqqrkqkknrdkkifgtgkrlakkvarrnad
+>sp|P62847|RS24_HUMAN Small ribosomal subunit protein eS24 OS=Homo sapiens OX=9606 GN=RPS24 PE=1 SV=1
+-mndTvTirTrkfmTnrllqrkqmvidvlhpgkatvpkTeireklakmykT-tpdvifvfgfrThfgggkTTgfgmiYdSldYakknepkhrlarhglYekkkt-srkqrkerknrmkkvrgTakanvgagkkpke-
+>sp|Q8LC83|RS242_ARATH Small ribosomal subunit protein eS24y OS=Arabidopsis thaliana OX=3702 GN=RPS24B PE=2 SV=2
+maekavtirtrnfmtnrllarkqfvidvlhpgranvskaelkeklarmyevkdpnaifcfkfrthfgggkssgygliydtvenakkfepkyrlirngldtkiek-srkqikerknrakkirgvkktkagdtkkk---
+>sp|Q9SS17|RS241_ARATH Small ribosomal subunit protein eS24z OS=Arabidopsis thaliana OX=3702 GN=RPS24A PE=2 SV=1
+maekavtirtrkfmtnrllsrkqfvidvlhpgranvskaelkeklarmyevkdpnaifvfkfrthfgggkssgfgliydtvesakkfepkyrlirngldtkiek-srkqikerknrakkirgvkktkagdakkk---
+>guidseq
+--^-^-^--^----^---------------------^-^---------^-^------^-----^------^^-----^-^--^------------^--^------^----------------^--------------

@@ -1,0 +1,14 @@
+>sp|P40029|MSRA_YEAST Peptide methionine sulfoxide reductase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=MXR1 PE=1 SV=1
+------------------------------------msslis--------------ktikydpakdklitlacgcfwgtehmyrkylndrivdckvgyangeeSkkdSpSSvSYkrvcggdtdfaevlqvsynpkvitlreltdfffrihdpttSnSqgpdkgTqyrSglfahSdadlkelakikeewqpkwg----nkiatviepiknfydaeeyhqlyldknpqgyacpthylrem---------------------------------------------
+>sp|Q9FKF7|MSRA1_ARATH Peptide methionine sulfoxide reductase A1 OS=Arabidopsis thaliana OX=3702 GN=MSRA1 PE=2 SV=1
+----------------mnilnklg-------------igssrqt-nmdpspiaqv-iddeapapgnqftqfgagcfwsvelayqrv--pgvtqtevgysqgit------hdpsykdvcsgttnhaeivrvqydpkecsyqslldlfwskhdpttlnrqgndvgtqyrsgiyfynpeqeklareslerhqqqvd----rkvvteilpakkfyraeehhqqylskggr--fgl------------------kqstekgcndpircyg------------------
+>sp|Q9LY14|MSRA3_ARATH Peptide methionine sulfoxide reductase A3 OS=Arabidopsis thaliana OX=3702 GN=MSRA3 PE=1 SV=1
+----------------mnilnrlg-------------lgssgqt-nmdpspiaqg-ndddtpapgnqfaqfgagcfwgvelafqrv--pgvtqteagytqgtv------dnpsygdvcsgttghsevvrvqydlndctyeslldlfwsrhdpttlnrqgndvgtqyrsgiyfytpeqeklareslerhqqqme----rkimteilpakkfyraeehhqqylskggr--fgq------------------gqstakgcndpircyg------------------
+>sp|Q9LY15|MSRA2_ARATH Peptide methionine sulfoxide reductase A2 OS=Arabidopsis thaliana OX=3702 GN=MRSA2 PE=1 SV=1
+mdsslktqepqvvetspspvaqep-------------pqvadkp-aivpspiaqe-pdndvpapgnefaefaagcfwgvelafqri--pgvtvtevgythgis------hnpsyedvctnttnhaevvrvqydpkectyetlldlfwsrhnpttlnrqgellgaqyrsgiyfytpeqeklareslekeqkkle----dkivteilpakkfykaeeyhqqylvkggm--hgn------------------aqSpakSckdpircyg------------------
+>sp|Q9SL43|MSRA5_ARATH Peptide methionine sulfoxide reductase A5 OS=Arabidopsis thaliana OX=3702 GN=MSRA5 PE=2 SV=1
+maislkrnrffipytnlvfffflc-------------vslldktvsirisnq-isdtvvdspdrplksavfalgsfwrseaafgci--ngvvrtsagyaggtk------tnpeyrnl----gdhaesvqveydpriigyrqlldvfwsshdsrqvfgqgpdvgnqyrsciftnsteelrlastskereqlntr---ssivttqiqqlgtfyraepdhqkfelkqhpfliqlignmveeelersalatklngyaaelcppriqkhidsrvneiirkgwpvlrdi
+>sp|Q9UJ68|MSRA_HUMAN Mitochondrial peptide methionine sulfoxide reductase OS=Homo sapiens OX=9606 GN=MSRA PE=1 SV=1
+mlSaTrracqllllhslfpvprmgnsasnivSpqealpgrkeqt-pvaakhhvngnrtvepfpegtqmavfgmgcfwgaerkfwvl--kgvystqvgfaggyt------snptykevcsektghaevvrvvYqpehmSfeellkvfwenhdptqgmrqgndhgtqYrsaiYpTsakqmeaalSSkenyqkvlSehgfgpittdiregqtfyyaedyhqqylsknpngycgl------------------gg-tgvscpvgikk--------------------
+>guidseq
+--^-^--------------------------^-----------------------------------------------------------------------^---^-^^-^^-----------------^-----^----------------^-^------^-^-^--^-^^--------^^--------^----------------------------------------------------------^---^---------------------------

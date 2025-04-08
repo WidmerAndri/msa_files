@@ -1,0 +1,8 @@
+>sp|P53102|MND1_YEAST Meiotic nuclear division protein 1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=MND1 PE=1 SV=2
+mgpkrqtvslqekknrilnffqetytfynikelekSipkkcgispmivkdlvqqmidedgvisvekcgniniywcfknqtlqklydsselikkkiqevkcdiatykqeldktlatgrrkkftvgqksynreallekrkkiqdeikkksnslqkiesirwdaakiqenkqqirlkkvhlekttdnieilidylykkfflkpeqirk---efgipeefkeftev---------------------
+>sp|Q8GYD2|MND1_ARATH Meiotic nuclear division protein 1 homolog OS=Arabidopsis thaliana OX=3702 GN=MND1 PE=1 SV=1
+-mskkrglSleekrekmlqifyesqdffllkelekmgpk-kgvisqsvkdviqslvd-ddlvakdkigisiyfwslpscagnqlrsvrqklesdlqgsnkrlaelvdqcea-lkkgree-------seertealtqlkdiekkhkdlknemv--qfadndpatleakrnaievahqsanrwtdniftlrqwcsnnfpqakeqlehlyteagitedfdyielssfplsssheadtakqlvqdea
+>sp|Q9BWT6|MND1_HUMAN Meiotic nuclear division protein 1 homolog OS=Homo sapiens OX=9606 GN=MND1 PE=1 SV=1
+-mskkkglsaeekrTrmmeifsetkdvfqlkdlekiapkekgitamSvkevlqslvd-dgmvdcerigTSnYYwafpskalharkhklevlesqlsegsqkhaSlqkSiek-akigrce-------teertrlakelSSlrdqreqlkaeve--kykdcdpqvveeirqankvakeaanrwTdnifaikswakrkfgfeenkidr---tfgipedfdYid-----------------------
+>guidseq
+--------^-----^--------------------^----------^---------------------^^-^^------------------------------^---^-----------------------------^^------------------------------------------^-----------------------------------^-------------------------

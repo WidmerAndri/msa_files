@@ -1,0 +1,10 @@
+>sp|P07108|ACBP_HUMAN Acyl-CoA-binding protein OS=Homo sapiens OX=9606 GN=DBI PE=1 SV=2
+-mSqaefekaaeevrhlkTkpSdeemlfiYghYkqaTvgdinTerpgmldfTgkakwdawnelkgTSkedamkaYinkveelkkkygi----
+>sp|P31787|ACBP_YEAST Acyl-CoA-binding protein OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ACB1 PE=1 SV=3
+-mvSqlfeekakavnelpTkpStdellelyalykqatvgdndkekpgifnmkdrykweawenlkgksqedaekeyialvdqliakyss----
+>sp|P57752|ACBP6_ARATH Acyl-CoA-binding domain-containing protein 6 OS=Arabidopsis thaliana OX=3702 GN=ACBP6 PE=1 SV=1
+mglkeefeehaekvntltelpsnedllilyglykqakfgpvdTSrpgmfSmkerakwdawkavegksseeamndyitkvkqllevaaSkaST
+>sp|Q8N6N7|ACBD7_HUMAN Acyl-CoA-binding domain-containing protein 7 OS=Homo sapiens OX=9606 GN=ACBD7 PE=1 SV=1
+malqadfdraaedvrklkarpddgelkelYglYkqaivgdiniacpgmldlkgkakweawnlkkglSTedaTSaYiskakeliekygi----
+>guidseq
+--^^--------------^--^-------^--^---^-----^^-----^-^-------------^^^---^^-^------------^--^^
