@@ -1,0 +1,10 @@
+>sp|P12004|PCNA_HUMAN Proliferating cell nuclear antigen OS=Homo sapiens OX=9606 GN=PCNA PE=1 SV=1
+mfearlvqgSilkkvlealkdlineacwdisssgvnlqsmdsshvslvqltlrsegfdtYrcdrnlamgvnlTSmSkilkcagnediitlraednadtlalvfeapnqekvsdYemklmdldveqlgipeqeYScvvkmpsgefaricrdlShigdavviScakdgvkfSaSgelgngniklSqTSnvdkeeeavtiemnepvqltfalrYlnffTkaTplSStvtlSmSadvplvveYkiadmghlkyYlapkiedeegS---
+>sp|P15873|PCNA_YEAST Proliferating cell nuclear antigen OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=POL30 PE=1 SV=1
+mleakfeeaSlfkriidgfkdcvqlvnfqckedgiiaqavddsrvllvsleigveafqeyrcdhpvtlgmdltslskilrcgnntdtltliadntpdsiillfedtkkdriaeyslklmdidadflkieelqydstlslpssefskivrdlSqlSdsinimiTkeTikfvadgdigsgsviikpfvdmehpetsiklemdqpvdltfgakylldiikgsSlsdrvgirlsseapalfqfdl-ksgflqfflapkfndee-----
+>sp|Q9M7Q7|PCNA1_ARATH Proliferating cellular nuclear antigen 1 OS=Arabidopsis thaliana OX=3702 GN=PCNA PE=1 SV=2
+mlelrlvqgsllkkvlesikdlvndanfdcsstgfslqamdsshvalvslllrsegfehyrcdrnlsmgmnlgnmskmlkcagnddiitikaddggdtvtfmfesptqdkiadfemklmdidsehlgipdaeyhsivrmpsnefsrickdlssigdtvvisvtkegvkfstagdigtanivlrqnttvdkpedaiviemkepvslsfalrymnsftkatplsdtvtislsselpvvveykvaemgyiryylapkieeeedTnp-
+>sp|Q9ZW35|PCNA2_ARATH Proliferating cell nuclear antigen 2 OS=Arabidopsis thaliana OX=3702 GN=PCNA2 PE=1 SV=1
+mlelrlvqgsllkkvleavkdlvndanfdcsttgfslqamdsshvalvslllrsegfehyrcdrnlsmgmnlgnmskmlkcagnddiitikaddgsdtvtfmfesptqdkiadfemklmdidsehlgipdaeyhsivrmpsgefsrickdlssigdtvvisvtkegvkfstagdigtanivlrqnttvdkpedaiviemnepvslsfalrymnsftkatplsetvtislsselpvvveykvaemgyiryylapkieeeedtkpe
+>guidseq
+---------^-------------------------------------------------^------------^^-^-------------------------------------^------------------^^-----------------^--^-----^-^--^---^-^----------^-^^------------------------^----^--^^-^^----^-^--------^----------^----------^---
