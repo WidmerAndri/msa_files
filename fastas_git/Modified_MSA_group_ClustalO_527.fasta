@@ -1,0 +1,10 @@
+>sp|P28007|GAR1_YEAST H/ACA ribonucleoprotein complex subunit GAR1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=GAR1 PE=1 SV=1
+msf--------------------------rggnrggr-ggfr----ggfr--ggrTgSarSfqqgppdTvlemgaflhpcegdivcrsi--ntkipyfnapiylenktqvgkvdeilgplnevfftikcgdgvqatsfkegdkfyiaadkllpierflpkpkvvgppkpknkkkrsgapggrggasmgrggsrggf-rggrggssfrggrggssfrggsrggsfrggsrggsrggfrggrr-
+>sp|Q8VZT0|NLAL1_ARATH Putative H/ACA ribonucleoprotein complex subunit 1-like protein 1 OS=Arabidopsis thaliana OX=3702 GN=At3g03920 PE=2 SV=1
+mrp---------pmrggggfrgrggrdg-ggggrfgggggrfgggggrfggg--ggrfggfrdegppsevvevatfvhacegdavtkls--qekiphfnapiylenktqigkvdeifgpineslfsikmmegivatsySpgdkffidpykllplarflpqpkgqstgg-------------rggagrgrgds-----rgrgrggsfsrgrg------aprg--grfpprggsrgsfrgrgrf
+>sp|Q9FK53|NLAL2_ARATH H/ACA ribonucleoprotein complex subunit 1-like protein 2 OS=Arabidopsis thaliana OX=3702 GN=At5g18180 PE=2 SV=1
+-mr---------pprgggsfrgrggrdn-ggrgrgrg------rgrgrfg--------ggnydegppsevvevatflhacegdavfkls--nvkiphfnapiylqnktqigrvdeifgpineslfsikmregivatsysqgdkffispekllplsrflpqpkgqsggr-------------gegrvpprgrg-----pp--rgrgnfrgrg------aprgasrgfqprggprggfrgrgra
+>sp|Q9NY12|GAR1_HUMAN H/ACA ribonucleoprotein complex subunit 1 OS=Homo sapiens OX=9606 GN=GAR1 PE=1 SV=1
+mSfrgggrggfnrggggggfnrggssnhfrgggggggggnfrgggrggfgrgggrggfnkgqdqgppervvllgeflhpceddivckcttdenkvpYfnapvYlenkeqigkvdeifgqlrdfYfSvklsenmkassfkklqkfYidpYkllplqrflprppgekgpp-------------rgggrggrgggrggggrgggrgggfrggrg------ggg-----ggfrggrgggfrgrgh-
+>guidseq
+-^-----------------------------------------------------^-^--^-------^---------------------------^-----^--------------------^-^------------^-----^---^---------------------------------------------------------------------------------------------

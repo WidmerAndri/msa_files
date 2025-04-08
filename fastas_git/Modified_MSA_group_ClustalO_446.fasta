@@ -1,0 +1,12 @@
+>sp|P02406|RL28_YEAST Large ribosomal subunit protein uL15 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPL28 PE=1 SV=3
+mpsrftktrkhrghvSagkgrigkhrkhpggrgmaggqhhhrinmdkYhpgYfgkvgmryfhkqqahfwkpvlnldklwTlipedkrdqylkSaSkeTapvidTlaagYgkilgkgripn-vpvivkarfvSklaeekiraaggvvelia---
+>sp|P46776|RL27A_HUMAN Large ribosomal subunit protein uL15 OS=Homo sapiens OX=9606 GN=RPL27A PE=1 SV=2
+mpSrlrktrklrghvShghgrigkhrkhpggrgnagglhhhrinfdkYhpgYfgkvgmkhyhlkrnqSfcpTvnldklwTlvSeqTrvnaak-nkTgaapiidvvrSgYykvlgkgklpk-qpvivkakffSrraeekikSvggacvlva---
+>sp|P49637|R27A3_ARATH Large ribosomal subunit protein uL15x OS=Arabidopsis thaliana OX=3702 GN=RPL27AC PE=2 SV=2
+mttrfkknrkkrghvsaghgrigkhrkhpggrgnaggmhhhrilfdkyhpgyfgkvgmryfhklrnkffcpivnldklwslvpedvkaks----TkdnvplidvtqhgffkvlgkghlpenkpfvvkaklisktaekkikeaggavvlTa---
+>sp|Q9LPV3|R27A1_ARATH Large ribosomal subunit protein uL15z OS=Arabidopsis thaliana OX=3702 GN=RPL27AA PE=3 SV=1
+mttsrkktrnlrehvsvghgrfgkhrklpgsrgnag-------------------vgmryfhklrnkfycqivnldklwsm------------------------------vlgkgflpenkpvvvkaklvsntdekkikeagsavvltflly
+>sp|Q9LR33|R27A2_ARATH Large ribosomal subunit protein uL15y OS=Arabidopsis thaliana OX=3702 GN=RPL27AB PE=2 SV=1
+matalkknrkkrghvsaghgrigkhrkhpggrgnaggmhhhrilfdkyhpgyfgkvgmryfhklrnkffcpivnldklwslvpedvkaks----skdnvplidvtqhgffkvlgkghlpenkpfvvkaklisktaekkikeaggavvlTa---
+>guidseq
+--^------------^-------------------------------^---^---------------^---^-------^--^--^------^-^^-^-----^--^-^----------------------^--------^-------^----

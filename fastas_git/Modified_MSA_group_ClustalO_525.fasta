@@ -1,0 +1,16 @@
+>tr|A8MQP6|A8MQP6_ARATH Nascent polypeptide-associated complex (NAC), alpha subunit family protein OS=Arabidopsis thaliana OX=3702 GN=At4g10480 PE=1 SV=1
+--mpgpvieev----neealmdaikeqm-klqkendvvvedvkdgdeddddv------dddddeiadageneaSkqsrsekksrkamlklgmkpvtdvsrvtikrsknvlfviskpdvfkSpnSetyvifgeakiddmsSqlqaqaaqrf---kmpdva----------smipntdgSeaatv-aqeeeddedvdetgveakdidlvmtqagvsrpkavkalkesngdivsaimeltt
+>sp|P38879|NACA_YEAST Nascent polypeptide-associated complex subunit alpha OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=EGD2 PE=1 SV=3
+---------------------------------------------------------------mSaipenanvTvlnknekkareligklglkqipgiirvtfrkkdnqiYaiekpevfrSag-gnYvvfgeakvdnfTqklaaaqqqaqaSgimpSnedvaTkSpediqadmqaaaegSvnaaaeeddeegevdagdlnkddielvvqqtnvSknqaikalkahngdlvnaimSlSk
+>sp|Q6ICZ8|NACA3_ARATH Nascent polypeptide-associated complex subunit alpha-like protein 3 OS=Arabidopsis thaliana OX=3702 GN=At5g13850 PE=1 SV=1
+------mt-------aeqkvelaak-leeqkidldkpeveddddndeddSe-------dddeaeghdgeaggrskqsrsekksrkamlklgmkpitgvsrvtvkksknilfviskpdvfkspaSdtyvifgeakiedlssqlqsqaaeqf---kapnls----------nvisqgetSsaataaavqddddeevdeegvepkdielvmtqagvskpravkalklangdivsaimeltt
+>sp|Q8LGC6|NACA5_ARATH Nascent polypeptide-associated complex subunit alpha-like protein 5 OS=Arabidopsis thaliana OX=3702 GN=At1g33040 PE=2 SV=2
+--mpgaiveee------ksqiesikeql-klekeddvvvedvkdgeeeddde------ddedvevegeggnenakqsrsekksrkavlklgmkpvsdvsrvtikraknvlfviskpdvykspnaetyvifgeakvddlssqlqtqaaqrf---kmpdvt----------smlpnagseatmap-laeeededdvddtgveardidlvmtqagvskakavsalkandgdivsaimeltt
+>sp|Q94JX9|NACA2_ARATH Nascent polypeptide-associated complex subunit alpha-like protein 2 OS=Arabidopsis thaliana OX=3702 GN=At3g49470 PE=2 SV=2
+mspppavvtesadgqpeqppvtaiaeelekklqtdepivedvkddedddddd-------eeeedddaqgvsgsskqsrsekksrkamlklgmkpvtgvsrvtikrtknvlffiskpdvfksphsetyvifgeakiedlssqlqtqaaqqf---rmpeig----------aTSqraeastatve-aqveedeeeidetgveardidlvmtqagvSrskavkalkshdgdivsaimeltt
+>sp|Q9H009|NACA2_HUMAN Nascent polypeptide-associated complex subunit alpha-2 OS=Homo sapiens OX=9606 GN=NACA2 PE=1 SV=1
+--mpgeatetvpateqelpqsqaet-----gsgtasdsgesvpgieeqdstqtttqkawlvaaaeideepvgkakqsrsekrarkamsklgllqvTgvTrvtiwksknilfvitkldvykspasdaYivfgeakiqdlSqqaqlaaaekf---rvqgea----------vgni---qenTqTpTvqeeSeeeevdeTgvevkdvklvmsqanvSrakavralknnSndivnaimelTv
+>sp|Q9LHG9|NACA1_ARATH Nascent polypeptide-associated complex subunit alpha-like protein 1 OS=Arabidopsis thaliana OX=3702 GN=At3g12390 PE=1 SV=1
+------mt-------teekeilaak-leeqkidldkpeveddddnedddSddd---dkdddeadgldgeaggkSkqsrsekksrkamlklgmkpitgvsrvtvkksknilfviskpdvfkspaSdtyvifgeakiedlsSqiqSqaaeqf---kapdlS----------nviSkgesssaav-----vqddeevdeegvepkdielvmtqagvsrpnavkalkaadgdivsaimeltt
+>guidseq
+-------------------------------------------------^--------------^--------^---------------------^--^-----------^---------^--^--^-----------^^---^-------^----^-^---^-^-----^^^----^-^-^-^----^-------^----------------^-----------^--------^-^-

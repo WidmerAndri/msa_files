@@ -1,0 +1,14 @@
+>sp|P15880|RS2_HUMAN Small ribosomal subunit protein uS5 OS=Homo sapiens OX=9606 GN=RPS2 PE=1 SV=2
+maddagaaggpggpggpgmgnrggfrggfgSgirg---rgrgrgrgrgrgrgarggk-aedkewmpvtklgrlvkdmkikSleeiYlfSlpikeseiidfflgaslkdevlkimpvqkqTragqrtrfkafvaigdYnghvglgvkcskevatairgaiilaklsivpvrrgywgnkigkphtvpckvtgrcgSvlvrlipaprgTgivSapvpkkllmmagiddcYTSargcTaTlgnfakaTfdaiSkTYSYlTpdlwkeTvfTkSpYqefTdhlvkThTrvSvqrTqapavaTT
+>sp|P25443|RS2_YEAST Small ribosomal subunit protein uS5 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS2 PE=1 SV=3
+mS----------ap-----eaqqqkrggf----g-------grnrgr---pnrrgprnTeekgwvpvTklgrlvkagkittieeiflhSlpvkefqiidtll-pglqdevmnikpvqkqtragqrtrfkavvvvgdsnghvglgiktakevagairagiiiaklSvipirrgYwgTnlgqphSlaTkttgkcgSvTvrlipaprgSgivaSpavkkllqlagvedvytqsngkTrTlentlkaafvaigntygfltpnlwaeqplpvSpldiYSdeaSaqkkrf-------------
+>sp|P49688|RS23_ARATH Small ribosomal subunit protein uS5x OS=Arabidopsis thaliana OX=3702 GN=RPS2C PE=1 SV=2
+maer----------ggergverggergdfgrgfggrggrgdrggrgrggrggrrggraSeeekwvpvtklgrlvaaghikqieqiylhslpvkeyqiidmligptlkdevmkimpvqkqtragqrtrfkafvvvgdgnghvglgvkcskevatairgaiilaklsvvpvrrgywgnkigkphtvpckvtgkcgsvtvrmvpaprgSgivaarvpkkvlqfagiddvftssrgstktlgnfvkatfdclqktygfltpefwketrfSrSpYqehTdflaskalSTSkpdpvvedqa--
+>sp|Q8L8Y0|RS21_ARATH Small ribosomal subunit protein uS5z OS=Arabidopsis thaliana OX=3702 GN=RPS2A PE=2 SV=2
+maer----------ggeggaerggdrgdfgrgfgggrgggrgrdrgprg-rgrrggraseetkwvpvtklgrlvadnkitkleqiylhslpvkeyqiidhlvgptlkdevmkimpvqkqtragqrtrfkafvvvgdgnghvglgvkcskevatairgaiilaklsvvpvrrgywgnkigkphtvpckvtgkcgsvtvrmvpaprgSgivaarvpkkvlqfagiddvftssrgstktlgnfvkatfdclqktygfltpefwketrfSrSpYqehTdflStkavSaTkviTegedqa--
+>sp|Q93VB8|RS22_ARATH Small ribosomal subunit protein uS5y/uS5u/uS5v OS=Arabidopsis thaliana OX=3702 GN=RPS2B PE=2 SV=1
+maer----------ggesgaerggdrgdfgrgfgggrgggrgrdrgprg-rgrrggraseetkwvpvtklgrlvadnkitkleqiylhslpvkeyqiidhlvgptlkdevmkimpvqkqtragqrtrfkafvvvgdgnghvglgvkcskevatairgaiilaklsvvpvrrgywgnkigkphtvpckvtgkcgsvtvrmvpaprgSgivaarvpkkvlqfagiddvftssrgstktlgnfvkatfdclqktygfltpefwketrfSrSpYqehTdflStkavSaTkviTegedqa--
+>sp|Q9SCM3|RS24_ARATH Small ribosomal subunit protein uS5w OS=Arabidopsis thaliana OX=3702 GN=RPS2D PE=2 SV=1
+--------------maergverggdrgdfgrgfggrgggr-gg----prgrgrragrapeeekwvpvtklgrlvkegkitkieqiylhslpvkeyqiidllvgpslkdevmkimpvqkqtragqrtrfkafivvgdsnghvglgvkcskevatairgaiilaklsvvpirrgywgnkigkphtvpckvtgkcgsvtvrmvpaprgSgivaarvpkkvlqfagiddvftssrgstktlgnfvkatfdclqktygfltpefwketrfskspyqehtdfllippgvkis--evvvdkSve
+>guidseq
+-^----------------------------^---------------------------^--------^------------^----^--^------------------------------^----------------^---------------------------^-------^--^------^--^-------^-^---------^---^^---------------^^^----^-^-------^----^-^^^^-^------^--^-^-^--^^---^-^-^^^^---^-----^^^

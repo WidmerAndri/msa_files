@@ -1,0 +1,12 @@
+>sp|P0CX43|RL1A_YEAST Large ribosomal subunit protein uL1A OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPL1A PE=1 SV=1
+-mSkiTSSqvrehvkellkysnetkkrnfletvelqvglknydpqrdkrfsgslklpncprpnmSicifgdafdvdrakScgvdamSvddlkklnknkklikklskkynafiasevlikqvprllgpqlSkagkfpTpvShnddlygkvtdvrstikfqlkkvlclavavgnvemeedvlvnqilmsvnffvsllkknwqnvgslvvkSSmgpafrly
+>sp|P59230|R10A2_ARATH Large ribosomal subunit protein uL1y OS=Arabidopsis thaliana OX=3702 GN=RPL10AB PE=1 SV=1
+-mSklqseavreaittikgk-seekkrnfvetvelqiglknydpqkdkrfsgsvklphiprpkmkicmlgdaqhveeaekmglsnmdvealkklnknkklvkklaksyhaflaseSvikqiprllgpglnkagkfptlvshqeSleakvnetkatvkfqlkkvlcmgvavgnlsmeekqlfqnvqmsvnflvsllkknwqnvrclylkstmgppqrif
+>sp|P59231|R10A3_ARATH Large ribosomal subunit protein uL1x OS=Arabidopsis thaliana OX=3702 GN=RPL10AC PE=1 SV=1
+-mSklqseavreaissiithcketkprnftetielqiglknydpqkdkrfsgsvklphvprpkmkicmlgdaqhveeaekiglesmdvealkklnknkklvkklakkfhaflasesvikqiprllgpglnkagkfptlvshqesleskvnetkatvkfqlkkvlcmgvavgnlsmeekqifqnvqmsvnflvsllkknwqnvrclylkstmgppnrvf
+>sp|P62906|RL10A_HUMAN Large ribosomal subunit protein uL1 OS=Homo sapiens OX=9606 GN=RPL10A PE=1 SV=2
+mSSkvSrdTlYeavr-evlhgnqrkrrkfleTvelqiSlknydpqkdkrfSgTvrlkstprpkfSvcvlgdqqhcdeakavdiphmdiealkklnknkklvkklakkYdaflaSeSlikqiprilgpglnkagkfpSllThnenmvakvdevkstikfqmkkvlclavavghvkmtddelvynihlavnflvSllkknwqnvralyikstmgkpqrlY
+>sp|Q8VZB9|R10A1_ARATH Large ribosomal subunit protein uL1z OS=Arabidopsis thaliana OX=3702 GN=RPL10AA PE=1 SV=1
+-mSklqseavreaittitgk-seakkrnfvetielqiglknydpqkdkrfsgsvklphiprpkmkicmlgdaqhveeaekmglenmdveslkklnknkklvkklakkyhaflaseSvikqiprllgpglnkagkfptlvshqeSleSkvnetkatvkfqlkkvlcmgvavgnlsmeekqifqnvqmsvnflvsllkknwqnvrclylkstmgppqrif
+>guidseq
+-^^--^^^^-^--------------------^-----^------------^-^-----------^--------------^------^--------------------^-----^-^-------------^------^--^---^--^---------------------------------------------^---------------^^-------^

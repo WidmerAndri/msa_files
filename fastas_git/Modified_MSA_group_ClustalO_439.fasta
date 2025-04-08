@@ -1,0 +1,10 @@
+>sp|P32914|SPT4_YEAST Transcription elongation factor SPT4 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=SPT4 PE=1 SV=1
+-----------m-sseracmlcgivqttnefnrdgcpncqgifeeagvs--tmecTSpSfeglvgmckptkswvakwlsvdhsiagmyaikvdgrlpaevvellph----YkprdgSqve
+>sp|P63272|SPT4H_HUMAN Transcription elongation factor SPT4 OS=Homo sapiens OX=9606 GN=SUPT4H1 PE=1 SV=1
+--maleTvpkdl-rhlracllcslvktidqfeydgcdncdaylqmkgnremvydctssSfdgiiammspedswvskwqrvSnfkpgvYavsvtgrlpqgivrelksrgvaYkSrdtaikt
+>sp|Q8LCQ3|SPT41_ARATH Transcription elongation factor SPT4 homolog 1 OS=Arabidopsis thaliana OX=3702 GN=At5g08565 PE=3 SV=3
+mgeapaqiptsfghelraclrcrlvktydqfrdsgcencpf-fkieddherivdvttpnfngiismmdprrswaarwlrigkfapgcytlavsealpeemqficqqarvqyvppkri---
+>sp|Q94C60|SPT42_ARATH Transcription elongation factor SPT4 homolog 2 OS=Arabidopsis thaliana OX=3702 GN=At5g63670 PE=1 SV=1
+mgsapaqiptsfghelraclrcrlvktydqfrdagcencpf-fkmeedherivevttpnfngiisvmdpsrswaarwlrigkfapgcytlavseplpeemqhlcqeervqyvlpkrm---
+>guidseq
+------^------------------------------------------------^^-^---------------------^------^----------------------^-^---^---
