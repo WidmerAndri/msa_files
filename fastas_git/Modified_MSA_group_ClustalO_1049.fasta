@@ -1,0 +1,12 @@
+>sp|O49627|ISU1_ARATH Iron-sulfur cluster assembly protein 1 OS=Arabidopsis thaliana OX=3702 GN=ISU1 PE=1 SV=1
+-------mmlkqaakkalgltsr---qstpwsvgilrtyhenvidhydnprnvgsfdkndpnvgtglvgapacgdvmklqikvdektgqivdarfktfgcgsaiasssvatewvkgkamedvltiknteiakhlslppvklhcsmlaedaikaavkdykekrvktngaaaagettqa------
+>sp|O81433|ISU3_ARATH Iron-sulfur cluster assembly protein 3 OS=Arabidopsis thaliana OX=3702 GN=ISU3 PE=2 SV=1
+-------mlrqttkraflglasq---nptpfpv-vsrlyhpnvidhydnprnvgsfdkndpnvgtglvgapqcgdvmklqvkfdg-sgqiidakfktfgcgsaiaassvatewvkgksveevltiknsqiakhlslppvklhcsmlaedaikaaiknykekqdkangetvetidstylhgigs
+>sp|Q03020|ISU1_YEAST Iron sulfur cluster assembly protein 1, mitochondrial OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ISU1 PE=1 SV=1
+----mlpvitrfarpalmairpvnamgvlrassitkrlyhpkviehythprnvgsldkklpnvgtglvgapacgdvmrlqikvndstgviedvkfkTfgcgsaiaSssymTelvqgmTlddaakiknteiakelslppvklhcsmlaedaikaaikdykskrntptmls--------------
+>sp|Q9H1K1|ISCU_HUMAN Iron-sulfur cluster assembly enzyme ISCU OS=Homo sapiens OX=9606 GN=ISCU PE=1 SV=2
+maaagafrlrraa-SalllrSpr---lparelSaparlyhkkvvdhYenprnvgSldktsknvgtglvgapacgdvmklqiqvde-kgkivdarfkTfgcgSaiaSSSlaTewvkgktveealtikntdiakelclppvklhcsmlaedaikaaladyklkqepkkgeaekk-----------
+>sp|Q9MAB6|ISU2_ARATH Iron-sulfur cluster assembly protein 2 OS=Arabidopsis thaliana OX=3702 GN=ISU2 PE=2 SV=1
+-----mmmlrqtsrkaylglqa------splgl-grrlyhenvidhfenprnvgsfnrndpnvgtglvgapacgdlmslqikvdd-sgqiidtrfktfgcgsaiasssvasewikgktldevmtiknaeiakhlrlppvklhcsmlaedaiksavrdykekqaktnaaaaeetvka-------
+>guidseq
+--------------^-----^-----------^-------------^-------^-----------------------------------------^----^---^^^--^------^-----------------------------------------------------------------

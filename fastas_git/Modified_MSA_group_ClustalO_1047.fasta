@@ -1,0 +1,12 @@
+>sp|P0DH92|VATL1_ARATH V-type proton ATPase subunit c1 OS=Arabidopsis thaliana OX=3702 GN=VHA-c1 PE=1 SV=1
+-----mstfsgdetapffgflgaaaalvfscmgaaygtaksgvgvasmgvmrpelvmksivpvvmagvlgiygliiaviistginpkaksyylfdgyahlssglacglaglsagmaigivgdagvranaqqpklfvgmililifaealalyglivgiilssragqsrae
+>sp|P27449|VATL_HUMAN V-type proton ATPase 16 kDa proteolipid subunit c OS=Homo sapiens OX=9606 GN=ATP6V0C PE=1 SV=1
+----mSeskSgpeyaSffavmgasaamvfsalgaaygtakSgTgiaamSvmrpeqimksiipvvmagiiaiyglvvavlianslnddi---slyksflqlgaglsvglsglaagfaigivgdagvrgtaqqprlfvgmililifaevlglyglivalilStk-------
+>sp|P32842|VATL2_YEAST V-type proton ATPase subunit c' OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=VMA11 PE=1 SV=1
+mstqlasniyaplyapffgfagcaaamvlsclgaaigtaksgigiagigtfkpelimkslipvvmsgilaiyglvvavliagnlspt-edytlfngfmhlscglcvgfaclssgyaigmvgdvgvrkymhqprlfvgivlilifsevlglygmivalilntrgse----
+>sp|P59228|VATL2_ARATH V-type proton ATPase subunit c2 OS=Arabidopsis thaliana OX=3702 GN=VHA-c2 PE=2 SV=1
+----mastfsgdetapffgflgaaaalvfscmgaaygtaksgvgvasmgvmrpelvmksivpvvmagvlgiygliiaviistginpkaksyylfdgyahlssglacglaglsagmaigivgdagvranaqqpklfvgmililifaealalyglivgiilssragqsrae
+>sp|P59229|VATL4_ARATH V-type proton ATPase subunit c4 OS=Arabidopsis thaliana OX=3702 GN=VHA-c4 PE=1 SV=1
+---massgfsgdetapffgflgaaaalvfscmgaaygtaksgvgvasmgvmrpelvmksivpvvmagvlgiygliiaviistginpkaksyylfdgyahlssglacglaglsagmaigivgdagvranaqqpklfvgmililifaealalyglivgiilssragqsrae
+>guidseq
+-----^---^-----^------------------------^-^-----^--------------------------------------------------------------------------------------------------------------^---------
