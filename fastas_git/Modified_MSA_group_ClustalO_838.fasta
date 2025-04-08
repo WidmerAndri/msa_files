@@ -1,0 +1,10 @@
+>sp|P53738|TR112_YEAST Multifunctional methyltransferase subunit TRM112 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=TRM112 PE=1 SV=1
+mkflttnflkcsvkacdTSndnfplqydgskcqlvqdesiefnpefllnivdrvdwpavltvaaelgnnalpptkpsfpssiqeltdddmailndlhtlllqtsiaegemkcrncghiyyikngipnlllpphlv--
+>sp|Q8LFJ5|T112A_ARATH Multifunctional methyltransferase subunit TRM112 homolog A OS=Arabidopsis thaliana OX=3702 GN=TRM112A PE=1 SV=1
+mrlithnmlscnikgvt---sgfplrieagn---viekevdfnpdfirhmfakiewkalvegarsmgyaelpeeSpda-----avlksdepflkklhhallelhleegalvcpetgrkfpvnkgipnmllhedev--
+>sp|Q9C9R3|T112B_ARATH Multifunctional methyltransferase subunit TRM112 homolog B OS=Arabidopsis thaliana OX=3702 GN=TRM112B PE=1 SV=1
+mrlivhnmlscnikgvv---nkfplrieaek---vtvkevdfnpdflrymfakidwkalvdgarsmeytelpdnapdt-----ttlesdetflrkfhhallelhleegslvcpetgrkfsvskgipnmllhedev--
+>sp|Q9UI30|TR112_HUMAN Multifunctional methyltransferase subunit TRM112-like protein OS=Homo sapiens OX=9606 GN=TRMT112 PE=1 SV=1
+mkllThnllSShvrgvgs--rgfplrlqate---vricpvefnpnfvarmipkvewsafleaadnlrliqvpkgpv-------egYeeneeflrtmhhllleveviegtlqcpeSgrmfpiSrgipnmllSeeeTeS
+>guidseq
+----^----^^------^^-------------------------------------------------------^----------^----------------------------^------^--------^---^-^

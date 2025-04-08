@@ -1,0 +1,14 @@
+>sp|P26785|RL16B_YEAST Large ribosomal subunit protein uL13B OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPL16B PE=1 SV=3
+------mSqpvvvidakdhllgrlaSTiakqvlngqkivvvraealniSgeffrnklkyhdflrkaTafnktrgpfhfrapSrilykairgmvShktargkaalerlkifegipppydkkkrvvvpqalrvlrlkpgrkyTTlgklSTSvgwkyedvvakledkrkvrSaeyyakkrafTkkvSSaSaaaSeSdva---kqlaSfgY--
+>sp|P40429|RL13A_HUMAN Large ribosomal subunit protein uL13 OS=Homo sapiens OX=9606 GN=RPL13A PE=1 SV=2
+-----maevqvlvldgrghllgrlaaivakqvllgrkvvvvrceginisgnfyrnklkYlaflrkrmnTnpSrgpYhfrapSrifwrtvrgmlphktkrgqaaldrlkvfdgipppYdkkkrmvvpaalkvvrlkptrkfaYlgrlahevgwkYqavTaTleekrkekakihyrkkkqlmrlrkqaeknv-ekkidkYTevlkthgllv
+>sp|Q9FKC0|R13A4_ARATH Large ribosomal subunit protein uL13w OS=Arabidopsis thaliana OX=3702 GN=RPL13AD PE=2 SV=1
+mvSgSgicskrvvvdarhhmlgrlasitakellngqkvvivrceeiclsgglvrqkmkymrflrkrmntkpshgpihfrapskifwrtvrgmiphktkrgaaalarlkvyegvptpydkikrmvipdalkvlrlqaghkycllgrlsSevgwnhydtikeletkrkerahvvyerkkqlnklrvkaekva-eeklgaqldilapvky--
+>sp|Q9LRX8|R13A2_ARATH Large ribosomal subunit protein uL13y OS=Arabidopsis thaliana OX=3702 GN=RPL13AB PE=2 SV=1
+mvSgSgicskrvvvdarhhmcgrlasiiakellngqSvvvvrceeiclsgglvrqkmkymrflrkrmntkpshgpihfrapskifwrtvrgmiphktkrgaaalarlkvfegvpppydkvkrmvipdalkvlrlqaghkycllgrlsSevgwnhydtikelevkrkersqalyerkkqltklrakaekva-eeklgSqldvlasiky--
+>sp|Q9SFU1|R13A1_ARATH Large ribosomal subunit protein uL13z OS=Arabidopsis thaliana OX=3702 GN=RPL13AA PE=2 SV=1
+mvSgsgicakrvvvdarhhmlgrlasvvakdllngqnivvvrceeiclsgglvrqkmkymrflrkrmntkpshgpihfrapskifwrtvrgmiphktkrganalarlkvfegvpTpydkikrmvvpdalkvlrlqaghkycllgrlsSevgwnhydtikelenkrkeraqavyerkkqlsklrakaekva-eeklgSqldvlapvky--
+>sp|Q9SVR0|R13A3_ARATH Large ribosomal subunit protein uL13x OS=Arabidopsis thaliana OX=3702 GN=RPL13AC PE=2 SV=1
+mvsgsgicakrvvvdgrhhmlgrlasntakellngqevvvvrceeiclsgglvrqkmkymrflrkrmntkpshgpihfrapskifwrtvrgmiphktkrgaaalarlkvfegipppydkikrmvipdalkvlrlqsghkycllgrlsSevgwnhydtikeletkrkersqvmyerkkqlnklrtkaekva-eerlgSqldvlapvky--
+>guidseq
+--^-^--^-----------------^^---------^-----------^---------^-------^-^--^---^-----^-----------^--------------------^-^-----------------------^^----^^^----^---^-^--------^----------^---^^-^---^-^---^^^----^--^--

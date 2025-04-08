@@ -1,0 +1,10 @@
+>sp|Q6Q546|HUB1_YEAST Ubiquitin-like modifier HUB1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=HUB1 PE=1 SV=2
+mievvvndrlgkkvrvkclaedsvgdfkkvlslqigtqpnkivlqkggsvlkdhisledyevhdqtnlelyyl
+>sp|Q9BZL1|UBL5_HUMAN Ubiquitin-like protein 5 OS=Homo sapiens OX=9606 GN=UBL5 PE=1 SV=1
+mievvcndrlgkkvrvkcnTddTigdlkkliaaqTgtrwnkivlkkwYTifkdhvslgdyeihdgmnlelyyq
+>sp|Q9FGZ9|UBL5_ARATH Ubiquitin-like protein 5 OS=Arabidopsis thaliana OX=3702 GN=UBL5 PE=3 SV=1
+mievvlndrlgkkvrvkcndddtigdlkklvaaqTgtraekiriqkwyniykdhitlkdyeihdgmglelyyn
+>tr|Q9M1U1|Q9M1U1_ARATH Ubiquitin-like superfamily protein OS=Arabidopsis thaliana OX=3702 GN=UBL5A PE=4 SV=1
+mievvlndrlgkkvrvkcneedtigdlkklvaaqTgtrpekiriqkwyniykdhiplkdyeihdgmglelyyn
+>guidseq
+-------------------^--^-----------^------------^^------------------------

@@ -1,0 +1,16 @@
+>sp|P07274|PROF_YEAST Profilin OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=PFY1 PE=1 SV=2
+-------------------------------------mS-wqaY-TdnligTgk-------vdkaviysragdavwatsggl-slqpneigeivqgfd-npaglqsnglhiqgqkfmllraddrS-iYgrhdaegvvcvrtkqtviiahypptvqageatkiveqladyligvqy
+>sp|Q38904|PRF4_ARATH Profilin-4 OS=Arabidopsis thaliana OX=3702 GN=PRF4 PE=1 SV=1
+-------------------------------------ms-wqty-vdehlmcdvgdgqghhltaaaiv-ghdgsvwaqsanfpqfkgqefsdimkdfd-epghlaptglfmagakymviqgepgavirgkkgaggitikktgqscvfgiyeepvtpgqcnmvverlgdylleqgl
+>sp|Q38905|PRF5_ARATH Profilin-5 OS=Arabidopsis thaliana OX=3702 GN=PRF5 PE=1 SV=1
+-------------------------------------ms-wqay-vdehlmcdvgdgqghhltaaaii-ghdgsvwaqsanfpqfkpqeitdimkdfd-epghlaptgmflaglkymviqgepnavirgkkgaggitikktgqsmvfglyeepvtpgqcnmvverlgdylieqgl
+>sp|Q42418|PRF2_ARATH Profilin-2 OS=Arabidopsis thaliana OX=3702 GN=PRF2 PE=1 SV=1
+-------------------------------------ms-wqsy-vddhlmceve---gnhlthaaif-gqdgsvwaqssafpqlkpaeiaginkdfe-eaghlaptglflggekymvvqgeagavirgkkgpggvtikkttqalvfgiydepmtggqcnlvverlgdyliesgl
+>sp|Q42449|PRF1_ARATH Profilin-1 OS=Arabidopsis thaliana OX=3702 GN=PRF1 PE=1 SV=1
+-------------------------------------ms-wqsy-vddhlmcdve---gnhltaaail-gqdgsvwaqsakfpqlkpqeidgikkdfe-epgflaptglflggekymviqgeqgavirgkkgpggvtikktnqalvfgfydepmtggqcnlvverlgdyliesel
+>sp|Q8NHR9|PROF4_HUMAN Profilin-4 OS=Homo sapiens OX=9606 GN=PFN4 PE=1 SV=1
+-------------------------------------mShlqSllldtllg-------tkhvdsaalikiqerslcvaspgf-nvtpsdvrtlvngfaknplqarreglyfkgkdyrcvradeyS-lyaknentgvvvvkThlYllvaTYTegmYpSicveaTeSlgdYlrkkgs
+>sp|Q9FE63|PRF3_ARATH Profilin-3 OS=Arabidopsis thaliana OX=3702 GN=PRF3 PE=1 SV=2
+mplphthslvvstlslehsdkpqrrsrakvkkkkktnms-wqty-vddhlmcdva---gnrltaaail-gqdgsvwaqsnnfpqvkpeeiqgikddft-tpgtlaptglflggnkymviqgepnavirgkkgaggvtikkttlalvfgiydepmtpgqcnmvvenlgeyliesgl
+>guidseq
+--------------------------------------^---^^-^-----^------------------------------------------------------------------------^--^------------^--^----^^^---^-^-----^-^---^------

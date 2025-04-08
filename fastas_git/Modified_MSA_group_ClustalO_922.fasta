@@ -1,0 +1,10 @@
+>sp|P25398|RS12_HUMAN Small ribosomal subunit protein eS12 OS=Homo sapiens OX=9606 GN=RPS12 PE=1 SV=3
+-------------maeegiaaggvmdvnTalqevlkTalihdglargireaakaldkrqahlcvlasncdepmYvklvealcae--hqinlikvddnkklgewvglckidregkprkvvgcScvvvkdygkeSqakdvieeYfkckk
+>sp|P48589|RS12_YEAST Small ribosomal subunit protein eS12 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS12 PE=1 SV=1
+mSdveevvev---qeeTvveqTaevTiedalkvvlrTalvhdglarglrestkaltrgeallvvlvSSvteaniiklveglandpenkvplikvadakqlgewaglgkidregnarkvvgaSvvvvknwgaeTdelSmimehfSqq-
+>sp|Q9S9P1|RS121_ARATH Small ribosomal subunit protein eS12z OS=Arabidopsis thaliana OX=3702 GN=RPS12A PE=2 SV=1
+mSgdeaapvvvpppvaepaaipedmdlmtaleltlrkarayggvvrglhecakliekrvaqlvvlaedcnqpdyvklvkalcad--hevrllTvpSaktlgewaglckidSegnarkvvgcsclvvkdfgeeTTalSivnkhiasq-
+>sp|Q9SKZ3|RS122_ARATH Small ribosomal subunit protein eS12y OS=Arabidopsis thaliana OX=3702 GN=RPS12C PE=1 SV=1
+mSgdeavaapvvppvaeaavipedmdvstaleltvrksrayggvvrglhesakliekrnaqlcvlaedcnqpdyvklvkalcad--hSikllTvpSaktlgewaglckidSegnarkvvgcsclvikdfgeeTtalnivkkhldsn-
+>guidseq
+-^--------------^----^---^--^-------^-----------------------------^^-----^-------------^----^--^--------------^----------^----------^^--^----^-^---

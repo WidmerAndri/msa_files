@@ -1,0 +1,12 @@
+>sp|P07281|RS19B_YEAST Small ribosomal subunit protein eS19B OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS19B PE=1 SV=2
+-magvSvrdvaaqdfinaYaSflqrqgklevpgyvdivkTsSgnemppqdaegwfykraaSvarhiymrkqvgvgklnklyggakSrgvrpYkhidaSgSinrkvlqalekigiveiSpkggrriSengqrdldriaaqTleede--
+>sp|P39019|RS19_HUMAN Small ribosomal subunit protein eS19 OS=Homo sapiens OX=9606 GN=RPS19 PE=1 SV=2
+-mpgvtvkdvnqqefvralaaflkksgklkvpewvdtvklakhkelapYd-enwfYTraaSTarhlYlrggagvgSmTkiyggrqrngvmpShfSrgSkSvarrvlqaleglkmvekdqdggrklTpqgqrdldriagqvaaankkh
+>sp|Q9FNP8|RS193_ARATH Small ribosomal subunit protein eS19x OS=Arabidopsis thaliana OX=3702 GN=RPS19C PE=2 SV=1
+matgktvkdvsphefvkayaahlkrsgkielplwtdivktgklkelapyd-pdwyyiraasmarkvylrgglgvgafrriyggskrngsrpphfckssggvarhilqqlqtmnivdldtkggrkiTSsgqrdldqvagriaaav---
+>sp|Q9LF30|RS192_ARATH Small ribosomal subunit protein eS19y OS=Arabidopsis thaliana OX=3702 GN=RPS19B PE=2 SV=1
+matgktvkdvSphdfvkaYaShlkrsgkielplwtdivktgrlkelapyd-pdwyyiraasmarkiylrgglgvgafrriyggskrngsrpphfckssggiarhilqqletmsiveldtkggrritssgqrdldqvagriaaes---
+>sp|Q9SGA6|RS191_ARATH Small ribosomal subunit protein eS19z OS=Arabidopsis thaliana OX=3702 GN=RPS19A PE=2 SV=1
+matgktvkdvSphdfvkaYaShlkrsgkielptwtdivktgklkelapyd-pdwyyiraasmarkvylrgglgvgafrriyggskrngsrpphfckssggiarhilqqletmniveldtkggrritssgqrdldqvagriavep---
+>guidseq
+-----^----^-------^-^------------------^-^------^------^^---^^----^--------^-^-------^-----^--^--^-^-----------------^-------^^------------^-------

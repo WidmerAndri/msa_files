@@ -1,0 +1,12 @@
+>sp|P20081|FKBP_YEAST FK506-binding protein 1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=FPR1 PE=1 SV=2
+mSeviegnvkidriSpgdgaTfpktgdlvtihYTgTlengq---kfd-SSvdrgSpfqcnigvgqvikgwdvgipklsvgekarltipgpyaygprgfpgl-ippnstlvfdvellkvn
+>sp|P62942|FKB1A_HUMAN Peptidyl-prolyl cis-trans isomerase FKBP1A OS=Homo sapiens OX=9606 GN=FKBP1A PE=1 SV=2
+------mgvqveTiSpgdgrTfpkrgqTcvvhytgmledgk---kfd-ssrdrnkpfkfmlgkqevirgweegvaqmsvgqrakltispdYaYgatghpgi-ipphatlvfdvellkle
+>sp|P68106|FKB1B_HUMAN Peptidyl-prolyl cis-trans isomerase FKBP1B OS=Homo sapiens OX=9606 GN=FKBP1B PE=1 SV=2
+------mgveietiSpgdgrtfpkkgqTcvvhytgmlqngk---kfd-ssrdrnkpfkfrigkqevikgfeegaaqmslgqrakltctpdvaygatghpgv-ippnatlifdvellnle
+>sp|Q5VVH2|FKB1C_HUMAN Peptidyl-prolyl cis-trans isomerase FKBP1C OS=Homo sapiens OX=9606 GN=FKBP1C PE=1 SV=1
+------mgvhvetispgdwrtfpkrsqtcvmhytgmledgk---kfd-ssrdrnkpfkfmlgkqevirgweegvvqmsvgqrakltispdYaygatghpgi-ipphatlvfdvellkle
+>sp|Q8LGG0|FKB12_ARATH Peptidyl-prolyl cis-trans isomerase FKBP12 OS=Arabidopsis thaliana OX=3702 GN=FKBP12 PE=1 SV=2
+------mgvekqvirpgngp-kpapgqtvtvhctgfgkdgdlsqkfwstkdegqkpfsfqigkgavikgwdegvigmqigevarlrcssdyaygaggfpawgiqpnsvldfeievlsvq
+>guidseq
+-^----------^-^-----^------^----^^-^------------^^----^-----------------------------------^-^--------------------------

@@ -1,0 +1,12 @@
+>sp|P0CAN7|VATE3_ARATH V-type proton ATPase subunit E3 OS=Arabidopsis thaliana OX=3702 GN=VHA-E3 PE=2 SV=1
+-------mndadasiqiqqmvrfirqeaeekaneisisseeefnieklqlveaekkkirqeyekkekqvdvrkkidySmqlnasrikvlqaqddivnamkeeaakqllkvsqhgffnhhhhqykhllkdlivqcllrlkepavllrcreedldivesmlddaseeyckkakvhapeiivdkdiflppapsd--ddphalscaggvvlasrdgkivcentldarlevafrnklpeirkslfgkvgaa----
+>sp|P22203|VATE_YEAST V-type proton ATPase subunit E OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=VMA4 PE=1 SV=4
+mSSaiTalTpnqvndelnkmqafirkeaeekakeiqlkadqeyeiektnivrneTnnidgnfkSklkkamlSqqiTkstiankmrlkvlSareqSldgifeetkeklSgiannr------deykpilqsliveallkllepkaivkalerdvdlieSmkddimreygekaqrapleeivisndyln-----------kdlvSggvvvSnaSdkieinntleerlkllSeealpairlelygpSktrkffd
+>sp|Q39258|VATE1_ARATH V-type proton ATPase subunit E1 OS=Arabidopsis thaliana OX=3702 GN=VHA-E1 PE=1 SV=2
+-------mndgdvsrqiqqmvrfirqeaeekaneisvsaeeefnieklqlveaekkkirqdyekkekqadvrkkidySmqlnasrikvlqaqddivnamkdqaakdllnvsrde------yaykqllkdlivqcllrlkepsvllrcreedlglveavlddakeeyagkakvhapevavdtkiflppppkS--ndphglhcsggvvlasrdgkivcentldarldvafrmklpvirkslfgqvta-----
+>sp|Q96A05|VATE2_HUMAN V-type proton ATPase subunit E 2 OS=Homo sapiens OX=9606 GN=ATP6V1E2 PE=1 SV=1
+-----malSdvdvkkqikhmmafieqeanekaeeidakaeeefniekgrlvqtqrlkimeYYekkekqieqqkkilmSTmrnqarlkvlrarndlisdllSeaklrlsrivedp------evyqglldklvlqgllrllepvmivrcrpqdlllveaavqkaipeymtisqkhv-evqidkeayl------------avnaaggvevysgnqrikvsnTleSrldlSakqkmpeirmalfgantnrkffi
+>sp|Q9C9Z8|VATE2_ARATH V-type proton ATPase subunit E2 OS=Arabidopsis thaliana OX=3702 GN=VHA-E2 PE=2 SV=1
+-------mndadvskqiqqmvrfirqeaeekaneisisaeeefnierlqllesakrklrqdydrklkqvdirkridystqlnasrikylqaqddvvtamkdsaakdllrvsndk------nnykkllkSliiesllrlkepsvllrcremdkkvvesviedakrqYaekakvgspkitidekvflppppnpklpdshdphcsggvvlasqdgkivcentldarldvafrqklpqirtrlvgapetsra--
+>guidseq
+-^^--^--^---------------------------------------------^-----^^-^-------^---^-^^----------^----^-----^------^--------------------^---------------------------^--------^------------------------^----------^-----^--^-------^--^----^^--------------^-------

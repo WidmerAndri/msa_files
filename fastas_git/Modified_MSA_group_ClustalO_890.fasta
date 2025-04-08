@@ -1,0 +1,12 @@
+>sp|P32836|GSP2_YEAST GTP-binding nuclear protein GSP2/CNR2 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=GSP2 PE=1 SV=1
+mSapaqnnaevpTfklvlvgdggTgkttfvkrhlTgefekkyiatigvevhplsfytnfgeikfdvwdtagqekfgglrdgyyinaqcaiimfdvtsrityknvpnwhrdlvrvcenipivlcgnkvdvkerkvkakTiTfhrkknlqyydiSakSnynfekpflwlarklagnpqlefvaSpalappevqvdeqlmhqyqqemdqatalplpdeddadl-
+>sp|P41916|RAN1_ARATH GTP-binding nuclear protein Ran-1 OS=Arabidopsis thaliana OX=3702 GN=RAN1 PE=1 SV=1
+malpnqqTvdypSfklvivgdggtgkttfvkrhltgefekkyeptigvevhpldfftncgkirfycwdtagqekfgglrdgyyihgqcaiimfdvtarltyknvptwhrdlcrvcenipivlcgnkvdvknrqvkakqvtfhrkknlqyyeisaksnynfekpflylarklagdqnlhfveTpalappevhidiadqqkneaellqaaaqplpdddddife
+>sp|P41917|RAN2_ARATH GTP-binding nuclear protein Ran-2 OS=Arabidopsis thaliana OX=3702 GN=RAN2 PE=1 SV=3
+malpnqqTvdypsfklvivgdggtgkttfvkrhltgefekkyeptigvevhpldfftncgkirfycwdtagqekfgglrdgyyihgqcaiimfdvtarltyknvptwhrdlcrvcenipivlcgnkvdvknrqvkakqvtfhrkknlqyyeisaksnynfekpflylarklagdqnlhfvespalappevhldiaaqqqneadlaaaaaqplpdddddafe
+>sp|P62826|RAN_HUMAN GTP-binding nuclear protein Ran OS=Homo sapiens OX=9606 GN=RAN PE=1 SV=3
+---maaqgepqvqfklvlvgdggTgkTTfvkrhlTgefekkYvaTlgvevhplvfhtnrgpikfnvwdTagqekfgglrdgYYiqaqcaiimfdvTSrvtYknvpnwhrdlvrvcenipivlcgnkvdikdrkvkakSivfhrkknlqYYdiSakSnYnfekpflwlarkligdpnlefvampalappevvmdpalaaqyehdlevaqttalpdedddl--
+>sp|Q8H156|RAN3_ARATH GTP-binding nuclear protein Ran-3 OS=Arabidopsis thaliana OX=3702 GN=RAN3 PE=1 SV=2
+malpnqqTvdypsfklvivgdggtgkttfvkrhltgefekkyeptigvevhpldfftncgkirfycwdtagqekfgglrdgyyihgqcaiimfdvtarltyknvptwhrdlcrvcenipivlcgnkvdvknrqvkakqvtfhrkknlqyyeisaksnynfekpflylarklagdanlhfvespalappevqidlaaqqqheaelaaaasqplpdddddtfe
+>guidseq
+-^-----^----^----------^--^^------^------^--^-----------------------^------------^^------------^^---^------------------------------------^-^--------^^--^--^-^-----------------------^---------------------------------------
