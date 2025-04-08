@@ -1,0 +1,10 @@
+>tr|F4JTR2|F4JTR2_ARATH CDP-diacylglycerol--inositol 3-phosphatidyltransferase OS=Arabidopsis thaliana OX=3702 GN=PIS2 PE=3 SV=1
+----makqrpatlsvylyipnivgymrvllnciafsvcfsnktlfsllyffsfccdavdgwcarkfnqvSTfgavldmvtdrvstacllvilsqiyrpslvfl-sllaldiashwlqmystflsgktshkdvkdstswlfrlyygnrmfmgyccvscevlyiillliatnqtenlmn--------isplslllalsifgwsikqiinviqmktaadvcvlydiekqhkkp---
+>sp|O14735|CDIPT_HUMAN CDP-diacylglycerol--inositol 3-phosphatidyltransferase OS=Homo sapiens OX=9606 GN=CDIPT PE=1 SV=1
+---------mpdeniflfvpnligyarivfaiisfyfmpccpltassfyllsglldafdghaaralnqgTrfgamldmltdrcstmcllvnlallypgatlffqismsldvashwlhlhssvvrgseshkmidlsgnpvlriyytsrpalftlcagnelfycllylfhfsegplvgsvgl-----frmglwvta---piallkslisvihlitaarnmaaldaadrakkk---
+>sp|P06197|PIS_YEAST CDP-diacylglycerol--inositol 3-phosphatidyltransferase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=PIS1 PE=1 SV=1
+mssnstpekvtaehvlwyipnkigyvrvitaalsffvmknhptaftwlystsclldaldgtmarkynqvsslgavldmvtdrsstaglmcflcvqypqwcvffqlmlglditshymhmyaslsagktshksvgegesrllhlyytrrdvlfticafnelfyaglylqlfsnsatfgk-------------wttiisfpgyvfkqtanvvqlkraaliladndaknaneknkty
+>sp|Q8LBA6|PIS1_ARATH CDP-diacylglycerol--inositol 3-phosphatidyltransferase 1 OS=Arabidopsis thaliana OX=3702 GN=PIS1 PE=1 SV=2
+-makkerprpeklsvylyipnivgymrvllncvafavcfsnkplfsvlyffsfccdavdgwvarrfnqvSTfgavldmvTdrvstacllvilsqiyrpslvfl-sllaldiashwlqmystflagksshkdvkdstswlfrlyygnrifmcyccvscevlyiillliaknqsenllnvvvatltqisplsfllaltlfgwsmkqtinviqmktaadvcvlydiekqqkp----
+>guidseq
+---------------------------------------------------------------------^^--------^---------------------------------------------------------------------------------------------------------------------------------------------------------

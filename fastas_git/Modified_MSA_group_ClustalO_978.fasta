@@ -1,0 +1,16 @@
+>sp|O04663|IF4E4_ARATH Eukaryotic translation initiation factor isoform 4E OS=Arabidopsis thaliana OX=3702 GN=EIF(ISO)4E PE=1 SV=2
+-----------maTd-----dvneplp-------------a-----------aaelpateaekqphklerkwSfwfdnqskk--gaawgaslrkayTfdtvedfwglhetifqtskltanaeihlfkagvepkwedpecanggkwtwvvta-nrkealdkgwletlmaligeqfde-adeicgvvasvrpqskqdklslwtrtkSneavlmgigkkwkeildvtdki--tfnnhddSr-rSr------fTv-
+>sp|O23252|IF4E1_ARATH Eukaryotic translation initiation factor 4E-1 OS=Arabidopsis thaliana OX=3702 GN=EIF4E1 PE=1 SV=1
+mavedTpksvv--teeakpnSie--npidryheegddaeeg--eiaggegdgnvdessksgvpeshplehswTfwfdnpavkskqtswgsslrpvfTfstveefwslynnmkhpsklahgadfycfkhiiepkwedpicanggkwtmtfp----kekSdkSwlYTllaligeqfdh-gdeicgavvnir--gkqerisiwtknasneaaqvsigkqwkefldynnsi--gfiihedak-kldrnaknayta-
+>sp|P06730|IF4E_HUMAN Eukaryotic translation initiation factor 4E OS=Homo sapiens OX=9606 GN=EIF4E PE=1 SV=2
+-----------ma--TvepeTTpTpnppTTeee----------------kTeSnqevanpehYikhplqnrwalwffknd---kSkTwqanlrliskfdtvedfwalynhiqlSsnlmpgcdySlfkdgiepmwedeknkrggrwlitlnkqqrrsdldrfwletllcligesfddysddvcgavvnvr--akgdkiaiwttecenreavthigrvYkerlglppkivigYqShadTaTkSgSTTknrfvv-
+>sp|P07260|IF4E_YEAST Eukaryotic translation initiation factor 4E OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=CDC33 PE=1 SV=1
+mSveevS-----------------------------kkfeenvSvddTTaTpkTvlSdSahfdvkhplntkwtlwytkpavd-kSeSwSdllrpvtSfqtveefwaiiqnipephelplkSdyhvfrndvrpewedeanakggkwsfqlr--gkgadidelwlrTllavigetideddSqingvvlSir--kggnkfalwtkSe-dkepllriggkfkqvlkltddghleffphssangrhpqp---sitl-
+>sp|Q9C7P2|IF4E2_ARATH Eukaryotic translation initiation factor 4E-2 OS=Arabidopsis thaliana OX=3702 GN=EIF4E2 PE=1 SV=2
+mvvmdspvsgrmadqnidpntttspspiekhvsai-kaisgdekapskekknyaskksttviqkshcfqnswtfwfdnpssksnqviwgsslrslytfatieefwslynnihpptkwvsgsdlycfkdkiepkwedpicanggkwtmffp----ratlesnwlntllalvgeqfdq-gdeicgavlnfr--trgdrislwtkkaaneeaqlsigkqwkellgyndti--gfivhedak-tldrdakrrytv-
+>sp|Q9C7P6|IF4E3_ARATH Eukaryotic translation initiation factor 4E-3 OS=Arabidopsis thaliana OX=3702 GN=EIF4E3 PE=1 SV=1
+mvvtdspvsgimadqnidpntttspSpkekhvsai-kaisgdekapskekknyaskksttviqkshcfqnswtfwfdnpssksnqviwgsslrslytfgtieefwslynnihpptkwvsgadlycfkdkiepkwedpicanggkwsmmfp----katlecnwlntllalvgeqfdq-gdeicgavlnfr--argdrislwtknaaneeaqlsigkqwkellgyneti--gfivhedak-tldrdakrrytv-
+>sp|Q9FK59|IF4E5_ARATH Eukaryotic translation initiation factor NCBP OS=Arabidopsis thaliana OX=3702 GN=NCBP PE=1 SV=1
+mevldrrddeirdSgnmd--------si---------------kshyvtdSvSeerrSrelkdgdhplrykfsiwytrrtpgvrnqsyednikkmvefstvegfwacychlarssllpsptdlhffkdgirplwedgancnggkwiirfs----kvvsarfwedlllalvgdqldd-adnicgavlsvr--fnediisvwnrnasdhqavmglrdsikrhlklphayvmeykphdasl-rdnssyrntwlrg
+>guidseq
+-^---^^------^-^----^^-^-^--^^-------------^---^^-^-^^--^^^---^---------^-----------^-^-^-------^----------------^------^--^---------------------------------^--^--^^-------------^-------^---------------^-^-----------^-------------^-^---^-^-^-^^^----^--

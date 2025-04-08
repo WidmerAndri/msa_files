@@ -1,0 +1,10 @@
+>sp|O81097|RPB8A_ARATH DNA-directed RNA polymerases II and V subunit 8A OS=Arabidopsis thaliana OX=3702 GN=NRPB8A PE=1 SV=1
+masniilfedifvvdqldpdgkkfdkvtrvqatshn-lemfmhldvntevyplavgdkftlalaptlnldgtpdtg------yftpga-kktladkyeyimhgklykiserdgkt---pkaelyvsfggllmllkgdpahishfeldqrlfllmrkl--
+>sp|P20436|RPAB3_YEAST DNA-directed RNA polymerases I, II, and III subunit RPABC3 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPB8 PE=1 SV=1
+--mSnTlfddifqvsevdpg--rynkvcrieaasttqdqckltldinvelfpvaaqdsltvtiasslnledTpandSSatrSwrppqagdrsladdydyvmygtaykfeevsk-----dliavyysfggllmrlegnyrnlnnlkqenayl-lirr---
+>sp|P52434|RPAB3_HUMAN DNA-directed RNA polymerases I, II, and III subunit RPABC3 OS=Homo sapiens OX=9606 GN=POLR2H PE=1 SV=4
+--magilfedifdvkdidpegkkfdrvsrlhceses-fkmdlildvniqiypvdlgdkfrlviastlYedgtlddg------eYnpTddrpsradqfeYvmYgkvyriegdeTSteaatrlSaYvsYggllmrlqgdannlhgfevdsrvYllmkklaf
+>sp|Q9M1A8|RPB8B_ARATH DNA-directed RNA polymerases II, IV and V subunit 8B OS=Arabidopsis thaliana OX=3702 GN=NRPB8B PE=1 SV=1
+masniimfedifvvdkldpdgkkfdkvtrvearshn-lemfmhldvntevyplavgdkftlamaptlnldgtpdtg------yftpga-kktladkyeyimhgklykiserdgkt---pkaelyvsfggllmllqgdpahishfeldqrlfllmrkl--
+>guidseq
+---^-^-------------------------------------------------------------^---^----^^---^-^--^-----------^--^----------^^-------^-^--^-----------------------^--------

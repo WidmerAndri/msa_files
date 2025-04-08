@@ -1,0 +1,10 @@
+>sp|O48549|RS61_ARATH Small ribosomal subunit protein eS6z OS=Arabidopsis thaliana OX=3702 GN=RPS6A PE=1 SV=2
+mkfnvanpttgcqkkleidddqklrafydkrisqevSgdalgeefkgyvfkikggcdkqgfpmkqgvlTpgrvrlllhrgtpcfrghgrrtgerrrksvrgcivspdlsvlnlvivkkgendlpglTdTekprmrgpkraskirklfnlkkeddvrtyvntyrrkftnkkgkevskapkiqrlvTplTlqrkrariadkkkkiakanSdaadYqkllasrlkeqrdrrSeSlakkrSrlSSaaakpSvTa----
+>sp|P0CX37|RS6A_YEAST Small ribosomal subunit protein eS6A OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS6A PE=1 SV=1
+mklniSYpvngSqkTfeiddehrirvffdkrigqevdgeavgdefkgyvfkiSggndkqgfpmkqgvllptrikllltknvScYrp--rrdgerkrksvrgaivgpdlavlalvivkkgeqeleglTdTTvpkrlgpkrannirkffglSkeddvrdfvi--rrevTk-gekTytkapkiqrlvTpqrlqrkrhqralkvrnaqaqreaaaeyaqllakrlserkaekaei--rkrraSSlk-a----------
+>sp|P51430|RS62_ARATH Small ribosomal subunit protein eS6y OS=Arabidopsis thaliana OX=3702 GN=RPS6B PE=1 SV=3
+mkfnvanpttgcqkkleidddqklraffdkrlsqevSgdalgeefkgyvfkimggcdkqgfpmkqgvlTpgrvrlllhrgtpcfrghgrrtgerrrksvrgcivspdlsvlnlvivkkgvsdlpglTdtekprmrgpkraskirklfnlgkeddvrkyvntyrrtftnkkgkkvskapkiqrlvTplTlqrkrariadkkkriakanSdaadYqkllasrlkeqrdrrSeSlakkrSrlSSapakpvaa-----
+>sp|P62753|RS6_HUMAN Small ribosomal subunit protein eS6 OS=Homo sapiens OX=9606 GN=RPS6 PE=1 SV=1
+mklniSfpaTgcqklievdderklrtfYekrmaTevaadalgeewkgYvvriSggndkqgfpmkqgvlThgrvrlllSkghScYrp--rrtgerkrksvrgcivdanlSvlnlvivkkgekdipglTdTTvprrlgpkraSrirklfnlSkeddvrqYvv--rkplnkegkkprtkapkiqrlvTprvlqhkrrrialkkqrtkknkeeaaeYakllakrmkeakekrqeqiakrrrlSSlr-aSTSkSeSSqk
+>guidseq
+-----^^--^-^--^------------^-----^--^----------^----^---------------^--------^---^-^------------------------^-----------------^-^^----------^--------^-------^--------^-----^-----------^--^-------------------^----^---------------^-^-----^-^^^---^^^-^-^^--
