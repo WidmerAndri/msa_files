@@ -1,0 +1,10 @@
+>sp|P23248|RS3A2_YEAST Small ribosomal subunit protein eS1B OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS1B PE=1 SV=3
+mavgknkrlsrgk-kglkkkvvdpfTrkewfdikapSTfenrnvgkTlvnkSTglknaSdalkgrvvevcladlqgSedhSfrkvklrvdevqgknllTnfhgmdfTtdklrSmvrkwqtlieanvtvktSddyvlrifaiafTrkqanqvkrhSYaqSShirairkviSeilTrevqnStlaqlTSklipevinkeienaTkdifplqnihvrkvkllkqpkfdvgalmalhgegSgeekgk------kvS---gfkdevleTv-----
+>sp|P61247|RS3A_HUMAN Small ribosomal subunit protein eS1 OS=Homo sapiens OX=9606 GN=RPS3A PE=1 SV=2
+mavgknkrlTkggkkgakkkvvdpfSkkdwYdvkapamfnirnigkTlvtrTqgTkiaSdglkgrvfevSladlqnde-vafrkfkliTedvqgkncltnfhgmdltrdkmcSmvkkwqtmieahvdvkTTdgYllrlfcvgftkkrnnqirkTSYaqhqqvrqirkkmmeimTrevqtndlkevvnklipdsigkdiekacqSiYplhdvfvrkvkmlkkpkfelgklmelhgegSSSgkaTgdeTgakveradgYeppvqeSv-----
+>sp|Q42262|RS3A2_ARATH Small ribosomal subunit protein eS1y OS=Arabidopsis thaliana OX=3702 GN=RPS3AB PE=2 SV=3
+mavgknkriskgr-kggkkkavdpfskkdwydvkapgSftnrnvgktlvsrtqgtkiaseglkhrvfevsladlqndednayrkirlraedvqgrnvltqfwgmdfttdklrslvkkwqtlieahvdvkttdgytlrmfciaftkrranqvkrtcyaqSSqirqirrkmSeimvkeaSScdlkelvakfipeaigreiekatqgiyplqnvfirkvkilkapkfdlgklmevhgdytaed------vgvkvdrpade-tmveepTeiiga
+>sp|Q9CAV0|RS3A1_ARATH Small ribosomal subunit protein eS1z OS=Arabidopsis thaliana OX=3702 GN=RPS3AA PE=1 SV=3
+mavgknkriskgr-kggkkkavdpfskkdwydvkapSifthrnvgktlvsrtqgtkiaseglkhrvfevSladlqgdednaYrkirlraedvqgrnvlcqfwgmdfttdklrslvkkwqtlieahvdvkttdsytlrlfciaftkrranqvkrtcyaqSSqirqirrkmrdimvreaSScdlkdlvakfipeaigreiekatqgiyplqnvfirkvkilkapkfdlgklmdvhgdYSaed------vgvkvdrpade-maveepteiiga
+>guidseq
+---------^---------------^----^-----^^--------^----^^-^---^----------^------^---^^------^---------^-------^-----^----------------^^--^---------^---------^^^--^^---------^---^---^^^-----^^--------------^-^-^-----------------------------^^^^---^---^----^----^------^^-----

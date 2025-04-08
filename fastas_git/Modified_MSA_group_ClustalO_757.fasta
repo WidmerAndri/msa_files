@@ -1,0 +1,18 @@
+>sp|O04157|RAG3B_ARATH Ras-related protein RABG3b OS=Arabidopsis thaliana OX=3702 GN=RABG3B PE=1 SV=1
+mstrrrtllkviilgdsgvgktslmnqyvnnkfsqqykatigadfvtkelqid-drlvtlqiwdtagqerfqslgvafyrgadccvlvydvnhlksfesldnwhnefltrasprdpmafpfillgnkvdidggnsrvvsekkarewcaekgnivyfetsakedynvddsflcitklalanerdqdiyfqp--dtgs--vpe---qrggcac
+>sp|P32939|YPT7_YEAST Ypt/Rab-type GTPase YPT7 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YPT7 PE=1 SV=1
+mssrkknilkviilgdsgvgktslmhryvndkysqqykatigadfltkevTvdgdkvatmqvwdtagqerfqSlgvafYrgadccvlvydvtnassfenikswrdeflvhanvnspetfpfvilgnkidaeesk-kivsekSaqelakSlgdiplflTSaknainvdtafeeiarSalqqnqadteafeddyndai--nirldgennScSc
+>sp|P51149|RAB7A_HUMAN Ras-related protein Rab-7a OS=Homo sapiens OX=9606 GN=RAB7A PE=1 SV=1
+mtsrkkvllkviilgdSgvgktslmnqYvnkkfSnqYkaTigadflTkevmvd-drlvTmqiwdTagqerfqSlgvafYrgadccvlvfdvtapntfkTldSwrdefliqaSprdpenfpfvvlgnkidlen---rqvatkraqawcYSknnipYfeTSakeainveqafqTiarnalkqeTevelYnefpepikldkndrakaSaeScSc
+>sp|Q948K8|RAG3A_ARATH Ras-related protein RABG3a OS=Arabidopsis thaliana OX=3702 GN=RABG3A PE=2 SV=1
+matrrrtllkvivlgdsgvgktslmnqyvhkkfsmqykatigadfvtkelqig-eklvtlqiwdtagqerfqslgaafyrgadccalvydvnvlrsfdnletwheeflkqaSpSdpktfpfivlgnkidvdggSsrvvsdkkaadwcasngnipyfetsakddfnvdeafltiaktalaneheqdiyfqg--ipda--vtenepkgggcac
+>sp|Q9C820|RAG3D_ARATH Ras-related protein RABG3d OS=Arabidopsis thaliana OX=3702 GN=RABG3D PE=2 SV=1
+mssrrrvllkviilgdsgvgkTSlmnqfvnrkfsnqykatigadfltkevqid-driftlqiwdtagqerfqslgvafyrgadccvlvydvnvmksfdnlnnwreefliqaspsdpenfpfvvlgnktdvdggksrvvsekkakawcaskgnipyfetsakegfnvdaafecitknafknepeeepylpd--tidv--aggqqqrstgcec
+>sp|Q9LS94|RAG3F_ARATH Ras-related protein RABG3f OS=Arabidopsis thaliana OX=3702 GN=RABG3F PE=1 SV=1
+mpsrrrtllkviilgdsgvgktslmnqyvnkkfsnqykatigadfltkevqfe-drlftlqiwdtagqerfqSlgvafyrgadccvlvydvnsmksfenlnnwreefliqaspsdpenfpfvlignkvdvddgnsrvvsekkakawcaskgnipyfetsakvgtnveeafqciakdalksgeeeelylpd--tidv--gtsnqqrstgcec
+>sp|Q9LW76|RAG3C_ARATH Ras-related protein RABG3c OS=Arabidopsis thaliana OX=3702 GN=RABG3C PE=2 SV=1
+masrrrvllkviilgdsgvgkTSlmnqfvnrkfsnqykatigadfltkevqid-driftlqiwdtagqerfqslgvafyrgadccvlvndvnvmksfenlnnwreefliqaspsdpenfpfvvlgnktdvdggksrvvtekkakswcaskgnipyfetsakdgvnvdaafeciaknalknepeeevylpd--tidv--agarqqrstgcec
+>sp|Q9XI98|RAG3E_ARATH Ras-related protein RABG3e OS=Arabidopsis thaliana OX=3702 GN=RABG3E PE=2 SV=1
+mpsrrrtllkviilgdsgvgktslmnqyvnkkfsnqykatigadfltkevqfe-drlftlqiwdtagqerfqslgvafyrgadccvlvydvnsaksfedlnnwreefliqaspsdpenfpfvvignkidvdggSsrvvsekkarawcaskgnipyyetsakvgtnvedaflcittnamksgeeeemylpd--tidv--gtsnpqrstgcec
+>guidseq
+----------------^----^^----^-----^--^--^------^---^-------^-----^-------^-----^-------------------^--^---------^-^-------------------^-------^-----^^-----^--^^------------^---^-----^----^-----------------^--^-^-

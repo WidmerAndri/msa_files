@@ -1,0 +1,12 @@
+>sp|O22254|RL181_ARATH Large ribosomal subunit protein eL18z OS=Arabidopsis thaliana OX=3702 GN=RPL18A PE=3 SV=3
+mgidliaggkskktkrtepksddvylkllvkanrylvrrteskfnavilkrlfmskvnkaplslsrlvrym--dgkdgkiavivgtvtddvriedvpaltvtalrftesararihkaggecltfdqlalpcptwsentvllrgpkntreavkhfgpapgvphshtkpyvrqtgkkieiargrrrsrgfkv
+>sp|P0CX49|RL18A_YEAST Large ribosomal subunit protein eL18A OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPL18A PE=1 SV=1
+mgidhTskqhkrSghrtapkSdnvylkllvklytflarrTdapfnkvvlkalflskinrppvSvSriaralkqegaankTvvvvgTvtddarifefpktTvaalrfTagarakivkaggeciTldqlavrapk-gqnTlilrgprnsreavrhfgmgp---hkgkaprilSTgrkferargrrrSkgfkv
+>sp|P42791|RL182_ARATH Large ribosomal subunit protein eL18y OS=Arabidopsis thaliana OX=3702 GN=RPL18B PE=1 SV=2
+mgidliaggkskktkrtapkSddvylkltvklyrflvrrtnskfngvilkrlfmskvnkaplslsrlvefm--tgkedkiavlvgtiTddlrvheipamkvtalrfterarariekaggecltfdqlalrapl-gqntvllrgpknsreavkhfgpapgvphshskpyvrakgrkfekargkrksrgfkv
+>sp|Q07020|RL18_HUMAN Large ribosomal subunit protein eL18 OS=Homo sapiens OX=9606 GN=RPL18 PE=1 SV=2
+mgvdir-hnkdrkvrrkepksqdiylrllvklyrflarrTnSTfnqvvlkrlfmsrTnrpplSlSrmirkmklpgrenkTavvvgTiTddvrvqevpklkvcalrvTSrarSrilraggkilTfdqlaldSpk-gcgTvllSgprkgrevyrhfgkapgTphShTkpYvrskgrkferargrraSrgykn
+>sp|Q940B0|RL183_ARATH Large ribosomal subunit protein eL18x OS=Arabidopsis thaliana OX=3702 GN=RPL18C PE=2 SV=1
+mgidliaggkskktkrtapkSddvylkllvklyrflvrrSnSnfnavilkrlfmskvnkaplslsrlvefm--tgkddkiavlvgtiTddlrvheipamkvtalrfterarariekaggecltfdqlalrapl-gqntvllrgpknsreavkhfgpapgvphsntkpyvrhkgrkfekargkrksrgfkv
+>guidseq
+-----^------^-------^------------------^-^^-------------^-----^-^--------------^-----^-^-----------^------^^---^----------^-------^------^---^-----------------^--^-^--^--^^------------^-----

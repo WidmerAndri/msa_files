@@ -1,0 +1,14 @@
+>sp|P07741|APT_HUMAN Adenine phosphoribosyltransferase OS=Homo sapiens OX=9606 GN=APRT PE=1 SV=2
+--------madSelqlveqrirSfpdfpTpgvvfrdiSpvlkdpaSfraaigllarhlkat-hggridYiagldSrgflfgpslaqelglgcvlirkrgklpgpTlwaSySleYgkaeleiqkdalepgqrvvvvddllaTggTmnaacellgrlqaevlecvslveltslkgreklapvpffsllqye-------
+>sp|P49435|APT1_YEAST Adenine phosphoribosyltransferase 1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=APT1 PE=1 SV=3
+-------mSiaSyaqelklalhqypnfpsegilfedflpifrnpglfqklidafklhleeafpevkidyivgleSrgflfgptlalalgvgfvpvrkagklpgecfkaTyekeygSdlfeiqknaipagsnviivddiiatggsaaaagelveqleanlleynfvmeldflkgrsklnap-vfTllnaqkealkk-
+>sp|Q42563|APT2_ARATH Adenine phosphoribosyltransferase 2 OS=Arabidopsis thaliana OX=3702 GN=APT2 PE=1 SV=1
+mfavenglqgdprlkaisdairviphfpktgimfqdittllldpvafkhvvdifvdr----ykhmnislvagveargfifgppialaigakfvplrkpgklpgrviseeyeleygrdclemsveavkseeraliiddlvatggtlsasinlleragaevvecacvvglpkfkgqcklkgkplyvlvepnqfdeltl
+>sp|Q9LFP0|APT5_ARATH Adenine phosphoribosyltransferase 5 OS=Arabidopsis thaliana OX=3702 GN=APT5 PE=1 SV=1
+mfaaenglkgdprleaisaairvvpnfpkkgimfqdittllldhkafkhtidifvdr----ykdmqisvvagveargflfgpsialaigakfiplrkpgklpgkvisesyeleyghdrlemhvgaveprerviiiddlvatggtlsaamsllesqgaevvecacviglpevkgqhklkgkplyvlvepsgldefc-
+>sp|Q9SU38|APT4_ARATH Adenine phosphoribosyltransferase 4 OS=Arabidopsis thaliana OX=3702 GN=APT4 PE=1 SV=1
+---msenevkdpridgiktkirvvpdfpkkgimfqdittllldpkafkdtidlfver----yrdmnisvvagieargfifgSpialaigakfvplrkpkklpgqiifeeyeleygsdrlemhveavdsgdralvvddliatggtlcaamnllkrvgaeviecacvielpelkgrerlegkplyvlveyr-------
+>sp|Q9SUW2|APT3_ARATH Adenine phosphoribosyltransferase 3 OS=Arabidopsis thaliana OX=3702 GN=APT3 PE=1 SV=1
+--mSgnkeeedprihgiktkirvvpdfpkkgimfqdittvlldpkafkdtidlfver----yrdknisvvagieargflfgppialaigakfvplrkpkklpgetifeeyeleygndrlemhigaveagdralvvddliatggtlcaainllervgaevvecacvielpelkgrqrlkgkplcmlveyr-------
+>guidseq
+---^----^--^----------^-----^--------^-------^----------------------^-----^------^----------------------^---^-^--^-^------------------------^--^---------------------------------------^------------

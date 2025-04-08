@@ -1,0 +1,12 @@
+>sp|P26373|RL13_HUMAN Large ribosomal subunit protein eL13 OS=Homo sapiens OX=9606 GN=RPL13 PE=1 SV=4
+mapSrngmvlkphfhkdwqrrvatwfnqparkirrrkarqakarriaprpaSgpirpivrcptvryhtkvragrgfSleelrvagihkkvarTigiSvdprrrnkSTeSlqanvqrlkeyrSklilfprkpSapkkgdSSaeelklaTqlTgpvmpvrnvykkekarviTeeeknfkafaSlrmaranarlfgirakrakeaaeqdvekkk
+>sp|P40212|RL13B_YEAST Large ribosomal subunit protein eL13B OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPL13B PE=1 SV=1
+maiSknlpilknhfrkhwqervkvhfdqagkkvsrrnaraaraakiaprpl-dllrpvvrapTvkynrkvragrgfTlaevkaaglTaaYarTigiavdhrrqnrnqeifdanvqrlkeyqSkiivfprdgkapeaeqvlSa---------aaTfpiaqpaTdveara--vqdngeSafrTlrlarSekkfrgirekrarekaeaeaekkk
+>sp|P41127|RL131_ARATH Large ribosomal subunit protein eL13z OS=Arabidopsis thaliana OX=3702 GN=RPL13B PE=1 SV=1
+--mkhnnvipnghfkkhwqnyvktwfnqparktrrriarqkkavkifprpTSgplrpvvhgqtlkynmkvrtgkgftleelkaagipkklaptigiavdhrrknrSleglqtnvqrlktyktklvifprrarkvkagdSTpeelanaTqvqgdYlpivrekptmelvkltsemkSfkafdkirlertnkrhagarakraaeaekeekk---
+>sp|Q9FF90|RL133_ARATH Large ribosomal subunit protein eL13x OS=Arabidopsis thaliana OX=3702 GN=RPL13D PE=1 SV=1
+--mkhnnvipsshfrkhwqnyvktwfnqparktrrrvarqkkavkifprpTSgplrpvvhgqtlkynmkvragkgftleelkvagipkklaptigisvdhrrknrSleglqsnvqrlktykaklvvfprrsrqvkagdSTpeelanaTqvqgdYmpiaSvkaamelvkltadlkafkaydkirlertnarhagarakraaeaekeekk---
+>sp|Q9SMT4|RL132_ARATH Large ribosomal subunit protein eL13y OS=Arabidopsis thaliana OX=3702 GN=RPL13C PE=3 SV=1
+--mkhnnvipnghfkkkwenyvktsfnqpamktrrriarqnkavkifprptagpirpvvhaqtltynmkvragkgftleelkaagipkklaptigisvdhhrknrslegfqtnvqrlktykaklvifprcartvkvgdsaqqelanatqvqvdhmpivremptmelvkltsdmklfnaydkirleginkrhagvrakraaeaekeekk---
+>guidseq
+---^----------------------------------------------^^----------^-------------^---------^--^--^---^--------^^-^------------^---------^------^^^------^--^--^----^--^-------^----^-^---^-----^------------------------
