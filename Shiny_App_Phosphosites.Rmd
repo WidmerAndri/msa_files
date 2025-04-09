@@ -1,0 +1,348 @@
+---
+title: "Shiny App Phosphosites"
+author: "Andri Widmer"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+
+      ##BetaVersion2.1
+
+#adding a search function: searches UniProt Acc. Nr. and UniProt name and additionally also Function..✅
+
+#check1: does it work with 50 alignment groups?✅
+
+#adding Nr. of phosphorylated positions per group. Probably as well normalized to its lenght. (#P-Positions/lenght).✅
+
+#adding search results ("in Group 15") as links to jump directly to.✅
+
+#display of "real position".✅
+
+#check2: does it work with 100 alignment groups?.✅
+
+#check3: 500 alignment groups?.✅
+
+#check4: all groups (1096)?❌  
+          #theoretically works, just only up to group 1000            (limit of drop down or something??)
+
+#filter/sorting function
+
+library(tableHTML)
+library(htmltools)
+library(shiny)
+library(bslib)
+library(xml2)
+library(reactable)
+library(htmlwidgets)
+
+# Load data from GitHub
+MSA_as_df_git=readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/MSA_as_df_git.rds"))
+msa_list=MSA_as_df_git[c(1:1096)]
+names(msa_list)=paste0("Group ", c(1:1096))
+scoring_table_test=read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/scoring_table_final.csv"))
+
+# UI
+ui=fluidPage(
+  titlePanel("Phosphosites in Orthologous Proteins of Yeast, Arabidopsis and Human"),
+
+  HTML("
+  <p>This tool allows you to explore multiple sequence alignments (MSAs) and associated phosphosite annotations across <b>Homo sapiens</b>, <b>Saccharomyces cerevisiae</b>, and <b>Arabidopsis thaliana</b>.</p>
+  <p>The phosphorylation information comes from EPSD and was downloaded on February 26, 2025.</p>
+  <p><b>Open in Jalview</b> to display the MSA (may take a few seconds). Click on a UniProt ID to view protein details.</p>
+  <p>Capitalized letters represent known phosphorylated sites. The guiding sequence uses <code>-</code> and <code>^</code> to show conserved phosphosites. Use Jalview's colour scheme <i>(Colour → By Annotation → Conservation)</i> for better insight.</p>
+  <p>For easier identification of phosphosites, press <b>Open in Viewer</b>. The greener, the higher the score.</p>
+  "),
+
+  br(),
+  textInput("global_search", "Protein Search (Uniprot Acc., ID or other):", placeholder = "Search all groups "),
+  selectInput("msa_choice", "Select Group:", choices = names(msa_list)),
+  uiOutput("search_results"),
+  uiOutput("jalview_link"),
+  br(),
+  uiOutput("group_title"),
+  uiOutput("group_stats"),
+  htmlOutput("msa_table")
+)
+
+# Server
+server = function(input, output, session) {
+
+  get_group_number = function(choice) {
+    as.numeric(gsub("Group ", "", choice))
+  }
+
+    output$group_title = renderUI({
+    req(input$msa_choice)
+    h4(paste0("Information for ", input$msa_choice))
+  })
+    output$group_stats = renderUI({
+  req(input$msa_choice)
+  group_nr = get_group_number(input$msa_choice)
+  df = msa_list[[input$msa_choice]]
+
+  # Anzahl der Positionen mit Score > 0
+  score_hits = scoring_table_test[
+    scoring_table_test$Group_Nr == group_nr & scoring_table_test$Score1 > 0, 
+  ]
+  num_phospho = nrow(score_hits)
+
+  alignment_length = ncol(df) - 6  
+
+  # normalized nr of phosphorylations
+  normalized = round(num_phospho / alignment_length, 3)
+
+  HTML(paste0(
+    "<p><b>Group ", group_nr, " has ", num_phospho, " phosphorylated positions.</b><br>",
+    "Normalized to alignment length: <i>", normalized, " (", num_phospho, " / ", alignment_length, ")</i></p>"
+  ))
+})
+
+  output$search_results = renderUI({
+  req(input$global_search)
+  search_term = tolower(input$global_search)
+
+  matching_groups = lapply(names(msa_list), function(group_name) {
+    df = msa_list[[group_name]]
+    hits = df[
+      grepl(search_term, tolower(df[[1]])) | 
+      grepl(search_term, tolower(df[[2]])) | 
+      grepl(search_term, tolower(df[[4]])), 
+    ]
+    if (nrow(hits) > 0) return(group_name)
+    return(NULL)
+  })
+
+  matching_groups = Filter(Negate(is.null), matching_groups)
+
+  if (length(matching_groups) == 0) {
+    return(HTML("<p><i>No matches found in any group.</i></p>"))
+  }
+
+  HTML(paste0(
+    "<p><b>Found in group(s):</b><br>",
+    paste0(lapply(matching_groups, function(g) {
+      paste0('<a href="#" onclick="Shiny.setInputValue(\'msa_choice\', \'', g, '\')">', g, '</a>')
+    }), collapse = "<br>"),
+    "</p><p style='font-size: 0.9em; color: gray;'>Click to jump to group.</p>"
+  ))
+})
+
+
+    output$msa_table = renderUI({
+  req(input$msa_choice)
+  df = msa_list[[input$msa_choice]]
+  df = df[, 1:5]
+
+  search_term = input$global_search
+
+  #Link in col 1
+  df[[1]] = sapply(df[[1]], function(prot) {
+    base = prot
+    if (search_term != "" && grepl(search_term, base, ignore.case = TRUE)) {
+      base = gsub(
+        paste0("(", search_term, ")"),
+        "<span style='background-color: yellow;'>\\1</span>",
+        base,
+        ignore.case = TRUE
+      )
+    }
+    paste0('<a href="https://www.uniprot.org/uniprotkb/', prot, '/entry" target="_blank">', base, '</a>')
+  })
+
+  #highligthing other cols
+  if (search_term != "") {
+    for (col in 2:4) {
+      df[[col]] = sapply(df[[col]], function(x) {
+        if (!is.na(x) && grepl(search_term, x, ignore.case = TRUE)) {
+          x = gsub(
+            paste0("(", search_term, ")"),
+            "<span style='background-color: yellow;'>\\1</span>",
+            x,
+            ignore.case = TRUE
+          )
+        }
+        return(x)
+      })
+    }
+  }
+
+  # coloring col 5 according to Information status
+  df[[5]] = ifelse(df[[5]] == "P-Sites from EPSD",
+    paste0('<div style="background-color: lightgreen;">', df[[5]], '</div>'),
+    paste0('<div style="background-color: lightcoral;">', df[[5]], '</div>')
+  )
+
+  tableHTML(df, widths = c(200, 150, 100, 400, 150), rownames = FALSE, escape = FALSE)
+})
+
+
+
+  output$jalview_link = renderUI({
+    req(input$msa_choice)
+    group_nr=get_group_number(input$msa_choice)
+    fasta_url=URLencode(paste0("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/fastas_git/Modified_MSA_group_ClustalO_", group_nr, ".fasta"))
+
+    tagList(
+      tags$a(
+        "Open in JalviewJS",
+        href = paste0("https://jalview.github.io/jalview-js/JalviewJS.html?open%20", fasta_url),
+        target = "_blank",
+        style = "margin-right: 10px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;"
+      ),
+      actionButton(
+        "open_modal", "Open in Viewer",
+        style = "padding: 6px 12px; background-color: orange; color: white; border-radius: 5px; border: none;"
+      )
+    )
+  })
+  
+  observe({
+  req(input$global_search)
+  search_term = tolower(input$global_search)
+  
+  for (group in names(msa_list)) {
+    df = msa_list[[group]]
+if (any(
+  grepl(search_term, tolower(df[[1]])) |
+  grepl(search_term, tolower(df[[2]])) |
+  grepl(search_term, tolower(df[[4]]))
+)) {
+  updateSelectInput(session, "msa_choice", selected = group)
+  break
+}
+
+  }
+})
+
+  observeEvent(input$open_modal, {
+    showModal(modalDialog(
+      title = paste("MSA Viewer –", input$msa_choice),
+      checkboxInput("show_realpos_modal", "Show Sequence Positions", value = FALSE),
+      reactableOutput("modal_viewer"),
+      size = "l",
+      easyClose = TRUE
+    ))
+  })
+
+  # Modal-Viewer
+  output$modal_viewer = renderReactable({
+    req(input$msa_choice)
+
+    group_nr = get_group_number(input$msa_choice)
+    msa_df = msa_list[[group_nr]]
+
+    msa_df_msa = msa_df[, 6:(ncol(msa_df)-1)]
+    colnames(msa_df_msa) = as.character(1:ncol(msa_df_msa))
+    if (isTRUE(input$show_realpos_modal)) {
+  msa_seq_only = msa_df[, 6:(ncol(msa_df)-1)]
+  msa_with_pos=msa_seq_only 
+
+
+  for (i in 1:nrow(msa_seq_only)) {
+    real_pos = 1
+    for (j in 1:ncol(msa_seq_only)) {
+      aa = msa_seq_only[i,j]
+      if (aa != "-") {
+        msa_with_pos[i,j] = htmltools::HTML(paste0(aa, "<sub>", real_pos, "</sub>"))
+        
+
+        real_pos = real_pos + 1
+      } else {
+          msa_with_pos[i,j]="-"
+      }
+    }
+  }
+
+  colnames(msa_with_pos)=colnames(msa_df_msa)
+  msa_with_pos$Protein=msa_df[, 1]
+  msa_df_msa=msa_with_pos[,c("Protein",setdiff(names(msa_with_pos),"Protein"))]
+
+} else {
+  msa_df_msa = msa_df[, 6:(ncol(msa_df) - 1)]
+  msa_df_msa$Protein = msa_df[, 1]
+  msa_df_msa = msa_df_msa[, c("Protein", setdiff(names(msa_df_msa), "Protein"))]
+  colnames(msa_df_msa)[-1]=as.character(1:(ncol(msa_df_msa)-1))
+}
+
+
+    score_positions=scoring_table_test[scoring_table_test$Group_Nr==group_nr,c("Position", "Score1")]
+    score_positions=round(score_positions, 2)
+    score_row=setNames(score_positions$Score1,as.character(score_positions$Position))
+
+    # Score-Zeile einfügen
+    score_row_for_table=as.list(rep(NA,ncol(msa_df_msa)))
+    names(score_row_for_table)=names(msa_df_msa)
+    for (pos in names(score_row)) {
+      if (pos %in% names(score_row_for_table)) {
+        score_row_for_table[[pos]]=round(score_row[[pos]], 2)
+      }
+    }
+    score_row_for_table$Protein="Score"
+    msa_df_msa=rbind(msa_df_msa,score_row_for_table)
+
+    value_to_color=colorRampPalette(c("#ffffe0","#1d8c3f"))(100)
+    columns_list=list()
+    for (colname in colnames(msa_df_msa)) {
+      if (colname != "Protein") {
+  score_val = as.numeric(score_row[[colname]])
+  color = if (!is.na(score_val)) value_to_color[pmin(100, pmax(1, as.integer(score_val * 99) + 1))] else "#ffffff"
+
+  columns_list[[colname]] = colDef(
+    name = NULL,
+    html=TRUE,
+    minWidth = if (isTRUE(input$show_realpos_modal)) 55 else 35,
+maxWidth = if (isTRUE(input$show_realpos_modal)) 60 else 40,
+    align = "center",
+    style = list(background = color, height = "30px", lineHeight = "30px", textAlign = "center"),
+    cell = function(value) {
+  if (is.na(value)) return("")
+  if (value == "Score") return(tags$b("Score"))
+
+  if (input$show_realpos_modal && grepl("^[A-Za-z]\\([0-9]+\\)$", value)) {
+    aa <- sub("\\(.*\\)", "", value)
+    pos <- sub(".*\\((.*)\\)", "\\1", value)
+    return(HTML(paste0(aa, "<sub>", pos, "</sub>")))
+  }
+
+  return(value)
+}
+
+  )
+}
+ else {
+        columns_list$Protein = colDef(
+          name = "Protein",
+          sticky = "left",
+          minWidth = 120,
+          cell = function(value) {
+            if (is.na(value)) return("")
+            if (value == "Score") return(tags$b("Score"))
+            return(htmltools::tags$a(
+              href = paste0("https://www.uniprot.org/uniprotkb/", value, "/entry"),
+              target = "_blank",
+              style = "font-weight: bold; text-decoration: none;",
+              value
+            ))
+          }
+        )
+      }
+    }
+
+    reactable(
+      msa_df_msa,
+      columns = columns_list,
+      bordered = TRUE,
+      highlight = TRUE,
+      compact = TRUE,
+      defaultColDef = colDef(align = "center")
+    )
+  })
+}
+
+shinyApp(ui, server)
+
+
+
+```
+
