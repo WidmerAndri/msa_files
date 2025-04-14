@@ -7,25 +7,10 @@ output: html_document
 
 ```{r}
 
-      ##Version 2
 
-#adding a search function: searches UniProt Acc. Nr. and UniProt name and additionally also Function..✅
+      ##Version 3
 
-#check1: does it work with 50 alignment groups?✅
 
-#adding Nr. of phosphorylated positions per group. Probably as well normalized to its lenght. (#P-Positions/lenght).✅
-
-#adding search results ("in Group 15") as links to jump directly to.✅
-
-#display of "real position".✅
-
-#check2: does it work with 100 alignment groups?.✅
-
-#check3: 500 alignment groups?.✅
-
-#check4: all groups (1096)?✅
-
-#filter/sorting function✅
 
 library(tableHTML)
 library(htmltools)
@@ -40,23 +25,53 @@ library(plotly)
 MSA_as_df_git=readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/MSA_as_df_git.rds"))
 msa_list=MSA_as_df_git[c(1:1096)]
 names(msa_list)=paste0("Group ", c(1:1096))
-scoring_table_test=read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/scoring_table_final.csv"))
+scoring_table_test=read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/scoring_table_final2.csv"))
 
 # UI
 ui=fluidPage(
+   withMathJax(),
   titlePanel("Phosphosites in Orthologous Proteins of Yeast, Arabidopsis and Human"),
 
   HTML("
-  <p>This tool allows you to explore multiple sequence alignments (MSAs) and associated phosphosite annotations across <b>Homo sapiens</b>, <b>Saccharomyces cerevisiae</b>, and <b>Arabidopsis thaliana</b>.</p>
-  <p>The phosphorylation information comes from EPSD and was downloaded on February 26, 2025.</p>
-  <p><b>Open in Jalview</b> to display the MSA (may take a few seconds). Click on a UniProt ID to view protein details.</p>
-  <p>Capitalized letters represent known phosphorylated sites. The guiding sequence uses <code>-</code> and <code>^</code> to show conserved phosphosites. Use Jalview's colour scheme <i>(Colour → By Annotation → Conservation)</i> for better insight.</p>
-  <p>For easier identification of phosphosites, press <b>Open in Viewer</b>. The greener, the higher the score.</p>
-  "),
+<p>This tool allows you to explore multiple sequence alignments (MSAs) and associated phosphosite annotations across <b>Homo sapiens</b>, <b>Saccharomyces cerevisiae</b>, and <b>Arabidopsis thaliana</b>.</p>
 
+<p>The phosphorylation information comes from EPSD and was downloaded on February 26, 2025.</p>
+
+<p><b>Open in Jalview</b> to display the MSA (may take a few seconds). Click on a UniProt ID to view protein details.</p>
+
+<p>Capitalized letters represent known phosphorylated sites. The guiding sequence uses <code>-</code> and <code>^</code> to show conserved phosphosites. Use Jalview's colour scheme <i>(Colour → By Annotation → Conservation)</i> for better insight.</p>
+
+<p>For easier identification of phosphosites, press <b>Open in Viewer</b>. The greener, the higher the score.</p>
+
+<hr>
+
+<h4>About the Scores</h4>
+
+<p><b>Score1</b> and <b>Score2</b> are conservation-based scores for phosphorylated sites, based on Valdar’s entropy framework (2002). They combine information on sequence variability, biochemical similarity, and gap content.</p>
+
+<p><b>Scoring formula:</b></p>
+<p style='font-size: 1.4em; text-align: center; margin: 1em 0;'>
+  $$\\mathrm{Score} = (1 - t_{x})^{\\alpha} \\cdot (1 - r_{x})^{\\beta} \\cdot (1 - g_{x})^{\\gamma} \\cdot M_{1} \\cdot M_{2}$$
+</p>
+
+<ul>
+  <li><b>t<sub>x</sub></b>: Normalized Shannon entropy of amino acid frequencies (sequence variability)</li>
+  <li><b>r<sub>x</sub></b>: Stereochemical diversity based on BLOSUM62 distances</li>
+  <li><b>g<sub>x</sub></b>: Gap fraction in the alignment column</li>
+  <li><b>M<sub>1</sub></b>: Organism multiplicator (based on how many species show phosphorylation at that position)</li>
+  <li><b>M<sub>2</sub></b> (Score-specific):</li>
+  <ul style='margin-top: 5px;'>
+    <li><b>Score1</b>: Relative number of confirmed phosphorylations (Y, S, T)</li>
+    <li><b>Score2</b>: Relative number of all potential phosphorylations (Y, S, T and lowercase y, s, t)</li>
+  </ul>
+</ul>
+")
+
+,
   br(),
   textInput("global_search", "Protein Search (Uniprot Acc., ID or other):", placeholder = "Search all groups "),
   selectInput("msa_choice", "Select Group:", choices = names(msa_list), selectize = FALSE),
+  selectInput("score_choice", "Choose score for coloring:",choices = c("Score1", "Score2"),selected = "Score1"),
   checkboxInput("show_summary", "Show Summary Table & Plot", value = FALSE),
   reactableOutput("summary_table"),
   uiOutput("search_results", container = div, class = "well"),
@@ -90,32 +105,36 @@ server = function(input, output, session) {
   get_group_number = function(choice) {
     as.numeric(gsub("Group ", "", choice))
   }
-    # Zusammenfassung aller Gruppen vorbereiten
-summary_df = do.call(rbind, lapply(seq_along(msa_list), function(i) {
-  group_nr = i
-  group_name = paste0("Group ", group_nr)
-  df = msa_list[[i]]
-  alignment_length = ncol(df) - 6
+summary_df_reactive = reactive({
+  score_col = input$score_choice
+  if (!(score_col %in% colnames(scoring_table_test))) score_col = "Score1"
 
-  score_hits = scoring_table_test[
-    scoring_table_test$Group_Nr == group_nr & scoring_table_test$Score1 > 0, 
-  ]
-  num_phospho = nrow(score_hits)
-  score_sum = sum(score_hits$Score1)
-  avg_score = if (num_phospho > 0) score_sum / num_phospho else NA
-  score_per_len = score_sum / alignment_length
-  norm_phospho = num_phospho / alignment_length
+  do.call(rbind, lapply(seq_along(msa_list), function(i) {
+    group_nr = i
+    df = msa_list[[i]]
+    alignment_length = ncol(df) - 6
 
-  data.frame(
-    Group = group_name,
-    Nr_P_Sites = num_phospho,
-    Rel_P_Sites = round(norm_phospho, 3),
-    Score_Sum = round(score_sum, 2),
-    Avg_Sco_P_Site = round(avg_score, 3),
-    Avg_Sco_Position = round(score_per_len, 3),
-    stringsAsFactors = FALSE
-  )
-}))
+    score_hits = scoring_table_test[
+      scoring_table_test$Group_Nr == group_nr & scoring_table_test[[score_col]] > 0, 
+    ]
+    num_phospho = nrow(score_hits)
+    score_sum = sum(score_hits[[score_col]])
+    avg_score = if (num_phospho > 0) score_sum / num_phospho else NA
+    score_per_len = score_sum / alignment_length
+    norm_phospho = num_phospho / alignment_length
+
+    data.frame(
+      Group = paste0("Group ", group_nr),
+      Nr_P_Sites = num_phospho,
+      Rel_P_Sites = round(norm_phospho, 3),
+      Score_Sum = round(score_sum, 2),
+      Avg_Sco_P_Site = round(avg_score, 3),
+      Avg_Sco_Position = round(score_per_len, 3),
+      stringsAsFactors = FALSE
+    )
+  }))
+})
+
 
     output$group_title = renderUI({
     req(input$msa_choice)
@@ -124,9 +143,11 @@ summary_df = do.call(rbind, lapply(seq_along(msa_list), function(i) {
     output$group_stats = renderUI({
   req(input$msa_choice)
   group_nr = get_group_number(input$msa_choice)
+  score_col = input$score_choice
+if (!(score_col %in% colnames(scoring_table_test))) score_col = "Score1"
+
   df = msa_list[[input$msa_choice]]
 
-  # Anzahl phosphorylierter Positionen
   score_hits = scoring_table_test[
     scoring_table_test$Group_Nr == group_nr & scoring_table_test$Score1 > 0, 
   ]
@@ -134,16 +155,11 @@ summary_df = do.call(rbind, lapply(seq_along(msa_list), function(i) {
 
   alignment_length = ncol(df) - 6  
 
-  # Normalisierte Anzahl
   normalized_phospho = round(num_phospho / alignment_length, 3)
 
-  # Summe der Scores
-  score_sum = round(sum(score_hits$Score1), 2)
-
-  # Durchschnittlicher Score pro P-Stelle
+score_sum = round(sum(score_hits[[score_col]]), 2)
   avg_score_per_phospho = if (num_phospho > 0) round(score_sum / num_phospho, 3) else NA
 
-  # Score-Dichte pro Alignment-Position
   score_per_pos = round(score_sum / alignment_length, 3)
 
   HTML(paste0(
@@ -151,7 +167,7 @@ summary_df = do.call(rbind, lapply(seq_along(msa_list), function(i) {
     "- Phosphorylated positions: <b>", num_phospho, "</b><br>",
     "- Normalized (per alignment length): <i>", normalized_phospho, " (", num_phospho, " / ", alignment_length, ")</i><br><br>",
     "<b>Score summary:</b><br>",
-    "- Sum of Scores: <b>", score_sum, "</b><br>",
+"<b>Sum of Scores (", score_col, "):</b> ",score_sum,"<br>",
     "- Average Score per P-site: <i>", avg_score_per_phospho, "</i><br>",
     "- Score per alignment position: <i>", score_per_pos, "</i></p>"
   ))
@@ -234,6 +250,7 @@ summary_df = do.call(rbind, lapply(seq_along(msa_list), function(i) {
 })
 
 output$score_plot = renderPlotly({
+  summary_df=summary_df_reactive()
   req(summary_df)
 
   plot_ly(
@@ -274,11 +291,15 @@ output$score_plot = renderPlotly({
     req(input$msa_choice)
     group_nr=get_group_number(input$msa_choice)
     fasta_url=URLencode(paste0("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/fastas_git/Modified_MSA_group_ClustalO_", group_nr, ".fasta"))
+    colour_scheme = "annotation"  # or "clustal", "zappo", "taylor", "hydrophobicity", etc.
+    jalview_url=paste0("https://jalview.github.io/jalview-js/JalviewJS.html?open%20", fasta_url,"%20colour%20clustal")
 
+    
+    
     tagList(
       tags$a(
         "Open in JalviewJS",
-        href = paste0("https://jalview.github.io/jalview-js/JalviewJS.html?open%20", fasta_url),
+        href=jalview_url,
         target = "_blank",
         style = "margin-right: 10px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;"
       ),
@@ -358,9 +379,13 @@ if (any(
 }
 
 
-    score_positions=scoring_table_test[scoring_table_test$Group_Nr==group_nr,c("Position", "Score1")]
-    score_positions=round(score_positions, 2)
-    score_row=setNames(score_positions$Score1,as.character(score_positions$Position))
+    selected_score = input$score_choice
+score_colname = if (selected_score %in% colnames(scoring_table_test)) selected_score else "Score1"
+
+score_positions = scoring_table_test[scoring_table_test$Group_Nr == group_nr, c("Position", score_colname)]
+score_positions = round(score_positions, 2)
+score_row = setNames(score_positions[[score_colname]], as.character(score_positions$Position))
+
 
     # Score-Zeile einfügen
     score_row_for_table=as.list(rep(NA,ncol(msa_df_msa)))
@@ -431,6 +456,7 @@ maxWidth = if (isTRUE(input$show_realpos_modal)) 60 else 40,
     )
   })
   output$summary_table = renderReactable({
+    summary_df=summary_df_reactive()
   reactable(
     summary_df,
     searchable = TRUE,
