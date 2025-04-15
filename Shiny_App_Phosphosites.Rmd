@@ -5,10 +5,10 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
+
 ```{r}
 
-
-      ##Version 3
+      ##Version 3 original
 
 
 
@@ -36,6 +36,7 @@ ui=fluidPage(
 <p>This tool allows you to explore multiple sequence alignments (MSAs) and associated phosphosite annotations across <b>Homo sapiens</b>, <b>Saccharomyces cerevisiae</b>, and <b>Arabidopsis thaliana</b>.</p>
 
 <p>The phosphorylation information comes from EPSD and was downloaded on February 26, 2025.</p>
+<p>The orthology data comes from OMA and was downloaded on February 17, 2025.</p>
 
 <p><b>Open in Jalview</b> to display the MSA (may take a few seconds). Click on a UniProt ID to view protein details.</p>
 
@@ -58,6 +59,7 @@ ui=fluidPage(
   <li><b>t<sub>x</sub></b>: Normalized Shannon entropy of amino acid frequencies (sequence variability)</li>
   <li><b>r<sub>x</sub></b>: Stereochemical diversity based on BLOSUM62 distances</li>
   <li><b>g<sub>x</sub></b>: Gap fraction in the alignment column</li>
+  <li><b>α,β,γ</sub></b>: Parameters for the weighting of each variable</li>
   <li><b>M<sub>1</sub></b>: Organism multiplicator (based on how many species show phosphorylation at that position)</li>
   <li><b>M<sub>2</sub></b> (Score-specific):</li>
   <ul style='margin-top: 5px;'>
@@ -387,7 +389,7 @@ score_positions = round(score_positions, 2)
 score_row = setNames(score_positions[[score_colname]], as.character(score_positions$Position))
 
 
-    # Score-Zeile einfügen
+    # adding score row
     score_row_for_table=as.list(rep(NA,ncol(msa_df_msa)))
     names(score_row_for_table)=names(msa_df_msa)
     for (pos in names(score_row)) {
@@ -445,7 +447,11 @@ maxWidth = if (isTRUE(input$show_realpos_modal)) 60 else 40,
         )
       }
     }
-
+for (d in 2:(ncol(msa_df_msa))){
+    msa_df_msa[nrow(msa_df_msa),d]=
+    HTML(paste0("<sub>",msa_df_msa[nrow(msa_df_msa),d], "</sub>"))
+}
+    
     reactable(
       msa_df_msa,
       columns = columns_list,
@@ -484,6 +490,7 @@ maxWidth = if (isTRUE(input$show_realpos_modal)) 60 else 40,
 }
 
 shinyApp(ui, server)
+
 
 
 ```
