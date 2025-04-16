@@ -37,14 +37,15 @@ ui=fluidPage(
 <p>The phosphorylation information comes from EPSD and was downloaded on February 26, 2025.</p>
 <p>The orthology data comes from OMA and was downloaded on February 17, 2025.</p>
 
-<p><b>Open in Jalview</b> to display the MSA (may take a few seconds). Click on a UniProt ID to view protein details.</p>
-
-<p>Capitalized letters represent known phosphorylated sites. The guiding sequence uses <code>-</code> and <code>^</code> to show conserved phosphosites. Use Jalview's colour scheme <i>(Colour → By Annotation → Conservation)</i> for better insight.</p>
+<p><b>Open in Jalview</b> to display the MSA (may take a few seconds). The guiding sequence uses <code>-</code> and <code>^</code> to show alignment positions with at least one phosphosite. Use Jalview's colour scheme <i>(Colour → By Annotation → Conservation)</i> for better insight.</p>
 
 <p>For easier identification of phosphosites, press <b>Open in Viewer</b>. The greener, the higher the score.</p>
 
-<hr>
+<p>In both JalviewJS and the Viewer, the alignment displays a mix of uppercase and lowercase letters. The uppercase letters (T, S, Y) indicate known phosphorylation sites, while the lowercase letters represent standard amino acids (a, c, d, etc.) or potential phosphorylation sites (t, s, y).</p>
+<p><sup>In case of finding mistakes → andri.widmer@unifr.ch<sup/></p>
 
+<hr>
+ 
 <h4>About the Scores</h4>
 
 <p><b>Score1</b> and <b>Score2</b> are conservation-based scores for phosphorylated sites, based on Valdar’s entropy framework (2002). They combine information on sequence variability, biochemical similarity, and gap content.</p>
@@ -66,6 +67,7 @@ ui=fluidPage(
     <li><b>Score2</b>: Relative number of all potential phosphorylations (Y, S, T and lowercase y, s, t)</li>
   </ul>
 </ul>
+<hr>
 ")
 
 ,
