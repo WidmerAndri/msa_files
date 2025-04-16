@@ -67,6 +67,7 @@ ui=fluidPage(
     <li><b>Score2</b>: Relative number of all potential phosphorylations (Y, S, T and lowercase y, s, t)</li>
   </ul>
 </ul>
+<p>The score values are between 0 and 1. Alignment positions with <b>NO</b> known phosphorylation score automatically 0.</p>
 <hr>
 ")
 
