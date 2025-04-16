@@ -5,7 +5,6 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-
 ```{r}
 
       ##Version 3 original
@@ -25,7 +24,7 @@ library(plotly)
 MSA_as_df_git=readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/MSA_as_df_git.rds"))
 msa_list=MSA_as_df_git[c(1:1096)]
 names(msa_list)=paste0("Group ", c(1:1096))
-scoring_table_test=read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/scoring_table_final2.csv"))
+scoring_table_test=read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/scoring_table_final_neu.csv"),sep=";")
 
 # UI
 ui=fluidPage(
