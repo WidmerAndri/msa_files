@@ -1,0 +1,16 @@
+>sp|P40580|BZRD_YEAST Benzil reductase ((S)-benzoin forming) IRC24 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=IRC24 PE=1 SV=1
+----------------mgkvilitgaSrgiglqlvktvieeddecivygvarTeaglqslqreygadkfvy--rvlditdrsrmealveeirq-khgkldgivanagmlepvkSiSqSnSehdikqwerlfdvnffsivslvalclpllksspfvgnivfvssgasvkpyngwsaygcskaalnhfamdiaseepsdkvravciapgvvdtqmqkdireTlgp--qgmTpkalerftqlyktSSlldp-kvpaavlaqlvlkgipdslngqylrynderlgpvqg
+>sp|Q9LHT0|TRNHF_ARATH Tropinone reductase homolog At5g06060 OS=Arabidopsis thaliana OX=3702 GN=At5g06060 PE=2 SV=1
+-------metdkrwslagktalvtggtrgigravveelakfga--kvhtcsrnqeelnaclndwkanglvvsgsvcdasvrdqrekliqeassafsgklnilinnvgtnv-----rkpTveySseeyakimstnlesafhlsqiahpllkasg-vgsivfissvaglvhlssgsiygatkgalnqltrnlacewasdnirtncvapwyikTslvetllekkefveavvsrtplgrvgepeevsslvaflclpass----yitgqvisvdggft-vngfsyamkp-
+>sp|Q9ZW03|TRNH3_ARATH Tropinone reductase homolog At2g29150 OS=Arabidopsis thaliana OX=3702 GN=At2g29150 PE=1 SV=1
+makagensrdksrwslegmtalvtggSkglgeavveelamlga--rvhtcardetqlqerlrewqakgfevttsvcdvssreqreklmetvssvfqgklnilvnnagtgi-----ikpsteytaedysflmatnlesafhlsqiahpllkasg-sgsivfmssvaglvht-gasiygaskgamnqlgrslacewasdnirvnsvcpwvittpltsfifsdeklrkavedktpmgrvgeanevsslvaflcfpaas----yitgqticvdggas-vngfsfkp---
+>sp|Q9ZW13|TRNH6_ARATH Tropinone reductase homolog At2g29290 OS=Arabidopsis thaliana OX=3702 GN=At2g29290 PE=2 SV=1
+---------mdkrwslqgmnalvtggtkgigeavveelsilga--rvhtcardetqlqerlrewqekgfqvttsicdvslreqreklmetvsslfqgklnilvnnvgtlm-----lkptteytaeefsflmatnldsafhisqlahpllkasg-sgsivlmssiagvvhvgvgsiygatkgamnqlarnlacewasdnirtnaicpwlittplisdllsveemkkeaeertpmgrvgeanevsplvaflclpaas----yitgqvicvdgglt-vngfsyqpha-
+>sp|Q9ZW18|SAG13_ARATH Senescence-associated protein 13 OS=Arabidopsis thaliana OX=3702 GN=SAG13 PE=1 SV=1
+makeg-glgensrwslggmTalvtggskgigeavveelamlga--kvhtcardetqlqerlrewqakgfqvttsvcdvssrdqrvklmetvsslyqgklnilvnnvgtsi-----fkptteytaedfsfvmatnlesafhlsqlahpllkasg-sgsivlissaagvvhvnvgsiygatkgamnqlarnlacewasdnirtnsvcpwyittplsndffd-eefkkeavrttpmgrvgeanevsplvaflclpsas----yitgqticvdggat-vngfsfktmp-
+>sp|Q9ZW19|TRNHC_ARATH Tropinone reductase homolog At2g29360 OS=Arabidopsis thaliana OX=3702 GN=SDR PE=1 SV=1
+maktgeslrdkprwslvgmtalvtggSkgigeavveelaTlga--rihtcardetqlqeslrkwqakgfqvttsvcdvssrdkreklmetvstifegklnilvnnvgtci-----vkptlqhtaedfsftmatnlesafhlsqlahpllkasg-sgsivlissvsgvvhvngasiygvskgamnqlgrnlacewasdnirtnsvcpwfietplvteslsneefrkevesrppmgrvgevnevsslvaflclpaas----yitgqticvdggft-vngfsfkplp-
+>sp|Q9ZW20|TRNHD_ARATH Tropinone reductase homolog At2g29370 OS=Arabidopsis thaliana OX=3702 GN=At2g29370 PE=3 SV=1
+makrgeslrdkpkwslegmtalvtggskglgkavveelamlga--rvhtcardetqlqeslrewqakglqvttsvcdvssrdqreklmetvsslfqgklsilvpnvgigv-----lkpttectaeefsfiiatnlestfhfsqlahpllkasg-sgnivlmssvagvvnlgntsiygatkgamnqlarnlacewasdniransvcpwfittpstkdflgdkdvkekvesvTplrrvgeanevsslvaflclpaas----yitgqticvdggft-ingfslp----
+>guidseq
+-------------------^------^------------^------------^------------------------------------------------------------^-^-^^^--^---------------------------------------------------------------------------------------^--------^--------^-^-----------^^-----------------------------------------

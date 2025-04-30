@@ -1,0 +1,8 @@
+>sp|P40314|NACB2_YEAST Nascent polypeptide-associated complex subunit beta-2 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=BTT1 PE=1 SV=1
+mpvdqeklaklhklsaankvggtrrkinkkgnlynnndkdntklqaelhklhpmtienvaeanffkkngkvlhfnsavvqiapqcnltmihgqpkentlnglypsvasqlgsqeleyltglahnleneqtvldqlgdrcSetkqq---------vmns-----------------
+>sp|Q9CAT7|BTF3L_ARATH Nascent polypeptide-associated complex subunit beta OS=Arabidopsis thaliana OX=3702 GN=At1g73230 PE=2 SV=1
+--mnreklmk---mantvrtggkgtvrrkkkavhkttttddkrlqstlkrvgvnsipaieevnifkddv-viqfinpkvqasiaantwvvsgtpqtkklqdilpqiisqlgpdnldnlkklaeqfqkqapga---gdvpatiqeedddddvpdlvvgetfetpateeapkaaas-
+>sp|Q9SMW7|BTF3_ARATH Basic transcription factor 3 OS=Arabidopsis thaliana OX=3702 GN=BTF3 PE=1 SV=1
+--mnreklmk---mantvrtggkgtvrrkkkavhktnttddkrlqstlkrigvnSipaieevnifkddv-viqfinpkvqasiaantwvvsgSpqtkklqdilpqiisqlgpdnmdnlkklaeqfqkqaSge---gnaaSaTiqeeddddvpel-vgetfetaaeekapaaaass
+>guidseq
+------------------------------------------------------^-------------------------------------^------------------------------------^---------^-^---------------------------------
