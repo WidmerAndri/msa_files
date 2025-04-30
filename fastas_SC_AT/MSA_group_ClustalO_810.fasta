@@ -1,0 +1,8 @@
+>sp|O82628|VATG1_ARATH V-type proton ATPase subunit G1 OS=Arabidopsis thaliana OX=3702 GN=VHA-G1 PE=1 SV=1
+meSnrgqgSiqqllaaeveaqhivnaartakmarlkqakeeaekeiaeykaqteqdfqrkleetSgdSganvkrleqetdtkieqlkneasriskdvvemllkhvttvkn-------
+>sp|O82629|VATG2_ARATH V-type proton ATPase subunit G2 OS=Arabidopsis thaliana OX=3702 GN=VHA-G2 PE=1 SV=2
+----mesagiqqllaaereaqqivnaarTakmtrlkqakeeaetevaehktsteqgfqrkleatSgdsganvkrleqetdakieqlkneatriskdvvdmllknvttvnn-------
+>sp|P48836|VATG_YEAST V-type proton ATPase subunit G OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=VMA10 PE=1 SV=1
+---mSqkngiaTllqaekeaheivSkarkyrqdklkqaktdaakeidsykiqkdkelkefeqknaggvgelekkaeagvqgelaeikkiaekkkddvvkilieTvikpsaevhinal
+>guidseq
+--^-^---^--^------------^---^-----------------------------------^--^-----------------------------------^-------------

@@ -1,0 +1,22 @@
+>sp|O49605|CP21A_ARATH Peptidyl-prolyl cis-trans isomerase CYP21-1 OS=Arabidopsis thaliana OX=3702 GN=CYP21-1 PE=2 SV=1
+-----mrreisfllqprcllllva-ltiflvfalfntg-----k---------deekqvi-edheitnrvfldvdidgqrlgriviglygtvvpktvenfralctgekgktssgkplhykgtpfhriisgfviqggdiihgdgkssdsiyggtfpdenfkiqhshagmvamantgpdsngsqffitt-vkaswlegehvvlgkviqgmdnvfaieggagtysgkprkkvviadsgeipkdkwdeer
+>sp|P23285|CYPB_YEAST Peptidyl-prolyl cis-trans isomerase B OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=CPR2 PE=1 SV=1
+----------------mkfsglwcwlllflsvnviaSd----------------vgelidqddevitqkvffdiehgeekvgriviglygkvcpktaknfyklstttns------kkgfigstfhrvipnfmvqggdftdgtgvggksiygdtfpdenftlkhdrkgrlsmanrgkdtngsqffittteeaswldgkhvvfgqvvdgmdvvnyiqhvsrdandkpleavkiakcgewtpelss---
+>sp|P34790|CP18C_ARATH Peptidyl-prolyl cis-trans isomerase CYP18-3 OS=Arabidopsis thaliana OX=3702 GN=CYP18-3 PE=1 SV=1
+----------------------------------------------------------------mafpkvyfdmtidgqpagrivmelytdktprtaenfralctgekgvggtgkplhfkgskfhrvipnfmcqggdfTagngtggesiygSkfedenferkhtgpgilsmanagantngsqffict-vktdwldgkhvvfgqvvegldvvkaiek-vgSSSgkpTkpvvvadcgqls--------
+>sp|Q38867|CP19C_ARATH Peptidyl-prolyl cis-trans isomerase CYP19-3 OS=Arabidopsis thaliana OX=3702 GN=CYP19-3 PE=2 SV=2
+----------------------------------------------------------------manpkvffdiligkmkagrvvmelfadvtprtannfralctgengigkagkalhykgsafhriipgfmcqggdftrgngtggesiygSkfedenfklkhTgpgilSmanSgpnTngSqfficT-ektswldgkhvvfgkvvdgynvvkamed-vgSdmgnpservviedcgelknpss----
+>sp|Q38900|CP19A_ARATH Peptidyl-prolyl cis-trans isomerase CYP19-1 OS=Arabidopsis thaliana OX=3702 GN=CYP19-1 PE=1 SV=1
+---------------------------------------------------------------matnpkvyfdmtvggksagrivmelyadttpetaenfralcTgergigkqgkplhykgsSfhrvipkfmcqggdfTagngtggesiygSkfkdenfikkhtgpgilsmanagantngsqffict-ektswldgkhvvfgqvveglnvvrdiek-vgsdsgrtSkpvviadcgqis--------
+>sp|Q42406|CP18D_ARATH Peptidyl-prolyl cis-trans isomerase CYP18-4 OS=Arabidopsis thaliana OX=3702 GN=CYP18-4 PE=1 SV=1
+----------------------------------------------------------------msnprvffdmslsgTpigriemelfadttpntaenfralctgekgmgklgkplhfkgsifhrvipgfmcqggdftakngtggesiygakfkdenfikkhtgagilsmanSgpntngsqffict-dktswldgkhvvfgqvvkgldvvkaiek-vgsdsgktskvvtitdcgqls--------
+>sp|Q8L8W5|CP21B_ARATH Peptidyl-prolyl cis-trans isomerase CYP21-2 OS=Arabidopsis thaliana OX=3702 GN=CYP21-2 PE=2 SV=1
+maitatrlv-sl-------tllwi-vvlfvtlaliqikltdvadpsvnekildaklnqvgedlegvthkvyfdiqingspagriliglfgnivpktaenfrslctgekgvgnmgkplyfkgsSfhriipgfmiqggdftrgdgrggesiygdkfadenfklkhtgpgflsmansgpdsngsqffitt-vttswldghhvvfgkvlsgmevvrkiea-qgqdsgvpkanviifasgevsl-------
+>sp|Q8LDP4|CP19D_ARATH Peptidyl-prolyl cis-trans isomerase CYP19-4 OS=Arabidopsis thaliana OX=3702 GN=CYP19-4 PE=1 SV=2
+-----maka-sf-------illgt-lflfgaiasi----------------------qakedlkevthkvyfdveidgksagrvviglfgkavpktaenfralctgekgvgksgkplhykgskfhriipsfmiqggdfthgngmggesiygqkfadenfklkhtgpgvlsmansgedtngsqffitt-vttswldgrhvvfgkvvqgmdvvykiea-egkqsgtpkskvviadSgelpl-------
+>sp|Q9SKQ0|CP19B_ARATH Peptidyl-prolyl cis-trans isomerase CYP19-2 OS=Arabidopsis thaliana OX=3702 GN=CYP19-2 PE=2 SV=1
+---------------------------------------------------------------mashpkvffdmtiggapagkivmelytdktpktaenfralctgekgvgrsgkplhfkgsSfhrvipnfmcqggdftkgngtggesiygakfedenferkhtgpgilsmanagantngsqffict-vktdwldgkhvvfgqvvegldvvkaiek-igsssgkptkpvviadcgeiss-------
+>sp|Q9SP02|CP20A_ARATH Peptidyl-prolyl cis-trans isomerase CYP20-1 OS=Arabidopsis thaliana OX=3702 GN=CYP20-1 PE=1 SV=1
+-----mass-vt-------lllws-llllgtlsaiq-------------------akkskenlkeithkvyfdveidgkaagrivmglfgktvpktvenfralctgekgigkngkalhykgsSfhriipsfmlqggdfthgngmggesiygekfadenfklkhtgpgflsmanagqdtngsqffitt-vttswldgrhvvfgkvvtgmdvvykvea-egnqsgtpkskvvivdsgelpl-------
+>guidseq
+------------------------------------^-----------------------------------------^-------------------------^-----------------^---------------^------------^-----------^-----^---^---^--^-----^--------------------------------^^^---^-------^------------
