@@ -1,0 +1,10 @@
+>sp|P52565|GDIR1_HUMAN Rho GDP-dissociation inhibitor 1 OS=Homo sapiens OX=9606 GN=ARHGDIA PE=1 SV=3
+--------------------------maeqepTaeqlaqiaaeneedehSvnYkppaqkSiqeiqeldkddeSlrkYkeallgr---vavsadpnvpnvvvtgltlvcssapgpleldltgdl--eSfkkqSfvlkegveyrikiSfrvnreivsgmkYiqhTYrkgvkidkTdYmvgSYgpraee---YeflTpveeapkgmlargSYSiksrftdddktdhlswewnlTikkdwkd
+>sp|P52566|GDIR2_HUMAN Rho GDP-dissociation inhibitor 2 OS=Homo sapiens OX=9606 GN=ARHGDIB PE=1 SV=3
+--------------------------mTekapeph---veeddddeldSklnYkpppqkSlkelqemdkddeSlikYkkTllgd---gpvvTdpkapnvvvtrlTlvceSapgpitmdltgdl--ealkketivlkegseyrvkihfkvnrdivsglkYvqhTYrTgvkvdkaTfmvgSYgprpee---YeflTpveeapkgmlargtyhnkSffTdddkqdhlSwewnlSikkewte
+>sp|Q12434|GDIR_YEAST Rho GDP-dissociation inhibitor OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RDI1 PE=1 SV=1
+--------------------------maeeSTdfS-------qfeeernndqYkvsakkTvdeyknldaedeSlakwkeSlglSSdvlplefpgdkrkvvvqkiqllvntepnpitfdltnektikelaskrykikenSiyklkivfkvqheiitglryvqyikkagiavdkiddhlgsyapntktkpfyevelpeseapsgflargnySavskfidddkTnhltlnwgveivkk---
+>sp|Q99819|GDIR3_HUMAN Rho GDP-dissociation inhibitor 3 OS=Homo sapiens OX=9606 GN=ARHGDIG PE=1 SV=2
+mlgldacelgaqllellrlalcarvlladkeggpp-----avdevldeavpeyrapgrkslleirqldpddrslakykrvllgp---lppavdpslpnvqvtrltllseqapgpvvmdltgdl--avlkdqvfvlkegvdyrvkiSfkvhreivsglkclhhtyrrglrvdktvymvgsygpsaqe---yefvtpveeaprgalvrgpylvvslftdddrthhlswewglcicqdwkd
+>guidseq
+---------------------------^--^^^-^-------------^^--^------^------------^---^--^---^^------^------------^----^----------------^----^------^------^------------^---^^-^------^^^---^^---------^---^-------------^^^--^--^----^---^-----^-------

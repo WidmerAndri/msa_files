@@ -1,0 +1,10 @@
+>sp|P61601|NCALD_HUMAN Neurocalcin-delta OS=Homo sapiens OX=9606 GN=NCALD PE=1 SV=2
+mgkqnsklrpevmqdllestdfteheiqewykgflrdcpsghlsmeefkkiygnffpYgdaskfaehvfrtfdangdgtidfrefiialsvtsrgkleqklkwafSmydldgngyiskaemleivqaiYkmvssv--mkmpedeSTpekrtekifrqmdtnrdgklSleefirgakSdpSivrllqcdpssagqf
+>sp|P62166|NCS1_HUMAN Neuronal calcium sensor 1 OS=Homo sapiens OX=9606 GN=NCS1 PE=1 SV=2
+mgksnsklkpevveeltrktyftekevqqwykgfikdcpsgqldaagfqkiykqffpfgdptkfatfvfnvfdenkdgriefsefiqalsvtsrgtldeklrwafklYdldndgYiTrnemldivdaiyqmvgnT--velpeeenTpekrvdrifammdknadgkltlqefqegskadpsivqalslYdglv---
+>sp|P62760|VISL1_HUMAN Visinin-like protein 1 OS=Homo sapiens OX=9606 GN=VSNL1 PE=1 SV=2
+mgkqnsklapevmedlvkSTefnehelkqwykgflkdcpsgrlnleefqqlYvkffpYgdaskfaqhafrtfdkngdgtidfreficalSiTsrgSfeqklnwafnmYdldgdgkitrvemleiieaiykmvgTvimmkmnedglTpeqrvdkifSkmdknkddqitldefkeaakSdpSivlllqcdiqk----
+>sp|Q06389|NCS1_YEAST Calcium-binding protein NCS-1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=FRQ1 PE=1 SV=2
+mgaktsklSkddltclkqstyfdrreiqqwhkgflrdcpsgqlaredfvkiykqffpfgspedfanhlftvfdkdnngfihfeefitvlsttsrgtleeklswafelydlnhdgyitfdemltivasvykmmgSm--vTlnedeatpemrvkkifklmdknedgyitldefregskvdpsiigalnlydgli---
+>guidseq
+--------^---------^^-------------------------------^-----^-------------------------------^-^---^---------^-^------^-^-----------^----^^---^-----^^---------^----------^---------^--^-------^-------
