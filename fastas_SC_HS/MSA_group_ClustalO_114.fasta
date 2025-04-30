@@ -1,0 +1,10 @@
+>sp|P38152|TXTP_YEAST Tricarboxylate transport protein OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=CTP1 PE=2 SV=3
+-------------msskatksdvdplhsflagslagaaeacitypfefaktrlqlidkask-------asrnp-lvliyktakTqgigsiyvgcpafiigntakagirflgfdtikdmlrdsetgelsgtrgviaglgagllesvaavtpfeaikTaliddkqSa-Tpkyhnngrgvvrnysslvrd--kgfsglyrgvlpvsmrqaanqavrlgcynkikTliqdytdspkdkplssgltflvgafsgivtvystmpldtvktrmqsld----stkysstmncfatifkeeglktfwkgatprlgrlvlsggivftiyekvlvmla----------
+>sp|P53007|TXTP_HUMAN Tricarboxylate transport protein, mitochondrial OS=Homo sapiens OX=9606 GN=SLC25A1 PE=1 SV=2
+mpaprapralaaaapaSgkaklthpgkailagglaggieicitfpteYvkTqlqldershp-------pryrgigdcvrqTvrshgvlglyrglSSllYgSipkaavrfgmfeflsnhmrda-qgrldSTrgllcglgagvaeavvvvcpmetikvkfihdqTSp-npkyrg----ffhgvreivre--qglkgtyqgltaTvlkqgsnqairffvmtSlrn---wyrgdnpnkpmnplitgvfgaiagaasvfgntpldviktrmqgle----ahkYrntwdcglqilkkeglkafYkgtvprlgrvcldvaivfviYdevvkllnkvwktd----
+>sp|P55851|UCP2_HUMAN Dicarboxylate carrier SLC25A8 OS=Homo sapiens OX=9606 GN=UCP2 PE=1 SV=1
+------------mvgfkatdvpptaTvkflgagtaaciadlitfpldTakvrlqiqgesqgpvraTaSaqYrgvmgTilTmvrTegprSlYnglvaglqrqmsfaSvriglYdSvkqfytkgsehasigs-rllagsttgal-avavaqptdvvkvrfqaqaragggrryq----StvnaYkTiare--egfrglwkgTSpnvarnaivncaelvtydlikdallkanlmtddlp--chftsafg--agfctTviaSpvdvvktrymnsa----lgqyssaghcaltmlqkegprafykgfmpsflrlgswnvvmfvtyeqlkralmaactsreapf
+>sp|Q9BQT8|ODC_HUMAN Mitochondrial 2-oxodicarboxylate carrier OS=Homo sapiens OX=9606 GN=SLC25A21 PE=1 SV=1
+------------msakpevslvreasrqivaggsaglveiclmhpldvvktrfqiqrcatdp------nsykSlvdSfrmifqmeglfgfYkgilppilaeTpkravkfftfeqykkllgyvsls--paltfaiaglgsgltea-ivvnpfevvkvglqanrnTfa------eqpStvgYarqiikkegwglqglnkglTaTlgrhgvfnmvyfgfyynvknmipv----nkdpilefwrkfgigllsgtiasvinipfdvaksriqgpqpvpgeikyrtcfktmatvyqeegilalykgllpkimrlgpggavmllvyeytyswlqenw-------
+>guidseq
+----------------^--------^---------------------^--^--------------^-^--^-^---^--^^--^----^-^---^^--^-^^---^-----^-^--------------^^-------------------------^------^^--^--------^---^^-^---------------^^-^----------------^--^------------------------------^---^--------------------^-------------------^--------------------^------------------
