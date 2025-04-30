@@ -1,0 +1,8 @@
+>sp|O82514|KAD4_ARATH Adenylate kinase 4 OS=Arabidopsis thaliana OX=3702 GN=ADK1 PE=1 SV=2
+-maTggaaadledvqtvdlmsellrrlkcsqkpdkrlifigppgsgkgtqspvvkdeyclchlstgdmlraavasktplgvkakeamekgelvSddlvvgii-deamnkpkcqkgfildgfprtvtqaekldemlkrrgteidkvlnfaiddaileeritgrwihpSSgrsyhtkfappktpgvdditgepliqrkddnadvlksrlaafhsqtqpvidyyakkavltniqaekapqevTSevkkals--
+>sp|P07170|KAD2_YEAST Adenylate kinase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ADK1 PE=1 SV=2
+----------------------------mSSSeSirmvligppgagkgTqapnlqerfhaahlatgdmlrsqiakgTqlgleakkimdqgglvsddimvnmikdeltnnpackngfildgfprtipqaekldqmlkeqgTplekaielkvddellvariTgrlihpaSgrSYhkifnppkedmkddvTgealvqrSddnadalkkrlaayhaqtepivdfYkktgiwagvdasqppatvwadilnklgkd
+>sp|Q9FK35|KAD3_ARATH Adenylate kinase 3 OS=Arabidopsis thaliana OX=3702 GN=ADK2 PE=1 SV=1
+matssaasvdmediqtvdlmsellrrmkcaskpdkrlvfigppgsgkgtqspvikdefclchlstgdmlraavaaktplgvkakeamdkgelvsddlvvgim-deamnrpkcqkgfildgfprtvtqaekldemlnrrgaqidkvlnfaiddsvleeritgrwihpSSgrsyhtkfappkvpgvddltgepliqrkddnadvlrsrldafhkqtqpvidyyakkenlvnipaekapeevtkvvkkvvst-
+>guidseq
+---^-------------------------^^^-^--------------^---------------------------^----------------^---------------------------------------------^-------------------^------^^--^^---------------^-------^------------------------^------------------^^---------
