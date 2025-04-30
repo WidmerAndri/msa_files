@@ -1,0 +1,12 @@
+>sp|O80501|RAH1B_ARATH Ras-related protein RABH1b OS=Arabidopsis thaliana OX=3702 GN=RABH1B PE=1 SV=1
+-mapvsalakyklvflgdqsvgktsiitrfmydkfdntyqatigidflsktmyledrtvrlqlwdtagqerfrslipsyirdssvavivYdvaSrqsflnttkwidevrTergS-dvivvlvgnktdlvdkrqvsieeaeakarelnv-mfietsakagfnikalfrkiaaalpgmetlss-tkqedmvdvnlkssnanaslaqqq-----sggcsc
+>sp|Q99260|YPT6_YEAST GTP-binding protein YPT6 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YPT6 PE=1 SV=1
+msrsgksltkykivflgeqgvgktslitrfmydtfddhyqatigidflsktmylddkTirlqlwdtagqerfrslipsyirdsrvaiivyditkrksfeyidkwiedvknergdenvilcivgnksdlsderqisteegekkakllgakifmetstkagynvkalfkkiakslpefqnsestpldsenan--sanqnkpgvidistaeeqeqsacqc
+>sp|Q9LFT9|RAH1E_ARATH Ras-related protein RABH1e OS=Arabidopsis thaliana OX=3702 GN=RABH1E PE=2 SV=1
+-maSvSplakyklvflgdqsvgktsiitrfmydkfdttyqatigidflsktmyledrtvrlqlwdtagqerfrslipsyirdssvavivydvanrqsflntskwiedvrtergs-dviivlvgnktdlvdkrqvsieegdnkardygv-ifietsakagfnikplfrkiaaalpgmetlss-tkqedmvdvnlktss-nsaqgeqq-----rggcac
+>sp|Q9SID8|RAH1D_ARATH Ras-related protein RABH1d OS=Arabidopsis thaliana OX=3702 GN=RABH1D PE=3 SV=1
+-maSvSplakyklvflgdqsvgktsiitrfmydkfdttyqatigidflsktmyledrtvrlqlwdtagqerfrslipsyirdssvavvvydvanrlsflnTskwieevrnerag-dviivlvgnktdlvekrqvsieegdskgreygv-mfietsakagfnikplfrkiaaalpgmesysn-tknedmvdvnlkpts-nssqgdqq-----ggacsc
+>sp|Q9SMR4|RAH1C_ARATH Ras-related protein RABH1c OS=Arabidopsis thaliana OX=3702 GN=RABH1C PE=1 SV=1
+-maSvSplakfklvflgdqsvgktsiitrfmydkfdttyqptigidflsktmyledrtvrlqlwdtagqerfrslipsyirdssvaivvydvsnrqtflntskwiedvhrergqsnviivlvgnktdlvekrqvsisegedkgkeygv-mfietsakenfnikalfrkiaaalpgvdsyslatksddmvdvnlktts-nssqgeqqggagggggcsc
+>guidseq
+---^-^---------------------------------------------------^-------------------------------^---^------^--------^---^-------------------------------------------------------------------------------------------------------
