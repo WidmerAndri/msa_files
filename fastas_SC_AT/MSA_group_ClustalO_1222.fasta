@@ -1,0 +1,14 @@
+>tr|A0A1P8AQU9|A0A1P8AQU9_ARATH Alpha/beta-Hydrolases superfamily protein OS=Arabidopsis thaliana OX=3702 GN=At1g52700 PE=1 SV=1
+-----------------------------------mgsrnargyefgrtyvvrpkgkhqatlvwlhglgdngssssql------mdslhlpnikwicptapsrpvtslggftctawfdvgeisedg--hddlegldasa----shianllssepadvkvgiggfsmgaaislysatcyalgrygtghaypinlqavvglsgwlpgwkslrskiecsfeaarraaslpiilthgtsddvvpyrfgeksaqslgmag-frlamfkpyeglghytvpremdevvhwlttmlglegsr------------
+>tr|A0A384L5V4|A0A384L5V4_ARATH Phospholipase/carboxylesterase/thioesterase domain-containing protein OS=Arabidopsis thaliana OX=3702 GN=At5g20060 PE=1 SV=1
+--------------------------mSisgaavgSgrnlrravefgkthvvrpkgkhqativwlhglgdngsswsql------letlplpnikwicptapsqpislfggfpstawfdvvdinedg--pddmegldvaa----ahvanllsnepadiklgvggfsmgaatslysatcfalgkygngnpypinlsaiiglsgwlpcaktlagkleee-qiknraaslpivvchgkaddvvpfkfgekssqallsng-fkkvtfkpysalghhtipqeldelcawltstlsleg--------------
+>tr|A0A384L6K0|A0A384L6K0_ARATH (thale cress) hypothetical protein OS=Arabidopsis thaliana OX=3702 GN=At3g15650 PE=4 SV=1
+--------------------------msysrqsmgsgsrstrgyefgrtyvvrpkgkhqativwlhglgdngssssql------leslplpnikwicptapsrpvsllggfpctawfdvgeisedl--hddiegldasa----ahianllsaeptdvkvgiggfsmgaaialysttcyalgrygtghaytinlratvglsgwlpgwrslrskiessnevarraasipillahgtsddvvpyrfgeksahslamag-frqtmfkpyeglghytvpkemdevvhwlvsrlglegsr------------
+>sp|Q12354|APTH1_YEAST Acyl-protein thioesterase 1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YLR118C PE=1 SV=1
+----------------------------------mnglrvaa-----------kiqparqtiiflhglgdtgsgwgflaqylqqrdpaafqhtnfvfpnapelhvtanggalmpawfdilewdpsf-skvdsdgfmnslnsiektvkqeidkgikpeqiiiggfsqgaalalatsv-----------tlpwkiggivalsgfcsipgilkqhkn------ginvktpifhghgdmdpvvpiglgikakqfyqdsceiqnyefkvykgmahSTvpdeledlaSfikkslss----------------
+>sp|Q84WK4|SOBR1_ARATH Carboxylesterase SOBER1 OS=Arabidopsis thaliana OX=3702 GN=SOBER1 PE=1 SV=1
+--------------------------------------------------------martfilwlhglgdsgpanepiqtq---fksselsnaswlfpsapfnpvtcnngavmrswfdvpelpfkvgspidessvleavknvhaiidqeiaegtnpenvficglsqggaltlasvl-----------lypktlgggavlsgwvpftssiisqfp------eeakktpilwshgtddrmvlfeagqaalpflkeag--vtcefkaypglghsisnkelkyieswikrrlkgssstclqlnclkemfh
+>sp|Q8GYK2|SOBRL_ARATH Probable carboxylesterase SOBER1-like OS=Arabidopsis thaliana OX=3702 GN=At4g22300 PE=2 SV=1
+mrtsrlkkpivlltiallssvfffaffflnksdvsstsalrn-----------rdsmartfilwlhglgdsgpanepiktl---frsqefrntkwlfpsappnpvscnygavmpswfdipelpltagspkdessllkavknvhaiidkeiagginpenvyicgfsqggaltlasvl-----------lypktigggavfsgwipfnssitnqft------edakktpilwshgiddktvlfeagqaalpflqqag--vtcefkaypglghsisneelqyleswlkqrmqssssss-----------
+>guidseq
+---------------------------^-------^------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------^^---------^------------------------
