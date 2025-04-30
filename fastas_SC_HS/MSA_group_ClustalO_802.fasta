@@ -1,0 +1,10 @@
+>sp|O75348|VATG1_HUMAN V-type proton ATPase subunit G 1 OS=Homo sapiens OX=9606 GN=ATP6V1G1 PE=1 SV=3
+maSqSqgiqqllqaekraaekvsearkrknrrlkqakeeaqaeieqYrlqrekefkakeaaalgSrgScSTevekeTqekmTilqTYfrqnrdevldnllafvcdirpeihenyring
+>sp|O95670|VATG2_HUMAN V-type proton ATPase subunit G 2 OS=Homo sapiens OX=9606 GN=ATP6V1G2 PE=1 SV=1
+maSqSqgiqqllqaekraaekvadarkrkarrlkqakeeaqmeveqYrrerehefqSkqqaamgSqgnlSaeveqaTrrqvqgmqssqqrnrervlaqllgmvcdvrpqvhpnyrisa
+>sp|P48836|VATG_YEAST V-type proton ATPase subunit G OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=VMA10 PE=1 SV=1
+-mSqkngiaTllqaekeaheivSkarkyrqdklkqaktdaakeidsykiqkdkelkefeqknaggvgelekkaeagvqgelaeikkiaekkkddvvkilieTvikpsaevhinal---
+>sp|Q96LB4|VATG3_HUMAN V-type proton ATPase subunit G 3 OS=Homo sapiens OX=9606 GN=ATP6V1G3 PE=1 SV=1
+mTSqSqgihqllqaekrakdkleeakkrkgkrlkqakeeamveidqYrmqrdkefrlkqskimgSqnnlSdeieeqtlgkiqelnghynkymesvmnqllsmvcdmkpeihvnyratn
+>guidseq
+-^^-^----^------------^-----------------------^---------^-------^--^-^^-----^----^---^^--------------^----------------

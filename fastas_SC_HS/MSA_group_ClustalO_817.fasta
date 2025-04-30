@@ -1,0 +1,10 @@
+>tr|H7BZ11|H7BZ11_HUMAN RPL36A-HNRNPH2 readthrough OS=Homo sapiens OX=9606 GN=RPL36A-HNRNPH2 PE=3 SV=2
+mvnvpktrrtfck--kcgkhqphkvtqYkkgkdSlYaqgkrrydrkqSgYggqTkpifrkkakttkkivlrlecvepncrSkrmlaikrckhfelggdkkrklhqnciepnlppraqqsp
+>sp|P0CX27|RL44A_YEAST Large ribosomal subunit protein eL42A OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPL42A PE=1 SV=1
+mvnvpktrktyckgktcrkhTqhkvtqykagkaSlfaqgkrrydrkqsgfggqtkpvfhkkakttkkvvlrlecvk--ckTraqltlkrckhfelggekkqkgqalqf------------
+>sp|P83881|RL36A_HUMAN Large ribosomal subunit protein eL42 OS=Homo sapiens OX=9606 GN=RPL36A PE=1 SV=2
+mvnvpktrrtfck--kcgkhqphkvtqYkkgkdSlYaqgkrrydrkqSgYggqTkpifrkkakttkkivlrlecvepncrSkrmlaikrckhfelggdkkrkgqviqf------------
+>sp|Q969Q0|RL36L_HUMAN Ribosomal protein eL42-like OS=Homo sapiens OX=9606 GN=RPL36AL PE=1 SV=3
+mvnvpktrrtfck--kcgkhqphkvtqYkkgkdSlYaqgrrrydrkqSgYggqTkpifrkkakttkkivlrlecvepncrSkrmlaikrckhfelggdkkrkgqviqf------------
+>guidseq
+--------------------^------^-----^-^-----------^-^---^--------------------------^---------------------------------------
