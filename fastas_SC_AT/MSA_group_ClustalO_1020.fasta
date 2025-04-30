@@ -1,0 +1,10 @@
+>tr|B3H4S0|B3H4S0_ARATH adenylate kinase OS=Arabidopsis thaliana OX=3702 GN=At3g60961 PE=3 SV=1
+-------------------------------------------------------------------------miaegrivpseitvkllckameesfqvsgndkflidgfprneenrivfenvariepafvlffdcpeeelerrimsr--nqgreddnietikkrfkvfvestlpiisyyqskgklrkinaaksseevfeavrvlfaset-----
+>sp|O04905|KCY3_ARATH UMP-CMP kinase 3 OS=Arabidopsis thaliana OX=3702 GN=UMK3 PE=1 SV=1
+-------mgSvdaangsgkkptvifvlggpgsgkgtqcayivehygythlsagdllraei-ksgsengtmiqnmikegkivpSevTikllqkaiq----engndkflidgfprneenraafekvTeiepkfvlffdcpeeemekrllgr--nqgreddnietirkrfkvflesslpvihyyeakgkvrkinaakpieavfeevkaifspeaekvea
+>sp|P15700|KCY_YEAST Uridylate kinase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=URA6 PE=1 SV=1
+----mta-attsqpafspdqvsvifvlggpgagkgtqceklvkdYSfvhlsagdllraeqgragSqygelikncikegqivpqeitlallrnaiSdnvk-ankhkflidgfprkmdqaisfer-diveskfilffdcpedimlerllergktsgrSddnieSikkrfntfketsmpvieyfetkskvvrvrcdrsvedvykdvqdairdSl-----
+>sp|Q8VY84|KCY1_ARATH Probable UMP-CMP kinase 1 OS=Arabidopsis thaliana OX=3702 GN=UMK1 PE=2 SV=1
+metpidapnkdehecprwkkstvvfvlggpgsgkgtqcanvvkhfsythfsagdllraei-ksgSefgamiqsmiaegrivpseitvkllckamee----sgndkflidgfprneenrnvfenvariepafvlffdcpeeelerrimsr--nqgreddnietikkrfkvfvestlpiisyyeskgklrkinaaksseevfeavrvlfaset-----
+>guidseq
+---------^----------------------------------^^------------------^-----------------^--^--------^-----------------------------^------------------------------^-----^-----------------------------------------------^------

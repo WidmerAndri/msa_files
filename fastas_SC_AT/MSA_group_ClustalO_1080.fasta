@@ -1,0 +1,12 @@
+>tr|A0A654FJM7|A0A654FJM7_ARATH 40S ribosomal protein S27 OS=Arabidopsis thaliana OX=3702 GN=At3g61111 PE=3 SV=1
+mvlqndidllnppaelekrkhklkrlvpspnsyfmlvrcsdcinittifshsqtvvvcgkcqnvlcqptggkakltvgcsfrkltd
+>sp|O64650|RS271_ARATH Small ribosomal subunit protein eS27z OS=Arabidopsis thaliana OX=3702 GN=RPS27A PE=1 SV=1
+mvlqndidllnppaelekrkhklkrlvqSpnSffmdvkcqgcfnittvfshsqtvvmcgncqtllctptggkakltegcSfrkk--
+>sp|P35997|RS27A_YEAST Small ribosomal subunit protein eS27A OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS27A PE=1 SV=1
+mv--lvqdllhpTaaSearkhklkTlvqgprSYfldvkcpgclnittvfshaqtavtcescstilctptggkaklSegTSfrrk--
+>sp|Q8L953|RS273_ARATH Small ribosomal subunit protein eS27w OS=Arabidopsis thaliana OX=3702 GN=RPS27D PE=2 SV=2
+mvlqndidllhpppelekrkhklkrlvqSpnSffmdvkcqgcfnittvfshsqtvvvcgncqtvlcqptggkarlqegcSfrkk--
+>sp|Q9M2F1|RS272_ARATH Small ribosomal subunit protein eS27y OS=Arabidopsis thaliana OX=3702 GN=RPS27B PE=2 SV=2
+mvlqndidllnppaelekrkhklkrlvqSpnSffmdvkcqgcfnittvfshsqtvvvcgncqtilcqptggkakltegcSfrrkgd
+>guidseq
+------------^--^--------^---^--^^------------------------------------------^--^^------
