@@ -1,0 +1,8 @@
+>sp|P18414|ERD2_YEAST ER lumen protein-retaining receptor OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ERD2 PE=1 SV=1
+mnpfrilgdlshltsililihnikttryiegiSfktqtlyalvfitryldlltfhwvslynalmkiffivstayivvllqgskrtntiaynemlmhdtfkiqhlligsalmsvffhhkftflelawsfsvwlesvailpqlymlskggktrsltvhyifamglyralyipnwiwrYstedkkldkiaffagllqtllysdffyiyytkvirgkgfklpk
+>sp|P35402|ERD2A_ARATH ER lumen protein-retaining receptor A OS=Arabidopsis thaliana OX=3702 GN=ERD2A PE=2 SV=1
+mnifrfagdmshlisvlilllkiyatkscagislktqelyalvfltryldlft-dyvslynsimkivfiasslaivwcmrrhplvr---rsydkdldtfrhqyvvlacfvlglilnekftvqevfwafsiyleavailpqlvllqrsgnvdnltgqyvvflgayrglyiinwiyryftedhftrwiacvsglvqtalyadffyyyyiswktntklklpa
+>sp|Q8VWI1|ERD2B_ARATH ER lumen protein-retaining receptor B OS=Arabidopsis thaliana OX=3702 GN=ERD2B PE=1 SV=1
+mnifrlagdmthlasvlvlllkihtikscagvslktqelyaivfatryldift-sfvslyntsmklvflgssfsivwymkyhkavh---rtydreqdtfrhwflvlpcfllallihekftflevlwtsslyleavailpqlvllqrtrnidnltgqyifllggyrglyilnwiyryftephfvhwitwiagfvqtllyadffyyyflswknnkklqlpa
+>guidseq
+--------------------------------^----------------------------------------------------------------------------------------------------------------------------------------------^-------------------------------------------
