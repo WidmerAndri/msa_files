@@ -1,0 +1,10 @@
+>sp|P32656|CHAC_YEAST Glutathione-specific gamma-glutamylcyclotransferase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=GCG1 PE=1 SV=1
+mtndnsgiwvlgYgsliykppshythripaiihgfarrfwqsstdhrgtpanpgrvatlipyediirqtaflknvnlysesapiqdpddlvtigvvyyipp--ehaqevreylnvreqngytlhevevhletnreheaelgealeqlprhnksgkrvlltsvy---igtidneafvgpetvdetakviavshgpsgsnyeylakleqalaqmpimkergritdhylTalletvnkyr---------------------------------------------
+>sp|Q84MC1|GCT22_ARATH Gamma-glutamylcyclotransferase 2-2 OS=Arabidopsis thaliana OX=3702 GN=GGCT2;2 PE=1 SV=1
+-----mvmwvfgygslvwnpgfhydekvlgfikgykrvfdlacidhrgtpehpartctlekaeeai-------------------------cwgtafcvrggpekerlameylerrece------------------ydlktsvdfykeddplkpavtgvivftstpdkvsnkyylgpapledmarqiatangpcgnnrdylfllekamhdighee-------dyvielanevrkvlaesstkkvtpvkesrasrvanksknnvptahqilphhpeavatti
+>sp|Q84QC1|GCT23_ARATH Gamma-glutamylcyclotransferase 2-3 OS=Arabidopsis thaliana OX=3702 GN=GGCT2;3 PE=1 SV=1
+-----mamwvfgygsliwktgfpfdeslpgfikgyrrvfhqgstdhrgtpdfpgrtvtleaaheev-------------------------ccgvaykitkeedk-rdallhlevrekq------------------ydqkeyldfftdsnasepavagvmvyiaspdkksnnnylgpaplediakqivkakgpsgpnrdylfnleealaqlgfkd-------khvtdlanqvrhilseseeldidataatan---------nv------------------
+>sp|Q8GY54|GCT21_ARATH Gamma-glutamylcyclotransferase 2-1 OS=Arabidopsis thaliana OX=3702 GN=GGCT2;1 PE=1 SV=1
+-----mvlwvfgygsliwnpgfdfdekligyikdykrvfdlacidhrgtpehpartctleqstgai-------------------------cwgaaycvrggpekeklameylerrece------------------ydsktlvefytendtstpivtgvivftstpdkvsnkyylgpapleemarqiatasgpcgnnreylfklekamfdiehee-------eyvielanevrkqldlpeevka--llkpivshvsvksqahvstrqrvfas---------
+>guidseq
+------------^---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------^-------------------------------------------------------
