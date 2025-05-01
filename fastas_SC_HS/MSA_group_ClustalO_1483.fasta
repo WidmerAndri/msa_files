@@ -1,0 +1,10 @@
+>sp|P20081|FKBP_YEAST FK506-binding protein 1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=FPR1 PE=1 SV=2
+mSeviegnvkidriSpgdgaTfpktgdlvtihYTgTlengqkfdSSvdrgSpfqcnigvgqvikgwdvgipklsvgekarltipgpyaygprgfpglippnstlvfdvellkvn
+>sp|P62942|FKB1A_HUMAN Peptidyl-prolyl cis-trans isomerase FKBP1A OS=Homo sapiens OX=9606 GN=FKBP1A PE=1 SV=2
+------mgvqveTiSpgdgrTfpkrgqTcvvhytgmledgkkfdssrdrnkpfkfmlgkqevirgweegvaqmsvgqrakltispdYaYgatghpgiipphatlvfdvellkle
+>sp|P68106|FKB1B_HUMAN Peptidyl-prolyl cis-trans isomerase FKBP1B OS=Homo sapiens OX=9606 GN=FKBP1B PE=1 SV=2
+------mgveietiSpgdgrtfpkkgqTcvvhytgmlqngkkfdssrdrnkpfkfrigkqevikgfeegaaqmslgqrakltctpdvaygatghpgvippnatlifdvellnle
+>sp|Q5VVH2|FKB1C_HUMAN Peptidyl-prolyl cis-trans isomerase FKBP1C OS=Homo sapiens OX=9606 GN=FKBP1C PE=1 SV=1
+------mgvhvetispgdwrtfpkrsqtcvmhytgmledgkkfdssrdrnkpfkfmlgkqevirgweegvvqmsvgqrakltispdYaygatghpgiipphatlvfdvellkle
+>guidseq
+-^----------^-^-----^------^----^^-^--------^^----^-----------------------------------^-^-------------------------
