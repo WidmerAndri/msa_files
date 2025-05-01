@@ -1,0 +1,8 @@
+>sp|P25296|CANB_YEAST Calcineurin subunit B OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=CNB1 PE=1 SV=3
+mgaapskivdglledtnfdrdeierlrkrfmkldrdSsgsidknefmSipgvssnplagrimevfdadnsgdvdfqefitglsifsgrgskdeklrfafkiydidkdgfisngelfivlkimvgsnlddeqlqqivdrtivendSdgdgrlsfeefknaietTevakSlTlqYdv
+>sp|P63098|CANB1_HUMAN Calcineurin subunit B type 1 OS=Homo sapiens OX=9606 GN=PPP3R1 PE=1 SV=2
+mgneasY---plemcShfdadeikrlgkrfkkldldnSgSlSveefmSlpelqqnplvqrvidifdTdgngevdfkefiegvsqfSvkgdkeqklrfafriydmdkdgYiSngelfqvlkmmvgnnlkdtqlqqivdktiinadkdgdgrisfeefcavvggldihkkmvvdv--
+>sp|Q96LZ3|CANB2_HUMAN Calcineurin subunit B type 2 OS=Homo sapiens OX=9606 GN=PPP3R2 PE=1 SV=3
+mgneasy---paemcshfdndeikrlgrrfkkldldksgslsveefmslpelrhnplvrrvidvfdtdgdgevdfkefilgTSqfSvkgdeeqklrfafSiYdmdkdgYiSngelfqvlkmmvgnnltdwqlqqlvdktiiildkdgdgkisfeefSavvrdleihkklvliv--
+>guidseq
+------^--------^--------------------^^-^-^-----^------------------^--------------^^--^-------------^-^------^-^---------------------------------^-----------^-----^----^-^--^--

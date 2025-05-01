@@ -1,0 +1,8 @@
+>sp|P35997|RS27A_YEAST Small ribosomal subunit protein eS27A OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS27A PE=1 SV=1
+mvlvqdllhpTaaSearkhklkTlvqgprSYfldvkcpgclnittvfshaqtavtcescstilctptggkaklSegTSfrrk--
+>sp|P42677|RS27_HUMAN Small ribosomal subunit protein eS27 OS=Homo sapiens OX=9606 GN=RPS27 PE=1 SV=3
+mplakdllhpSpeeekrkhkkkrlvqSpnSYfmdvkcpgcykittvfshaqtvvlcvgcstvlcqptggkarlTegcSfrrkqh
+>sp|Q71UM5|RS27L_HUMAN Ribosomal protein eS27-like OS=Homo sapiens OX=9606 GN=RPS27L PE=1 SV=3
+mplardllhpSleeekkkhkkkrlvqSpnSYfmdvkcpgcykittvfshaqtvvlcvgcstvlcqptggkarlTegcSfrrkqh
+>guidseq
+----------^--^--------^---^--^^------------------------------------------^--^^------
