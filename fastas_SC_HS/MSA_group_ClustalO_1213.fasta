@@ -1,0 +1,10 @@
+>sp|P35200|UPS2_YEAST Protein UPS2, mitochondrial OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=UPS2 PE=1 SV=1
+-mklfqnsydfnypwdqvtaanwkkypneisthviavdvlrrelkdqgkvlvterlitvkqgvpkwimmmlggt--nmShvrevsvvdlnkksltmrscnltmcnllkvyetvtysphpddsanktlfqqeaqit--aygsirklcnkmedwsvqrfcenakkgkmgfdavlqvfsenwekh-vddlsnqlvskvnetmedvkisagtllkgtersgrtilqqnidlfrdaynhen
+>sp|Q96N28|PLD3A_HUMAN PRELI domain containing protein 3A OS=Homo sapiens OX=9606 GN=PRELID3A PE=1 SV=1
+-mkiwssehvfghpwdtviqaamrkypnpmnpsvlgvdvlqrrvdgrgrl-hslrllstewglpslvrailgts-rtltyirehsvvdpvekkmelcstnitltnlvsvnerlvytphpenpemt-vltqeaiit--vkgis--lgsyleslmantissnakkgwaaiewiiehses----a-vs---------------------------------------------------
+>sp|Q9Y255|PRLD1_HUMAN PRELI domain-containing protein 1, mitochondrial OS=Homo sapiens OX=9606 GN=PRELID1 PE=1 SV=1
+mvkYflgqSvlrSSwdqvfaafwqrypnpyskhvltedivhrevtpdqkl-lSrrllTktnrmprwaerlfpanvahsvyvledsivdpqnqtmttftwninharlmvveercvycvnSdnsgwtei-rreawvssslfgv----sravqefglarfksnvtktmkgfeYilaklqgeapSkTlveTakeakekaketalaatekakdlas----kaatkkqqqqqqfv-------
+>sp|Q9Y3B1|PLD3B_HUMAN PRELI domain containing protein 3B OS=Homo sapiens OX=9606 GN=PRELID3B PE=1 SV=2
+-mkiwtsehvfdhpwetvttaamqkypnpmnpsvvgvdvldrhidpsgkl-hshrllSTewglpsivkSligaa-rtkTYvqehsvvdpvekTmelkSTniSfTnmvSvderliYkphpqdpekt-vltqeaiit--vkgvS--lSsyleglmastissnaSkgreamewvihklna----e-ieelTaSargTirtpmaaaafaek-----------------------------
+>guidseq
+---^----^---^^--------------------------------------^----^^---------^---------^^------------^----^^--^-^---^------^---^----------------------^---^---------------^-------^----------^-^---^^-^---^------------------------------------------

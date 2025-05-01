@@ -1,0 +1,16 @@
+>sp|A0A0B4J2A2|PAL4C_HUMAN Peptidyl-prolyl cis-trans isomerase A-like 4C OS=Homo sapiens OX=9606 GN=PPIAL4C PE=2 SV=1
+--------------------------------------------mvnsvvffditvdgkplgrisiklfadkipktaenfralSTgekgfrykgscfhriipgfmcqggdfTrpngtgdkSiYgekfddenlirkhTgSgilSmanagpnTngSqfficTakTewldgkhvafgkvkervniveamehfgYrn-sktskkitiadcgqf-------------
+>sp|P0DN37|PAL4G_HUMAN Peptidyl-prolyl cis-trans isomerase A-like 4G OS=Homo sapiens OX=9606 GN=PPIAL4G PE=1 SV=1
+--------------------------------------------mvnsviffditvdgkplgrisikqfadkipktaenfralSTgekgfrykgScfhriipgfmcqggdfthpngTgdkSiYgekfddenlirkhTgSgilSmanagpnTngSqfficTakTewldgkhvafgkvkervniveamehfgYrn-sktskkitiadcgqf-------------
+>sp|P23284|PPIB_HUMAN Peptidyl-prolyl cis-trans isomerase B OS=Homo sapiens OX=9606 GN=PPIB PE=1 SV=2
+mlrlSernmkvllaaaliagsvf----flllpgpsaadekkkgpkvtvkvYfdlrigdedvgrvifglfgktvpkTvdnfvalaTgekgfgYknSkfhrvikdfmiqggdftrgdgTggkSiYgerfpdenfklkhYgpgwvSmanagkdTngSqffittvkTawldgkhvvfgkvlegmevvrkveSTkTdSrdkplkdviiadcgkievekpfaiake--
+>sp|P25719|CYPC_YEAST Peptidyl-prolyl cis-trans isomerase C, mitochondrial OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=CPR3 PE=1 SV=1
+--------------------------mfkrSiiqqsrlfSnSaSrlgkkvffdpavngTkigriefelydnvvpktaenfralcTgekgwgykgvpfhriipdfmiqggdtdltngfggkSiygSkfadenfvkkhdkagllSmanagpnTngsqffiTtvpcpwldgkhvvfgevtkgmdivkaieSYgTaS-gkpraeivieeagel-------------
+>sp|P30405|PPIF_HUMAN Peptidyl-prolyl cis-trans isomerase F, mitochondrial OS=Homo sapiens OX=9606 GN=PPIF PE=1 SV=1
+mlalrc-gsrwl-gllSvprsvplrlpaaracSkgSgdpSSSSSSgnplvyldvdangkplgrvvlelkadvvpkTaenfralctgekgfgYkgstfhrvipSfmcqagdfTnhngTggkSiYgSrfpdenftlkhvgpgvlsmanagpnTngsqfficTikTdwldgkhvvfghvkegmdvvkkieSfgSkS-grtskkivitdcgqls------------
+>sp|P45877|PPIC_HUMAN Peptidyl-prolyl cis-trans isomerase C OS=Homo sapiens OX=9606 GN=PPIC PE=1 SV=1
+----mgpgprlllplvlcvglga------lvfssgaegfrkrgpSvTakvffdvrigdkdvgriviglfgkvvpktvenfvalatgekgygykgskfhrvikdfmiqggdiTTgdgtggvsiygetfpdenfklkhygigwvsmanagpdtngsqffiTltkpTwldgkhvvfgkvidgmtvvhsielqatdghdrplTncSiinSgkidvkTpfvveiadw
+>sp|P62937|PPIA_HUMAN Peptidyl-prolyl cis-trans isomerase A OS=Homo sapiens OX=9606 GN=PPIA PE=1 SV=2
+--------------------------------------------mvnpTvffdiavdgeplgrvSfelfadkvpkTaenfralSTgekgfgYkgScfhriipgfmcqggdfTrhngTggkSiYgekfedenfilkhTgpgilSmanagpnTngSqfficTakTewldgkhvvfgkvkegmniveamerfgSrn-gkTSkkiTiadcgqle------------
+>guidseq
+----^-----------^-------------^-^--^---^^^^^^-^-^-^-------^-----^----------^-------^^------^--^-------^--------^^---^---^-^-^-----------^-^---^-------^--^----^^--^^-----------------------^^-^-^---^^^--^---^------^---------

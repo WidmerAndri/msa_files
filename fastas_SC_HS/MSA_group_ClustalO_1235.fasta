@@ -1,0 +1,12 @@
+>sp|P25874|UCP1_HUMAN Mitochondrial brown fat uncoupling protein 1 OS=Homo sapiens OX=9606 GN=UCP1 PE=1 SV=3
+--------mggltasdvhptlgvqlfsagiaacladvitfpldtakvrlqvqgecp---tsSvirYkgvlgTitavvktegrmklysglpaglqrqisSaSlriglydtvqeflTagketapslgskilaglttggvavfigqptevvkvrlqaqShlhgi--kprYTgTYnaYriiaTTe-glTglwkgttpnlmrsviinctelvtydlmkeafvkn-niladdvpchlvsaliagfcatamsspvdvvktrfins----ppgqYkSvpncamkvfTnegpTaffkglvpsflrlgswnvimfvcfeqlkrelsksrqtmdcat
+>sp|P55916|UCP3_HUMAN Putative mitochondrial transporter UCP3 OS=Homo sapiens OX=9606 GN=UCP3 PE=1 SV=1
+--------mvglkpsdvpptmavkflgagtaacfadlvtfpldtakvrlqiqgenqavqtarlvqyrgvlgtiltmvrtegpcspynglvaglqrqmSfaSiriglYdSvkqvYTpkgadnsslttrilagcttgamavtcaqptdvvkvrfqasihlgpsrsdrkysgtmdaYrTiaree-gvrglwkgtlpnimrnaivncaevvtydilkeklldy-hlltdnfpchfvsafgagfcatvvaspvdvvktrymns----ppgqyfspldcmikmvaqegpTafykgftpsflrlgSwnvvmfvTYeqlkralmkvqmlreSpf
+>sp|Q02978|M2OM_HUMAN Mitochondrial 2-oxoglutarate/malate carrier protein OS=Homo sapiens OX=9606 GN=SLC25A11 PE=1 SV=3
+maaTaSagaggidgkprTSpkSvkflfgglagmgatvfvqpldlvknrmqlSgegak-----treykTSfhalTSilkaeglrgiytglSagllrqatyTttrlgiYTvlferltgadgTppgfllkavigmTagatgafvgtpaevalirmTadgrlpad-qrrgYknvfnaliritree-gvltlwrgciptmaravvvnaaqlaSYSqSkqfllds-gyfsdnilchfcasmisglvttaasmpvdiaktriqnmrmidgkpeykngldvlfkvvrYegffslwkgftpyyarlgphtvltfifleqmnkaykrlflsg----
+>sp|Q06143|DIC1_YEAST Mitochondrial dicarboxylate transporter OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=DIC1 PE=1 SV=1
+mstn--------akesagknikypwwyggaagifatmvthpldlakvrlqaapmpkp-----t-----lfrmlesilanegvvglysglsaavlrqctyttvrfgaydllkenvipreqltn-mayllpcsmfsgaigglagnfadvvnirmqndsaleaa-krrnyknaidgvykiyryegglkTlftgwkpnmvrgilmTasqvvtydvfknylvtkldfdasknYthltaSllaglvatTvcspadvmktrimn-----gsgdhqpalkiladavrkegpSfmfrgwlpsftrlgpftmliffaieqlkkhrvgmpkedk---
+>sp|Q9UBX3|DIC_HUMAN Mitochondrial dicarboxylate carrier OS=Homo sapiens OX=9606 GN=SLC25A10 PE=1 SV=2
+---------------maaearvsrwyfgglascgaaccthpldllkvhlqtqqevkl-----r-----mTgmalrvvrTdgilalYSglSaSlcrqmtysltrfaiYetvrdrvakgSqgplpfhekvllgsvsglaggfvgTpadlvnvrmqndvklpqg-qrrnyahaldglyrvaree-glrrlfSgatmassrgalvTvgqlscydqakqlvlst-gylsdnifthfvasfiaggcatflcqpldvlktrlmn-----skgeyqgvfhcavet-aklgplafYkglvpagirliphtvltfvfleqlrknfgikvps-----
+>guidseq
+---^-^-----------^^--^-----------------------------^---------^---^-^^^-^-^^---^------^^--^-^-----^^^^-----^^^----^^--^-^------------^---------^---------^--^----------^^-^^--^-^--^^----^^--^------------^-----^^^-^---------------^-----^--------^-----------------------^-^---------^^---^--^-----------^-------^^---------------^--
