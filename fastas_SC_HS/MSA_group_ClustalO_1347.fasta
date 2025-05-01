@@ -1,0 +1,12 @@
+>sp|P04710|ADT1_YEAST ADP,ATP carrier protein 1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=AAC1 PE=1 SV=1
+-------mshtetqtqqshfgvdflmggvsaaiakTgaapiervkllmqnqeemlkqgsldtrykgildcfkrtathegivsfwrgntanvlryfptqalnfafkdkiksllsyd-rerdgyakwfagnlfsggaagglsllfvysldyartrlaadargskstsqrqfnglldvykktlktdgllglyrgfvpsvlgiivyrglyfglydsfkpvlltgalegsfvasfllgwvitmgastasypldtvrrrmmmtsgq---tikydgaldclrkivqkegayslfkgcganifrgvaaagvislydqlqlimf---gkkfk
+>sp|P05141|ADT2_HUMAN ADP/ATP translocase 2 OS=Homo sapiens OX=9606 GN=SLC25A5 PE=1 SV=7
+------------mTdaavSfakdflaggvaaaiSkTavapiervklllqvqha-SkqitadkqYkgiidcvvripkeqgvlSfwrgnlanvirYfpTqalnfafkdkykqiflggvdkrTqfwlYfagnlaSggaagaTSlcfvypldfarTrlaadvg--kagaerefrglgdclvkiYkSdgikglyqgfnvsvqgiiiyraaYfgiYdTakgmlpd-pknthiviswmiaqtvtavagltsypfdTvrrrmmmqSgrkgTdimYTgTldcwrkiardeggkaffkgawSnvlrgmggafvlvlydeikkYt---------
+>sp|P12235|ADT1_HUMAN ADP/ATP translocase 1 OS=Homo sapiens OX=9606 GN=SLC25A4 PE=1 SV=4
+------------mgdhawSflkdflaggvaaavSkTavapiervklllqvqha-SkqiSaekqykgiidcvvripkeqgflsfwrgnlanvirYfpTqalnfafkdkykqlflggvdrhkqfwrYfagnlaSggaagaTSlcfvypldfarTrlaadvg--kgaaqrefhglgdciikifkSdglrglYqgfnvsvqgiiiYraaYfgvYdTakgmlpd-pknvhifvswmiaqsvtavaglvsypfdtvrrrmmmqSgrkgadimytgtvdcwrkiakdegakaffkgawSnvlrgmggafvlvlydeikkyv---------
+>sp|P12236|ADT3_HUMAN ADP/ATP translocase 3 OS=Homo sapiens OX=9606 GN=SLC25A6 PE=1 SV=4
+------------mTeqaiSfakdflaggiaaaiSkTavapiervklllqvqha-SkqiaadkqYkgivdcivripkeqgvlSfwrgnlanvirYfpTqalnfafkdkykqiflggvdkhTqfwrYfagnlaSggaagaTSlcfvypldfarTrlaadvg--kSgTerefrglgdclvkitksdgirglyqgfsvsvqgiiiYraaYfgvYdTakgmlpd-pknthivvswmiaqtvtavagvvsYpfdtvrrrmmmqSgrkgadimytgtvdcwrkifrdeggkaffkgawSnvlrgmggafvlvlydelkkvi---------
+>sp|Q9H0C2|ADT4_HUMAN ADP/ATP translocase 4 OS=Homo sapiens OX=9606 GN=SLC25A31 PE=1 SV=1
+mhrepakkkaekrlfdaSSfgkdllaggvaaavSkTavapiervklllqvqaS-SkqiSpearYkgmvdclvripreqgffsfwrgnlanvirYfpTqalnfafkdkykqlfmSgvnkekqfwrwflanlasggaagatslcvvypldfartrlgvdig--kgpeerqfkglgdcimkiaksdgiaglyqgfgvsvqgiivyrasyfgaydtvkgllpk-pkkTpflvsffiaqvvttcsgilsypfdtvrrrmmmqsgea--krqYkgTldcfvkiyqhegisSffrgafsnvlrgtggalvlvlydkikeffhidiggr--
+>guidseq
+-------------^---^^--------------^-^----------------^-^---^----^-----------------^-----------^--^----------------^-----^----^------^------^^-----------^----------^-^--------------^-^------^------------^---^---^-^-----------^--------------------^---^--------^----^---^^-^--------------^------^--------------------^----------
