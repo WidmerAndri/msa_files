@@ -7,438 +7,485 @@ output: html_document
 
 ```{r}
 
-      ##Version 3 original
+        ###VERSION 3 BETA
 
-
-
-library(tableHTML)
-library(htmltools)
 library(shiny)
-library(bslib)
-library(xml2)
+library(htmltools)
 library(reactable)
-library(htmlwidgets)
 library(plotly)
+library(tableHTML)
 
-# Load data from GitHub
-MSA_as_df_git=readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/MSA_as_df_git.rds"))
-msa_list=MSA_as_df_git[c(1:1096)]
-names(msa_list)=paste0("Group ", c(1:1096))
-scoring_table_test=read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/scoring_table_final_neu.csv"),sep=";")
+# Helper to load dataset depending on page
+load_data <- function(page) {
+  if (page == "page1") {
+    list(
+      msa_list = readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/MSA_as_df_git.rds"))[1:1096],
+      score_table = read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/scoring_table_final_neu.csv"), sep = ";"),
+      fasta_base = "https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/fastas_git/Modified_MSA_group_ClustalO_"
+    )
+  } else if (page == "page2") {
+    list(
+      msa_list = readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/1_MSA_df_SC_AT.rds")),
+      score_table = read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/scoring_table_SC_AT.csv"), sep = ";"),
+      fasta_base = "https://raw.githubusercontent.com/WidmerAndri/msa_files/main/fastas_SC_AT/MSA_group_ClustalO_"
+    )
+  } else if (page == "page3") {
+    list(
+      msa_list = readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/1_MSA_df_SC_HS.rds")),
+      score_table = read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/scoring_table_SC_HS.csv"), sep = ";"),
+      fasta_base = "https://raw.githubusercontent.com/WidmerAndri/msa_files/main/fastas_SC_HS/MSA_group_ClustalO_"
+    )
+  }
+}
 
-# UI
-ui=fluidPage(
-   withMathJax(),
-  titlePanel("Phosphosites in Orthologous Proteins of Yeast, Arabidopsis and Human"),
+# Main UI container (controlled by current_page)
+ui <- fluidPage(
+  uiOutput("main_ui"),
+  tags$head(
+  tags$script(type = "text/javascript", src = "https://polyfill.io/v3/polyfill.min.js?features=es6"),
+  tags$script(type = "text/javascript", src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js")
+)
 
-  HTML("
+)
+
+server <- function(input, output, session) {
+  current_page <- reactiveVal("start")
+
+  observeEvent(input$go_page1, current_page("page1"))
+  observeEvent(input$go_page2, current_page("page2"))
+  observeEvent(input$go_page3, current_page("page3"))
+  observeEvent(input$go_home, current_page("start"))
+
+  output$main_ui <- renderUI({
+    switch(current_page(),
+      "start" = start_page_ui(),
+      "page1" = page_ui("page1", "Yeast – Arabisopsis – Human"),
+      "page2" = page_ui("page2", "Yeast – Arabidopsis"),
+      "page3" = page_ui("page3", "Yeast – Human")
+    )
+  })
+
+  # dynamic server module
+  observeEvent(current_page(), {
+  page <- current_page()
+  if (page %in% c("page1", "page2", "page3")) {
+    page_server(id = page, page = page)
+  }
+})
+
+}
+
+# first page with Buttons
+start_page_ui <- function() {
+  fluidPage(
+    titlePanel("MSA Viewer - Finding Conserved Phosphorylated Sites"),
+    
+    
+    HTML("
 <p>This tool allows you to explore multiple sequence alignments (MSAs) and associated phosphosite annotations across <b>Homo sapiens</b>, <b>Saccharomyces cerevisiae</b>, and <b>Arabidopsis thaliana</b>.</p>
 
-<p>The phosphorylation information comes from EPSD and was downloaded on February 26, 2025.</p>
-<p>The orthology data comes from OMA and was downloaded on February 17, 2025.</p>
+<p>A scoring system was used to quantify all positions at which at least one sequence is phosphorylated. Two different scores were developed. Navigate to a subpage for further information.<p/>
 
-<p><b>Open in Jalview</b> to display the MSA (may take a few seconds). The guiding sequence uses <code>-</code> and <code>^</code> to show alignment positions with at least one phosphosite. Use Jalview's colour scheme <i>(Colour → By Annotation → Conservation)</i> for better insight.</p>
+<hr>
+Using the filter and search features takes quite some time for proper loading. Please be patient;)
+<hr>
+ 
+"),
+    
+    
+    br(),
+    p("I am looking for orthologous proteins in..."),
+    actionButton("go_page1", "...Human – Yeast – Arabidopsis", class = "btn-primary"),
+    br(), br(),
+    actionButton("go_page2", "...Yeast – Arabidopsis", class = "btn-success"),
+    br(), br(),
+    actionButton("go_page3", "...Yeast – Human", class = "btn-warning"),
+    br(), br(),
+    hr(),
+    p("In case of finding mistakes or having ideas for addtional features and upgrades → andri.widmer@unifr.ch")
+  )
+}
+
+# placeholder for each page
+page_ui <- function(id, title) {
+  ns <- NS(id)
+  fluidPage(
+    actionButton("go_home", "← Back to Menu"),
+    br(), br(),
+    h3(title),
+    uiOutput(ns("full_page"))
+  )
+}
+
+# Loading server logic for one page
+page_server <- function(id, page) {
+  moduleServer(id, function(input, output, session) {
+    ns <- session$ns
+    cat("Page_server activated for", page, "\n")
+
+    data <- load_data(page)
+    msa_list <- data$msa_list
+    score_table <- data$score_table
+    fasta_base <- data$fasta_base
+    names(msa_list) <- paste0("Group ", seq_along(msa_list))
+
+    get_group_number <- function(choice) {
+      as.numeric(gsub("Group ", "", choice))
+    }
+
+    summary_df_reactive <- reactive({
+      score_col <- input$score_choice
+      if (!(score_col %in% colnames(score_table))) score_col <- "Score1"
+
+      do.call(rbind, lapply(seq_along(msa_list), function(i) {
+        group_nr <- i
+        df <- msa_list[[i]]
+        alignment_length <- ncol(df) - 6
+        score_hits <- score_table[score_table$Group_Nr == group_nr & score_table[[score_col]] > 0, ]
+        num_phospho <- nrow(score_hits)
+        score_sum <- sum(score_hits[[score_col]])
+        avg_score <- if (num_phospho > 0) score_sum / num_phospho else NA
+        score_per_len <- score_sum / alignment_length
+        norm_phospho <- num_phospho / alignment_length
+
+        data.frame(
+          Group = paste0("Group ", group_nr),
+          Nr_P_Sites = num_phospho,
+          Rel_P_Sites = round(norm_phospho, 3),
+          Score_Sum = round(score_sum, 2),
+          Avg_Sco_P_Site = round(avg_score, 3),
+          Avg_Sco_Position = round(score_per_len, 3),
+          stringsAsFactors = FALSE
+        )
+      }))
+    })
+
+    output$summary_table <- renderReactable({
+      reactable(summary_df_reactive(), searchable = TRUE, striped = TRUE, highlight = TRUE)
+    })
+
+    output$score_plot <- renderPlotly({
+      df <- summary_df_reactive()
+      plot_ly(
+        data = df,
+        x = ~Rel_P_Sites,
+        y = ~Avg_Sco_P_Site,
+        type = "scatter",
+        mode = "markers",
+        size = ~Score_Sum,
+        text = ~Group,
+        marker = list(color = ~Avg_Sco_Position, colorscale = "Viridis", showscale = TRUE)
+      )
+    })
+
+    output$group_title <- renderUI({
+      req(input$msa_choice)
+      h4(paste0("Information for ", input$msa_choice))
+    })
+
+    output$group_stats <- renderUI({
+      req(input$msa_choice)
+      group_nr <- get_group_number(input$msa_choice)
+      score_col <- input$score_choice
+      if (!(score_col %in% colnames(score_table))) score_col <- "Score1"
+      df <- msa_list[[input$msa_choice]]
+      score_hits <- score_table[score_table$Group_Nr == group_nr & score_table[[score_col]] > 0, ]
+      num_phospho <- nrow(score_hits)
+      alignment_length <- ncol(df) - 6
+      normalized_phospho <- round(num_phospho / alignment_length, 3)
+      score_sum <- round(sum(score_hits[[score_col]]), 2)
+      avg_score_per_phospho <- if (num_phospho > 0) round(score_sum / num_phospho, 3) else NA
+      score_per_pos <- round(score_sum / alignment_length, 3)
+
+      HTML(paste0(
+        "<p><b>Group ", group_nr, " summary:</b><br>",
+        "- Phosphorylated positions: <b>", num_phospho, "</b><br>",
+        "- Normalized (per alignment length): <i>", normalized_phospho, "</i><br>",
+        "- Average Score per P-site: <i>", avg_score_per_phospho, "</i><br>",
+        "- Score per alignment position: <i>", score_per_pos, "</i></p>"
+      ))
+    })
+
+    output$search_results <- renderUI({
+      req(input$global_search)
+      search_term <- tolower(input$global_search)
+
+      matching_groups <- lapply(names(msa_list), function(group_name) {
+        df <- msa_list[[group_name]]
+        hits <- df[
+          grepl(search_term, tolower(df[[1]])) |
+          grepl(search_term, tolower(df[[2]])) |
+          grepl(search_term, tolower(df[[4]])),
+        ]
+        if (nrow(hits) > 0) return(group_name)
+        return(NULL)
+      })
+
+      matching_groups <- Filter(Negate(is.null), matching_groups)
+
+      if (length(matching_groups) == 0) {
+        return(HTML("<p><i>No matches found in any group.</i></p>"))
+      }
+
+      HTML(paste0(
+        "<p><b>Found in group(s):</b><br>",
+        paste0(lapply(matching_groups, function(g) {
+          paste0('<a href="#" onclick="Shiny.setInputValue(\'', ns("msa_choice"), '\', \'', g, '\', {priority: \'event\'})">', g, '</a>')
+        }), collapse = "<br>"),
+        "</p><p style='font-size: 0.9em; color: gray;'>Click to jump to group.</p>"
+      ))
+    })
+
+    output$jalview_link <- renderUI({
+      req(input$msa_choice)
+      group_nr <- get_group_number(input$msa_choice)
+      fasta_url <- URLencode(paste0(fasta_base, group_nr, ".fasta"))
+      jalview_url <- paste0("https://jalview.github.io/jalview-js/JalviewJS.html?open%20", fasta_url, "%20colour%20clustal")
+
+      tagList(
+        tags$a("Open in JalviewJS", href = jalview_url, target = "_blank",
+               style = "margin-right: 10px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;"),
+        actionButton(ns("open_modal"), "Open in Viewer",
+               style = "padding: 6px 12px; background-color: orange; color: white; border-radius: 5px; border: none;")
+      )
+    })
+
+    output$msa_table <- renderUI({
+      req(input$msa_choice)
+      df <- msa_list[[input$msa_choice]][, 1:5]
+
+      search_term <- input$global_search
+      if (!is.null(search_term) && search_term != "") {
+        for (col in 1:4) {
+          df[[col]] <- sapply(df[[col]], function(x) {
+            if (!is.na(x) && grepl(search_term, x, ignore.case = TRUE)) {
+              gsub(paste0("(", search_term, ")"), "<span style='background-color: yellow;'>\\1</span>", x, ignore.case = TRUE)
+            } else x
+          })
+        }
+      }
+
+      df[[5]] <- ifelse(
+        df[[5]] == "P-Sites from EPSD",
+        paste0('<div style="background-color: lightgreen;">', df[[5]], '</div>'),
+        paste0('<div style="background-color: lightcoral;">', df[[5]], '</div>')
+      )
+
+      tableHTML(df, widths = c(200, 150, 100, 400, 150), rownames = FALSE, escape = FALSE)
+    })
+
+    output$full_page <- renderUI({
+      tagList(
+        
+        help_text <- if (page == "page1") {
+  htmltools::HTML("<p><b>Open in Jalview</b> to display the MSA (may take a few seconds). The guiding sequence uses <code>-</code> and <code>^</code> to indicate alignment positions where at least one phosphosite is annotated. In Jalview, use <i>Colour → By Annotation → Conservation</i> for better insight.</p>
 
 <p>For easier identification of phosphosites, press <b>Open in Viewer</b>. The greener, the higher the score.</p>
 
-<p>In both JalviewJS and the Viewer, the alignment displays a mix of uppercase and lowercase letters. The uppercase letters (T, S, Y) indicate known phosphorylation sites, while the lowercase letters represent standard amino acids (a, c, d, etc.) or potential phosphorylation sites (t, s, y).</p>
-<p><sup>In case of finding mistakes → andri.widmer@unifr.ch<sup/></p>
+<p>In both JalviewJS and the Viewer, alignments use uppercase letters (T, S, Y) for confirmed phosphorylation sites, and lowercase (t, s, y) for potential ones. All other amino acids appear in lowercase (a, c, d, ...).</p>
+
+<p>The phosphorylation data comes from EPSD (as of February 26, 2025), and orthologs were derived from OMA (February 17, 2025).</p>
 
 <hr>
- 
 <h4>About the Scores</h4>
 
-<p><b>Score1</b> and <b>Score2</b> are conservation-based scores for phosphorylated sites, based on Valdar’s entropy framework (2002). They combine information on sequence variability, biochemical similarity, and gap content.</p>
+<p><b>Score1</b> and <b>Score2</b> quantify conservation and phospho-support for each alignment position, based on Valdar’s entropy framework (2002).</p>
 
 <p><b>Scoring formula:</b></p>
 <p style='font-size: 1.4em; text-align: center; margin: 1em 0;'>
   $$\\mathrm{Score} = (1 - t_{x})^{\\alpha} \\cdot (1 - r_{x})^{\\beta} \\cdot (1 - g_{x})^{\\gamma} \\cdot M_{1} \\cdot M_{2}$$
 </p>
 
+<script>
+  if (window.MathJax) MathJax.typeset();
+</script>
+
+
 <ul>
-  <li><b>t<sub>x</sub></b>: Normalized Shannon entropy of amino acid frequencies (sequence variability)</li>
-  <li><b>r<sub>x</sub></b>: Stereochemical diversity based on BLOSUM62 distances</li>
-  <li><b>g<sub>x</sub></b>: Gap fraction in the alignment column</li>
-  <li><b>α,β,γ</sub></b>: Parameters for the weighting of each variable</li>
-  <li><b>M<sub>1</sub></b>: Organism multiplicator (based on how many species show phosphorylation at that position)</li>
-  <li><b>M<sub>2</sub></b> (Score-specific):</li>
-  <ul style='margin-top: 5px;'>
-    <li><b>Score1</b>: Relative number of confirmed phosphorylations (Y, S, T)</li>
-    <li><b>Score2</b>: Relative number of all potential phosphorylations (Y, S, T and lowercase y, s, t)</li>
-  </ul>
+  <li><b>t<sub>x</sub></b>: Normalized entropy (sequence variability)</li>
+  <li><b>r<sub>x</sub></b>: Biochemical similarity (BLOSUM62)</li>
+  <li><b>g<sub>x</sub></b>: Gap fraction in alignment column</li>
+  <li><b>α, β, γ</b>: Weighting parameters</li>
+  <li><b>M₁</b>: Organism multiplicator:
+    <ul>
+      <li>1.0 = all 3 organisms phosphorylated</li>
+      <li>0.8 = 2 organisms phosphorylated</li>
+      <li>0.6 = 1 organism phosphorylated</li>
+    </ul>
+  </li>
+  <li><b>M₂</b>:
+    <ul>
+      <li><b>Score1</b>: fraction of confirmed sites (T, S, Y)</li>
+      <li><b>Score2</b>: fraction of all potential sites (T, S, Y, t, s, y)</li>
+    </ul>
+  </li>
 </ul>
-<p>The score values are between 0 and 1. Alignment positions with <b>NO</b> known phosphorylation score automatically 0.</p>
+
+<p>Scores range from 0 to 1. Positions with no phospho evidence receive 0.</p>
+<hr>")
+        } else {
+  htmltools::HTML("<p>The groups of orthologous proteins between the two species are collected here. Search or filter the data according to your desires. Two display options are available for the MSA.<p/>
+
+<p><b>Open in Jalview</b> to view the MSA. Alignment positions marked with <code>-</code> and <code>^</code> indicate phosphosite candidates. In Jalview, use <i>Colour → By Annotation → Conservation</i> for better visualization.</p>
+
+<p><b>Open in Viewer</b> to inspect phosphosite conservation interactively. Higher scores appear greener.</p>
+
+<p>Uppercase letters (T, S, Y) show confirmed phosphosites; lowercase letters (t, s, y) are potential ones. All other lowercase letters (a, g, v, ...) are not phosphorylated amino acids .</p>
+
+<p>Phosphorylation data: EPSD (Feb 26, 2025); Orthologs from OMA (Feb 17, 2025).</p>
+
 <hr>
-")
+<h4>About the Scores</h4>
 
-,
-  br(),
-  textInput("global_search", "Protein Search (Uniprot Acc., ID or other):", placeholder = "Search all groups "),
-  selectInput("msa_choice", "Select Group:", choices = names(msa_list), selectize = FALSE),
-  selectInput("score_choice", "Choose score for coloring:",choices = c("Score1", "Score2"),selected = "Score1"),
-  checkboxInput("show_summary", "Show Summary Table & Plot", value = FALSE),
-  reactableOutput("summary_table"),
-  uiOutput("search_results", container = div, class = "well"),
-  conditionalPanel(
-  condition = "input.show_summary == true",
-  fluidRow(
-    column(
-      width = 6,
-      style = "padding-right: 20px;",
-      h4("Group Summary Table"),
-      reactableOutput("summary_table")
-    ),
-    column(
-      width = 6,
-      style = "padding-left: 20px;",
-      h4("Phospho Score Scatter"),
-      plotlyOutput("score_plot", height = "400px")
-    )
-  )
-),
-  uiOutput("jalview_link"),
-  br(),
-  uiOutput("group_title"),
-  uiOutput("group_stats"),
-  htmlOutput("msa_table")
-)
+<p>Scores are based on Valdar’s entropy method (2002) and capture conservation, biochemical properties, and phospho-patterns.</p>
 
-# Server
-server = function(input, output, session) {
+<p><b>Scoring formula:</b></p>
+<p style='font-size: 1.4em; text-align: center; margin: 1em 0;'>
+  $$\\mathrm{Score} = (1 - t_{x})^{\\alpha} \\cdot (1 - r_{x})^{\\beta} \\cdot (1 - g_{x})^{\\gamma} \\cdot M_{1} \\cdot M_{2}$$
+</p>
 
-  get_group_number = function(choice) {
-    as.numeric(gsub("Group ", "", choice))
-  }
-summary_df_reactive = reactive({
-  score_col = input$score_choice
-  if (!(score_col %in% colnames(scoring_table_test))) score_col = "Score1"
-
-  do.call(rbind, lapply(seq_along(msa_list), function(i) {
-    group_nr = i
-    df = msa_list[[i]]
-    alignment_length = ncol(df) - 6
-
-    score_hits = scoring_table_test[
-      scoring_table_test$Group_Nr == group_nr & scoring_table_test[[score_col]] > 0, 
-    ]
-    num_phospho = nrow(score_hits)
-    score_sum = sum(score_hits[[score_col]])
-    avg_score = if (num_phospho > 0) score_sum / num_phospho else NA
-    score_per_len = score_sum / alignment_length
-    norm_phospho = num_phospho / alignment_length
-
-    data.frame(
-      Group = paste0("Group ", group_nr),
-      Nr_P_Sites = num_phospho,
-      Rel_P_Sites = round(norm_phospho, 3),
-      Score_Sum = round(score_sum, 2),
-      Avg_Sco_P_Site = round(avg_score, 3),
-      Avg_Sco_Position = round(score_per_len, 3),
-      stringsAsFactors = FALSE
-    )
-  }))
-})
+<script>
+  if (window.MathJax) MathJax.typeset();
+</script>
 
 
-    output$group_title = renderUI({
-    req(input$msa_choice)
-    h4(paste0("Information for ", input$msa_choice))
-  })
-    output$group_stats = renderUI({
-  req(input$msa_choice)
-  group_nr = get_group_number(input$msa_choice)
-  score_col = input$score_choice
-if (!(score_col %in% colnames(scoring_table_test))) score_col = "Score1"
+<ul>
+  <li><b>t<sub>x</sub></b>: Sequence variability (entropy)</li>
+  <li><b>r<sub>x</sub></b>: Biochemical diversity (BLOSUM62)</li>
+  <li><b>g<sub>x</sub></b>: Gap content</li>
+  <li><b>α, β, γ</b>: Weight parameters</li>
+  <li><b>M₁</b>: Organism multiplicator:
+    <ul>
+      <li>1.0 = both organisms phosphorylated</li>
+      <li>0.5 = one organism phosphorylated</li>
+    </ul>
+  </li>
+  <li><b>M₂</b>:
+    <ul>
+      <li><b>Score1</b>: confirmed sites only</li>
+      <li><b>Score2</b>: confirmed + potential</li>
+    </ul>
+  </li>
+</ul>
 
-  df = msa_list[[input$msa_choice]]
-
-  score_hits = scoring_table_test[
-    scoring_table_test$Group_Nr == group_nr & scoring_table_test$Score1 > 0, 
-  ]
-  num_phospho = nrow(score_hits)
-
-  alignment_length = ncol(df) - 6  
-
-  normalized_phospho = round(num_phospho / alignment_length, 3)
-
-score_sum = round(sum(score_hits[[score_col]]), 2)
-  avg_score_per_phospho = if (num_phospho > 0) round(score_sum / num_phospho, 3) else NA
-
-  score_per_pos = round(score_sum / alignment_length, 3)
-
-  HTML(paste0(
-    "<p><b>Group ", group_nr, " summary:</b><br>",
-    "- Phosphorylated positions: <b>", num_phospho, "</b><br>",
-    "- Normalized (per alignment length): <i>", normalized_phospho, " (", num_phospho, " / ", alignment_length, ")</i><br><br>",
-    "<b>Score summary:</b><br>",
-"<b>Sum of Scores (", score_col, "):</b> ",score_sum,"<br>",
-    "- Average Score per P-site: <i>", avg_score_per_phospho, "</i><br>",
-    "- Score per alignment position: <i>", score_per_pos, "</i></p>"
-  ))
-})
-
-  output$search_results = renderUI({
-  req(input$global_search)
-  search_term = tolower(input$global_search)
-
-  matching_groups = lapply(names(msa_list), function(group_name) {
-    df = msa_list[[group_name]]
-    hits = df[
-      grepl(search_term, tolower(df[[1]])) | 
-      grepl(search_term, tolower(df[[2]])) | 
-      grepl(search_term, tolower(df[[4]])), 
-    ]
-    if (nrow(hits) > 0) return(group_name)
-    return(NULL)
-  })
-
-  matching_groups = Filter(Negate(is.null), matching_groups)
-
-  if (length(matching_groups) == 0) {
-    return(HTML("<p><i>No matches found in any group.</i></p>"))
-  }
-
-  HTML(paste0(
-    "<p><b>Found in group(s):</b><br>",
-    paste0(lapply(matching_groups, function(g) {
-      paste0('<a href="#" onclick="Shiny.setInputValue(\'msa_choice\', \'', g, '\')">', g, '</a>')
-    }), collapse = "<br>"),
-    "</p><p style='font-size: 0.9em; color: gray;'>Click to jump to group.</p>"
-  ))
-})
-    output$msa_table = renderUI({
-  req(input$msa_choice)
-  df = msa_list[[input$msa_choice]]
-  df = df[, 1:5]
-
-  search_term = input$global_search
-
-  #Link in col 1
-  df[[1]] = sapply(df[[1]], function(prot) {
-    base = prot
-    if (search_term != "" && grepl(search_term, base, ignore.case = TRUE)) {
-      base = gsub(
-        paste0("(", search_term, ")"),
-        "<span style='background-color: yellow;'>\\1</span>",
-        base,
-        ignore.case = TRUE
-      )
-    }
-    paste0('<a href="https://www.uniprot.org/uniprotkb/', prot, '/entry" target="_blank">', base, '</a>')
-  })
-
-  #highligthing other cols
-  if (search_term != "") {
-    for (col in 2:4) {
-      df[[col]] = sapply(df[[col]], function(x) {
-        if (!is.na(x) && grepl(search_term, x, ignore.case = TRUE)) {
-          x = gsub(
-            paste0("(", search_term, ")"),
-            "<span style='background-color: yellow;'>\\1</span>",
-            x,
-            ignore.case = TRUE
-          )
-        }
-        return(x)
-      })
-    }
-  }
-
-  # coloring col 5 according to Information status
-  df[[5]] = ifelse(df[[5]] == "P-Sites from EPSD",
-    paste0('<div style="background-color: lightgreen;">', df[[5]], '</div>'),
-    paste0('<div style="background-color: lightcoral;">', df[[5]], '</div>')
-  )
-
-  tableHTML(df, widths = c(200, 150, 100, 400, 150), rownames = FALSE, escape = FALSE)
-})
-
-output$score_plot = renderPlotly({
-  summary_df=summary_df_reactive()
-  req(summary_df)
-
-  plot_ly(
-  data = summary_df,
-  x = ~jitter(Rel_P_Sites, amount = 0.005),
-  y = ~jitter(Avg_Sco_P_Site, amount = 0.005),
-  type = "scatter",
-  mode = "markers",
-  size = ~Score_Sum * 4,
-  text = ~paste0(
-    "<b>", Group, "</b><br>",
-    "P-Sites: ", Nr_P_Sites, "<br>",
-    "Norm P-Sites: ", Rel_P_Sites, "<br>",
-    "Score Sum: ", Score_Sum, "<br>",
-    "Avg Score: ", Avg_Sco_P_Site, "<br>",
-    "Score / Len: ", Avg_Sco_Position
-  ),
-  hoverinfo = "text",
-  marker = list(
-    color = ~Avg_Sco_Position,
-    colorscale = "Viridis",
-    showscale = TRUE,
-    colorbar = list(title = "Score / Len"),
-    opacity = 0.6,
-    line = list(width = 0.5, color = "#333")
-  )
-)%>%
-    layout(
-      xaxis = list(title = "Normalized P-Sites"),
-      yaxis = list(title = "Avg. Score per Site"),
-      title = "Group Overview (bubble = Score Sum)",
-      hovermode = "closest"
-    )
-})
-
-
-  output$jalview_link = renderUI({
-    req(input$msa_choice)
-    group_nr=get_group_number(input$msa_choice)
-    fasta_url=URLencode(paste0("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/fastas_git/Modified_MSA_group_ClustalO_", group_nr, ".fasta"))
-    colour_scheme = "annotation"  # or "clustal", "zappo", "taylor", "hydrophobicity", etc.
-    jalview_url=paste0("https://jalview.github.io/jalview-js/JalviewJS.html?open%20", fasta_url,"%20colour%20clustal")
-
-    
-    
-    tagList(
-      tags$a(
-        "Open in JalviewJS",
-        href=jalview_url,
-        target = "_blank",
-        style = "margin-right: 10px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;"
-      ),
-      actionButton(
-        "open_modal", "Open in Viewer",
-        style = "padding: 6px 12px; background-color: orange; color: white; border-radius: 5px; border: none;"
-      )
-    )
-  })
-  
-  observe({
-  req(input$global_search)
-  search_term = tolower(input$global_search)
-  
-  for (group in names(msa_list)) {
-    df = msa_list[[group]]
-if (any(
-  grepl(search_term, tolower(df[[1]])) |
-  grepl(search_term, tolower(df[[2]])) |
-  grepl(search_term, tolower(df[[4]]))
-)) {
-  updateSelectInput(session, "msa_choice", selected = group)
-  break
-}
-
-  }
-})
-
-  observeEvent(input$open_modal, {
-    showModal(modalDialog(
-      title = paste("MSA Viewer –", input$msa_choice),
-      checkboxInput("show_realpos_modal", "Show Sequence Positions", value = FALSE),
-      reactableOutput("modal_viewer"),
-      size = "l",
-      easyClose = TRUE
-    ))
-  })
-
-  # Modal-Viewer
-  output$modal_viewer = renderReactable({
-    req(input$msa_choice)
-
-    group_nr = get_group_number(input$msa_choice)
-    msa_df = msa_list[[group_nr]]
-
-    msa_df_msa = msa_df[, 6:(ncol(msa_df)-1)]
-    colnames(msa_df_msa) = as.character(1:ncol(msa_df_msa))
-    if (isTRUE(input$show_realpos_modal)) {
-  msa_seq_only = msa_df[, 6:(ncol(msa_df)-1)]
-  msa_with_pos=msa_seq_only 
-
-
-  for (i in 1:nrow(msa_seq_only)) {
-    real_pos = 1
-    for (j in 1:ncol(msa_seq_only)) {
-      aa = msa_seq_only[i,j]
-      if (aa != "-") {
-        msa_with_pos[i,j] = htmltools::HTML(paste0(aa, "<sub>", real_pos, "</sub>"))
+<p>Scores vary from 0 to 1. </p>
+<hr>")
+},
         
+        textInput(ns("global_search"), "Protein Search:", placeholder = "Search all groups"),
+        uiOutput(ns("search_results"), container = div, class = "well"),
+        selectInput(ns("msa_choice"), "Select Group:", choices = names(msa_list), selectize = FALSE),
+        selectInput(ns("score_choice"), "Choose score for coloring:", choices = c("Score1", "Score2"), selected = "Score1"),
+        checkboxInput(ns("show_summary"), "Show Summary Table & Plot", value = FALSE),
+        uiOutput(ns("summary_ui")),
+        uiOutput(ns("jalview_link")),
+        br(),
+        uiOutput(ns("group_title")),
+        uiOutput(ns("group_stats")),
+        htmlOutput(ns("msa_table"))
+      )
+    })
+    
+    output$summary_ui <- renderUI({
+  if (isTruthy(input$show_summary)) {
+    fluidRow(
+      column(6, h4("Group Summary Table"), reactableOutput(ns("summary_table"))),
+      column(6, h4("Phospho Score Scatter"), plotlyOutput(ns("score_plot"), height = "400px"))
+    )
+  } else {
+    NULL
+  }
+})
 
-        real_pos = real_pos + 1
-      } else {
-          msa_with_pos[i,j]="-"
+    
+    observeEvent(input$open_modal, {
+      showModal(modalDialog(
+        title = paste("MSA Viewer –", input$msa_choice),
+        checkboxInput(ns("show_realpos_modal"), "Show Sequence Positions", value = FALSE),
+        reactableOutput(ns("modal_viewer")),
+        size = "l",
+        easyClose = TRUE
+      ))
+    })
+
+    output$modal_viewer <- renderReactable({
+  req(input$msa_choice)
+  group_nr <- get_group_number(input$msa_choice)
+  msa_df <- msa_list[[group_nr]]
+  msa_df_msa <- msa_df[, 6:(ncol(msa_df) - 1)]
+  colnames(msa_df_msa) <- as.character(1:ncol(msa_df_msa))
+
+  # optional real positions
+  if (isTRUE(input$show_realpos_modal)) {
+    msa_seq_only <- msa_df[, 6:(ncol(msa_df) - 1)]
+    msa_with_pos <- msa_seq_only
+
+    for (i in 1:nrow(msa_seq_only)) {
+      real_pos <- 1
+      for (j in 1:ncol(msa_seq_only)) {
+        aa <- msa_seq_only[i, j]
+        if (aa != "-") {
+          msa_with_pos[i, j] <- htmltools::HTML(paste0(aa, "<sub>", real_pos, "</sub>"))
+          real_pos <- real_pos + 1
+        } else {
+          msa_with_pos[i, j] <- "-"
+        }
       }
     }
+
+    colnames(msa_with_pos) <- colnames(msa_df_msa)
+    msa_with_pos$Protein <- msa_df[, 1]
+    msa_df_msa <- msa_with_pos[, c("Protein", setdiff(names(msa_with_pos), "Protein"))]
+  } else {
+    msa_df_msa$Protein <- msa_df[, 1]
+    msa_df_msa <- msa_df_msa[, c("Protein", setdiff(names(msa_df_msa), "Protein"))]
   }
 
-  colnames(msa_with_pos)=colnames(msa_df_msa)
-  msa_with_pos$Protein=msa_df[, 1]
-  msa_df_msa=msa_with_pos[,c("Protein",setdiff(names(msa_with_pos),"Protein"))]
+  # loading score data
+  selected_score <- input$score_choice
+  score_colname <- if (selected_score %in% colnames(score_table)) selected_score else "Score1"
+  score_positions <- score_table[score_table$Group_Nr == group_nr, c("Position", score_colname)]
+  score_row <- setNames(score_positions[[score_colname]], as.character(score_positions$Position))
 
-} else {
-  msa_df_msa = msa_df[, 6:(ncol(msa_df) - 1)]
-  msa_df_msa$Protein = msa_df[, 1]
-  msa_df_msa = msa_df_msa[, c("Protein", setdiff(names(msa_df_msa), "Protein"))]
-  colnames(msa_df_msa)[-1]=as.character(1:(ncol(msa_df_msa)-1))
-}
-
-
-    selected_score = input$score_choice
-score_colname = if (selected_score %in% colnames(scoring_table_test)) selected_score else "Score1"
-
-score_positions = scoring_table_test[scoring_table_test$Group_Nr == group_nr, c("Position", score_colname)]
-score_positions = round(score_positions, 2)
-score_row = setNames(score_positions[[score_colname]], as.character(score_positions$Position))
-
-
-    # adding score row
-    score_row_for_table=as.list(rep(NA,ncol(msa_df_msa)))
-    names(score_row_for_table)=names(msa_df_msa)
-    for (pos in names(score_row)) {
-      if (pos %in% names(score_row_for_table)) {
-        score_row_for_table[[pos]]=round(score_row[[pos]], 2)
-      }
+  # adding scores as row (modal viewer)
+  score_row_for_table <- as.list(rep(NA, ncol(msa_df_msa)))
+  names(score_row_for_table) <- colnames(msa_df_msa)
+  for (pos in names(score_row)) {
+    if (pos %in% names(score_row_for_table)) {
+      score_row_for_table[[pos]] <- paste0("<sub>", round(score_row[[pos]], 2), "</sub>")
     }
-    score_row_for_table$Protein="Score"
-    msa_df_msa=rbind(msa_df_msa,score_row_for_table)
-
-    value_to_color=colorRampPalette(c("#ffffe0","#1d8c3f"))(100)
-    columns_list=list()
-    for (colname in colnames(msa_df_msa)) {
-      if (colname != "Protein") {
-  score_val = as.numeric(score_row[[colname]])
-  color = if (!is.na(score_val)) value_to_color[pmin(100, pmax(1, as.integer(score_val * 99) + 1))] else "#ffffff"
-
-  columns_list[[colname]] = colDef(
-    name = NULL,
-    html=TRUE,
-    minWidth = if (isTRUE(input$show_realpos_modal)) 55 else 35,
-maxWidth = if (isTRUE(input$show_realpos_modal)) 60 else 40,
-    align = "center",
-    style = list(background = color, height = "30px", lineHeight = "30px", textAlign = "center"),
-    cell = function(value) {
-  if (is.na(value)) return("")
-  if (value == "Score") return(tags$b("Score"))
-
-  if (input$show_realpos_modal && grepl("^[A-Za-z]\\([0-9]+\\)$", value)) {
-    aa <- sub("\\(.*\\)", "", value)
-    pos <- sub(".*\\((.*)\\)", "\\1", value)
-    return(HTML(paste0(aa, "<sub>", pos, "</sub>")))
   }
+  score_row_for_table$Protein <- "Score"
+  msa_df_msa <- rbind(msa_df_msa, score_row_for_table)
 
-  return(value)
-}
+  # calculating colors
+  value_to_color <- colorRampPalette(c("#ffffe0", "#1d8c3f"))(100)
+  columns_list <- list()
 
-  )
-}
- else {
-        columns_list$Protein = colDef(
-          name = "Protein",
-          sticky = "left",
-          minWidth = 200,
-          cell = function(value) {
-            if (is.na(value)) return("")
-            if (value == "Score") return(tags$b("Score"))
+  for (colname in colnames(msa_df_msa)) {
+    if (colname != "Protein") {
+      score_val <- as.numeric(score_row[[colname]])
+      color <- if (!is.na(score_val)) value_to_color[pmin(100, pmax(1, as.integer(score_val * 99) + 1))] else "#ffffff"
+
+      columns_list[[colname]] <- colDef(
+        html = TRUE,
+        minWidth = 35,
+        align = "center",
+        style = list(background = color, textAlign = "center"),
+        cell = function(value) {
+          if (is.na(value)) return("")
+          return(HTML(value))
+        }
+      )
+    } else {
+      columns_list[[colname]] <- colDef(
+        name = "Protein",
+        sticky = "left",
+        minWidth = 200,
+        cell = function(value) {
+          if (value == "Score") {
+            return(tags$b("Score"))
+          } else {
             return(htmltools::tags$a(
               href = paste0("https://www.uniprot.org/uniprotkb/", value, "/entry"),
               target = "_blank",
@@ -446,53 +493,26 @@ maxWidth = if (isTRUE(input$show_realpos_modal)) 60 else 40,
               value
             ))
           }
-        )
-      }
-    }
-for (d in 2:(ncol(msa_df_msa))){
-    msa_df_msa[nrow(msa_df_msa),d]=
-    HTML(paste0("<sub>",msa_df_msa[nrow(msa_df_msa),d], "</sub>"))
-}
-    
-    reactable(
-      msa_df_msa,
-      columns = columns_list,
-      bordered = TRUE,
-      highlight = TRUE,
-      compact = TRUE,
-      defaultColDef = colDef(align = "center")
-    )
-  })
-  output$summary_table = renderReactable({
-    summary_df=summary_df_reactive()
-  reactable(
-    summary_df,
-    searchable = TRUE,
-    highlight = TRUE,
-    striped = TRUE,
-    defaultSorted = "Score_Sum",
-    defaultSortOrder = "desc",
-    columns = list(
-      Group = colDef(
-        name = "Group",
-        cell = function(value) {
-          # Klickbare Gruppe
-          htmltools::tags$a(
-            href = "#",
-            onclick = paste0("Shiny.setInputValue('msa_choice', '", value, "', {priority: 'event'})"),
-            style = "text-decoration: none; font-weight: bold; color: #007bff;",
-            value
-          )
         }
       )
-    )
+    }
+  }
+
+  reactable(
+    msa_df_msa,
+    columns = columns_list,
+    bordered = TRUE,
+    highlight = TRUE,
+    compact = TRUE,
+    defaultColDef = colDef(align = "center")
   )
 })
 
+  })
 }
 
-shinyApp(ui, server)
 
+shinyApp(ui, server)
 
 
 ```
