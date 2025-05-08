@@ -7,7 +7,7 @@ output: html_document
 
 ```{r}
 
-        ###VERSION 3 BETA
+        ###VERSION 4
 
 library(shiny)
 library(htmltools)
@@ -16,30 +16,30 @@ library(plotly)
 library(tableHTML)
 
 # Helper to load dataset depending on page
-load_data <- function(page) {
+load_data = function(page) {
   if (page == "page1") {
     list(
       msa_list = readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/MSA_as_df_git.rds"))[1:1096],
-      score_table = read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/scoring_table_final_neu.csv"), sep = ";"),
+      score_table = read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/scoring_table_SC_AT_HS_git.csv"), sep = ";"),
       fasta_base = "https://raw.githubusercontent.com/WidmerAndri/msa_files/refs/heads/main/fastas_git/Modified_MSA_group_ClustalO_"
     )
   } else if (page == "page2") {
     list(
       msa_list = readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/1_MSA_df_SC_AT.rds")),
-      score_table = read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/scoring_table_SC_AT.csv"), sep = ";"),
+      score_table = read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/scoring_table_SC_AT_git.csv"), sep = ";"),
       fasta_base = "https://raw.githubusercontent.com/WidmerAndri/msa_files/main/fastas_SC_AT/MSA_group_ClustalO_"
     )
   } else if (page == "page3") {
     list(
       msa_list = readRDS(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/1_MSA_df_SC_HS.rds")),
-      score_table = read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/scoring_table_SC_HS.csv"), sep = ";"),
+      score_table = read.csv(url("https://raw.githubusercontent.com/WidmerAndri/msa_files/main/scoring_table_SC_HS_git.csv"), sep = ";"),
       fasta_base = "https://raw.githubusercontent.com/WidmerAndri/msa_files/main/fastas_SC_HS/MSA_group_ClustalO_"
     )
   }
 }
 
 # Main UI container (controlled by current_page)
-ui <- fluidPage(
+ui = fluidPage(
   uiOutput("main_ui"),
   tags$head(
   tags$script(type = "text/javascript", src = "https://polyfill.io/v3/polyfill.min.js?features=es6"),
@@ -48,15 +48,15 @@ ui <- fluidPage(
 
 )
 
-server <- function(input, output, session) {
-  current_page <- reactiveVal("start")
+server = function(input, output, session) {
+  current_page = reactiveVal("start")
 
   observeEvent(input$go_page1, current_page("page1"))
   observeEvent(input$go_page2, current_page("page2"))
   observeEvent(input$go_page3, current_page("page3"))
   observeEvent(input$go_home, current_page("start"))
 
-  output$main_ui <- renderUI({
+  output$main_ui = renderUI({
     switch(current_page(),
       "start" = start_page_ui(),
       "page1" = page_ui("page1", "Yeast – Arabisopsis – Human"),
@@ -67,7 +67,7 @@ server <- function(input, output, session) {
 
   # dynamic server module
   observeEvent(current_page(), {
-  page <- current_page()
+  page = current_page()
   if (page %in% c("page1", "page2", "page3")) {
     page_server(id = page, page = page)
   }
@@ -76,7 +76,7 @@ server <- function(input, output, session) {
 }
 
 # first page with Buttons
-start_page_ui <- function() {
+start_page_ui = function() {
   fluidPage(
     titlePanel("MSA Viewer - Finding Conserved Phosphorylated Sites"),
     
@@ -87,8 +87,7 @@ start_page_ui <- function() {
 <p>A scoring system was used to quantify all positions at which at least one sequence is phosphorylated. Two different scores were developed. Navigate to a subpage for further information.<p/>
 
 <hr>
-Using the filter and search features takes quite some time for proper loading. Please be patient;)
-<hr>
+
  
 "),
     
@@ -107,8 +106,8 @@ Using the filter and search features takes quite some time for proper loading. P
 }
 
 # placeholder for each page
-page_ui <- function(id, title) {
-  ns <- NS(id)
+page_ui = function(id, title) {
+  ns = NS(id)
   fluidPage(
     actionButton("go_home", "← Back to Menu"),
     br(), br(),
@@ -118,35 +117,35 @@ page_ui <- function(id, title) {
 }
 
 # Loading server logic for one page
-page_server <- function(id, page) {
+page_server = function(id, page) {
   moduleServer(id, function(input, output, session) {
-    ns <- session$ns
+    ns = session$ns
     cat("Page_server activated for", page, "\n")
 
-    data <- load_data(page)
-    msa_list <- data$msa_list
-    score_table <- data$score_table
-    fasta_base <- data$fasta_base
-    names(msa_list) <- paste0("Group ", seq_along(msa_list))
+    data = load_data(page)
+    msa_list = data$msa_list
+    score_table = data$score_table
+    fasta_base = data$fasta_base
+    names(msa_list) = paste0("Group ", seq_along(msa_list))
 
-    get_group_number <- function(choice) {
+    get_group_number = function(choice) {
       as.numeric(gsub("Group ", "", choice))
     }
 
-    summary_df_reactive <- reactive({
-      score_col <- input$score_choice
-      if (!(score_col %in% colnames(score_table))) score_col <- "Score1"
+    summary_df_reactive = reactive({
+      score_col = input$score_choice
+      if (!(score_col %in% colnames(score_table))) score_col = "Score1"
 
       do.call(rbind, lapply(seq_along(msa_list), function(i) {
-        group_nr <- i
-        df <- msa_list[[i]]
-        alignment_length <- ncol(df) - 6
-        score_hits <- score_table[score_table$Group_Nr == group_nr & score_table[[score_col]] > 0, ]
-        num_phospho <- nrow(score_hits)
-        score_sum <- sum(score_hits[[score_col]])
-        avg_score <- if (num_phospho > 0) score_sum / num_phospho else NA
-        score_per_len <- score_sum / alignment_length
-        norm_phospho <- num_phospho / alignment_length
+        group_nr = i
+        df = msa_list[[i]]
+        alignment_length = ncol(df) - 6
+        score_hits = score_table[score_table$Group_Nr == group_nr & score_table[[score_col]] > 0, ]
+        num_phospho = nrow(score_hits)
+        score_sum = sum(score_hits[[score_col]])
+        avg_score = if (num_phospho > 0) score_sum / num_phospho else NA
+        score_per_len = score_sum / alignment_length
+        norm_phospho = num_phospho / alignment_length
 
         data.frame(
           Group = paste0("Group ", group_nr),
@@ -160,12 +159,12 @@ page_server <- function(id, page) {
       }))
     })
 
-    output$summary_table <- renderReactable({
+    output$summary_table = renderReactable({
       reactable(summary_df_reactive(), searchable = TRUE, striped = TRUE, highlight = TRUE)
     })
 
-    output$score_plot <- renderPlotly({
-      df <- summary_df_reactive()
+    output$score_plot = renderPlotly({
+      df = summary_df_reactive()
       plot_ly(
         data = df,
         x = ~Rel_P_Sites,
@@ -178,24 +177,24 @@ page_server <- function(id, page) {
       )
     })
 
-    output$group_title <- renderUI({
+    output$group_title = renderUI({
       req(input$msa_choice)
       h4(paste0("Information for ", input$msa_choice))
     })
 
-    output$group_stats <- renderUI({
+    output$group_stats = renderUI({
       req(input$msa_choice)
-      group_nr <- get_group_number(input$msa_choice)
-      score_col <- input$score_choice
-      if (!(score_col %in% colnames(score_table))) score_col <- "Score1"
-      df <- msa_list[[input$msa_choice]]
-      score_hits <- score_table[score_table$Group_Nr == group_nr & score_table[[score_col]] > 0, ]
-      num_phospho <- nrow(score_hits)
-      alignment_length <- ncol(df) - 6
-      normalized_phospho <- round(num_phospho / alignment_length, 3)
-      score_sum <- round(sum(score_hits[[score_col]]), 2)
-      avg_score_per_phospho <- if (num_phospho > 0) round(score_sum / num_phospho, 3) else NA
-      score_per_pos <- round(score_sum / alignment_length, 3)
+      group_nr = get_group_number(input$msa_choice)
+      score_col = input$score_choice
+      if (!(score_col %in% colnames(score_table))) score_col = "Score1"
+      df = msa_list[[input$msa_choice]]
+      score_hits = score_table[score_table$Group_Nr == group_nr & score_table[[score_col]] > 0, ]
+      num_phospho = nrow(score_hits)
+      alignment_length = ncol(df) - 6
+      normalized_phospho = round(num_phospho / alignment_length, 3)
+      score_sum = round(sum(score_hits[[score_col]]), 2)
+      avg_score_per_phospho = if (num_phospho > 0) round(score_sum / num_phospho, 3) else NA
+      score_per_pos = round(score_sum / alignment_length, 3)
 
       HTML(paste0(
         "<p><b>Group ", group_nr, " summary:</b><br>",
@@ -206,13 +205,13 @@ page_server <- function(id, page) {
       ))
     })
 
-    output$search_results <- renderUI({
+    output$search_results = renderUI({
       req(input$global_search)
-      search_term <- tolower(input$global_search)
+      search_term = tolower(input$global_search)
 
-      matching_groups <- lapply(names(msa_list), function(group_name) {
-        df <- msa_list[[group_name]]
-        hits <- df[
+      matching_groups = lapply(names(msa_list), function(group_name) {
+        df = msa_list[[group_name]]
+        hits = df[
           grepl(search_term, tolower(df[[1]])) |
           grepl(search_term, tolower(df[[2]])) |
           grepl(search_term, tolower(df[[4]])),
@@ -221,7 +220,7 @@ page_server <- function(id, page) {
         return(NULL)
       })
 
-      matching_groups <- Filter(Negate(is.null), matching_groups)
+      matching_groups = Filter(Negate(is.null), matching_groups)
 
       if (length(matching_groups) == 0) {
         return(HTML("<p><i>No matches found in any group.</i></p>"))
@@ -236,11 +235,11 @@ page_server <- function(id, page) {
       ))
     })
 
-    output$jalview_link <- renderUI({
+    output$jalview_link = renderUI({
       req(input$msa_choice)
-      group_nr <- get_group_number(input$msa_choice)
-      fasta_url <- URLencode(paste0(fasta_base, group_nr, ".fasta"))
-      jalview_url <- paste0("https://jalview.github.io/jalview-js/JalviewJS.html?open%20", fasta_url, "%20colour%20clustal")
+      group_nr = get_group_number(input$msa_choice)
+      fasta_url = URLencode(paste0(fasta_base, group_nr, ".fasta"))
+      jalview_url = paste0("https://jalview.github.io/jalview-js/JalviewJS.html?open%20", fasta_url, "%20colour%20clustal")
 
       tagList(
         tags$a("Open in JalviewJS", href = jalview_url, target = "_blank",
@@ -250,14 +249,14 @@ page_server <- function(id, page) {
       )
     })
 
-    output$msa_table <- renderUI({
+    output$msa_table = renderUI({
       req(input$msa_choice)
-      df <- msa_list[[input$msa_choice]][, 1:5]
+      df = msa_list[[input$msa_choice]][, 1:5]
 
-      search_term <- input$global_search
+      search_term = input$global_search
       if (!is.null(search_term) && search_term != "") {
         for (col in 1:4) {
-          df[[col]] <- sapply(df[[col]], function(x) {
+          df[[col]] = sapply(df[[col]], function(x) {
             if (!is.na(x) && grepl(search_term, x, ignore.case = TRUE)) {
               gsub(paste0("(", search_term, ")"), "<span style='background-color: yellow;'>\\1</span>", x, ignore.case = TRUE)
             } else x
@@ -265,7 +264,7 @@ page_server <- function(id, page) {
         }
       }
 
-      df[[5]] <- ifelse(
+      df[[5]] = ifelse(
         df[[5]] == "P-Sites from EPSD",
         paste0('<div style="background-color: lightgreen;">', df[[5]], '</div>'),
         paste0('<div style="background-color: lightcoral;">', df[[5]], '</div>')
@@ -274,10 +273,10 @@ page_server <- function(id, page) {
       tableHTML(df, widths = c(200, 150, 100, 400, 150), rownames = FALSE, escape = FALSE)
     })
 
-    output$full_page <- renderUI({
+    output$full_page = renderUI({
       tagList(
         
-        help_text <- if (page == "page1") {
+        help_text = if (page == "page1") {
   htmltools::HTML("<p><b>Open in Jalview</b> to display the MSA (may take a few seconds). The guiding sequence uses <code>-</code> and <code>^</code> to indicate alignment positions where at least one phosphosite is annotated. In Jalview, use <i>Colour → By Annotation → Conservation</i> for better insight.</p>
 
 <p>For easier identification of phosphosites, press <b>Open in Viewer</b>. The greener, the higher the score.</p>
@@ -386,7 +385,7 @@ page_server <- function(id, page) {
       )
     })
     
-    output$summary_ui <- renderUI({
+    output$summary_ui = renderUI({
   if (isTruthy(input$show_summary)) {
     fluidRow(
       column(6, h4("Group Summary Table"), reactableOutput(ns("summary_table"))),
@@ -408,66 +407,66 @@ page_server <- function(id, page) {
       ))
     })
 
-    output$modal_viewer <- renderReactable({
+    output$modal_viewer = renderReactable({
   req(input$msa_choice)
-  group_nr <- get_group_number(input$msa_choice)
-  msa_df <- msa_list[[group_nr]]
-  msa_df_msa <- msa_df[, 6:(ncol(msa_df) - 1)]
-  colnames(msa_df_msa) <- as.character(1:ncol(msa_df_msa))
+  group_nr = get_group_number(input$msa_choice)
+  msa_df = msa_list[[group_nr]]
+  msa_df_msa = msa_df[, 6:(ncol(msa_df) - 1)]
+  colnames(msa_df_msa) = as.character(1:ncol(msa_df_msa))
 
   # optional real positions
   if (isTRUE(input$show_realpos_modal)) {
-    msa_seq_only <- msa_df[, 6:(ncol(msa_df) - 1)]
-    msa_with_pos <- msa_seq_only
+    msa_seq_only = msa_df[, 6:(ncol(msa_df) - 1)]
+    msa_with_pos = msa_seq_only
 
     for (i in 1:nrow(msa_seq_only)) {
-      real_pos <- 1
+      real_pos = 1
       for (j in 1:ncol(msa_seq_only)) {
-        aa <- msa_seq_only[i, j]
+        aa = msa_seq_only[i, j]
         if (aa != "-") {
-          msa_with_pos[i, j] <- htmltools::HTML(paste0(aa, "<sub>", real_pos, "</sub>"))
-          real_pos <- real_pos + 1
+          msa_with_pos[i, j] = htmltools::HTML(paste0(aa, "<sub>", real_pos, "</sub>"))
+          real_pos = real_pos + 1
         } else {
-          msa_with_pos[i, j] <- "-"
+          msa_with_pos[i, j] = "-"
         }
       }
     }
 
-    colnames(msa_with_pos) <- colnames(msa_df_msa)
-    msa_with_pos$Protein <- msa_df[, 1]
-    msa_df_msa <- msa_with_pos[, c("Protein", setdiff(names(msa_with_pos), "Protein"))]
+    colnames(msa_with_pos) = colnames(msa_df_msa)
+    msa_with_pos$Protein = msa_df[, 1]
+    msa_df_msa = msa_with_pos[, c("Protein", setdiff(names(msa_with_pos), "Protein"))]
   } else {
-    msa_df_msa$Protein <- msa_df[, 1]
-    msa_df_msa <- msa_df_msa[, c("Protein", setdiff(names(msa_df_msa), "Protein"))]
+    msa_df_msa$Protein = msa_df[, 1]
+    msa_df_msa = msa_df_msa[, c("Protein", setdiff(names(msa_df_msa), "Protein"))]
   }
 
   # loading score data
-  selected_score <- input$score_choice
-  score_colname <- if (selected_score %in% colnames(score_table)) selected_score else "Score1"
-  score_positions <- score_table[score_table$Group_Nr == group_nr, c("Position", score_colname)]
-  score_row <- setNames(score_positions[[score_colname]], as.character(score_positions$Position))
+  selected_score = input$score_choice
+  score_colname = if (selected_score %in% colnames(score_table)) selected_score else "Score1"
+  score_positions = score_table[score_table$Group_Nr == group_nr, c("Position", score_colname)]
+  score_row = setNames(score_positions[[score_colname]], as.character(score_positions$Position))
 
   # adding scores as row (modal viewer)
-  score_row_for_table <- as.list(rep(NA, ncol(msa_df_msa)))
-  names(score_row_for_table) <- colnames(msa_df_msa)
+  score_row_for_table = as.list(rep(NA, ncol(msa_df_msa)))
+  names(score_row_for_table) = colnames(msa_df_msa)
   for (pos in names(score_row)) {
     if (pos %in% names(score_row_for_table)) {
-      score_row_for_table[[pos]] <- paste0("<sub>", round(score_row[[pos]], 2), "</sub>")
+      score_row_for_table[[pos]] = paste0("<sub>", round(score_row[[pos]], 2), "</sub>")
     }
   }
-  score_row_for_table$Protein <- "Score"
-  msa_df_msa <- rbind(msa_df_msa, score_row_for_table)
+  score_row_for_table$Protein = "Score"
+  msa_df_msa = rbind(msa_df_msa, score_row_for_table)
 
   # calculating colors
-  value_to_color <- colorRampPalette(c("#ffffe0", "#1d8c3f"))(100)
-  columns_list <- list()
+  value_to_color = colorRampPalette(c("#ffffe0", "#1d8c3f"))(100)
+  columns_list = list()
 
   for (colname in colnames(msa_df_msa)) {
     if (colname != "Protein") {
-      score_val <- as.numeric(score_row[[colname]])
-      color <- if (!is.na(score_val)) value_to_color[pmin(100, pmax(1, as.integer(score_val * 99) + 1))] else "#ffffff"
+      score_val = as.numeric(score_row[[colname]])
+      color = if (!is.na(score_val)) value_to_color[pmin(100, pmax(1, as.integer(score_val * 99) + 1))] else "#ffffff"
 
-      columns_list[[colname]] <- colDef(
+      columns_list[[colname]] = colDef(
         html = TRUE,
         minWidth = 35,
         align = "center",
@@ -478,7 +477,7 @@ page_server <- function(id, page) {
         }
       )
     } else {
-      columns_list[[colname]] <- colDef(
+      columns_list[[colname]] = colDef(
         name = "Protein",
         sticky = "left",
         minWidth = 200,
@@ -516,4 +515,3 @@ shinyApp(ui, server)
 
 
 ```
-
