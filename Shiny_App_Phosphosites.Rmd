@@ -356,7 +356,7 @@ page_server = function(id, page) {
   <li><b>M₁</b>: Organism multiplicator:
     <ul>
       <li>1.0 = both organisms phosphorylated</li>
-      <li>0.5 = one organism phosphorylated</li>
+      <li>0.6 = one organism phosphorylated</li>
     </ul>
   </li>
   <li><b>M₂</b>:
