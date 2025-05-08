@@ -301,7 +301,7 @@ page_server = function(id, page) {
 
 
 <ul>
-  <li><b>t<sub>x</sub></b>: Normalized entropy (sequence variability)</li>
+  <li><b>t<sub>x</sub></b>: Normalized entropy (Relative von Neumann Entropy)</li>
   <li><b>r<sub>x</sub></b>: Biochemical similarity (BLOSUM62)</li>
   <li><b>g<sub>x</sub></b>: Gap fraction in alignment column</li>
   <li><b>α, β, γ</b>: Weighting parameters</li>
@@ -349,7 +349,7 @@ page_server = function(id, page) {
 
 
 <ul>
-  <li><b>t<sub>x</sub></b>: Sequence variability (entropy)</li>
+  <li><b>t<sub>x</sub></b>: Sequence variability (Relative von Neumann Entropy)</li>
   <li><b>r<sub>x</sub></b>: Biochemical diversity (BLOSUM62)</li>
   <li><b>g<sub>x</sub></b>: Gap content</li>
   <li><b>α, β, γ</b>: Weight parameters</li>
