@@ -167,8 +167,8 @@ page_server = function(id, page) {
       df = summary_df_reactive()
       plot_ly(
         data = df,
-        x = ~Rel_P_Sites,
-        y = ~Avg_Sco_P_Site,
+        x = ~jitter(Rel_P_Sites, amount = 0.005),
+        y = ~jitter(Avg_Sco_P_Site, amount = 0.005),
         type = "scatter",
         mode = "markers",
         size = ~Score_Sum,
