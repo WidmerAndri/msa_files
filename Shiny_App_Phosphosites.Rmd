@@ -469,12 +469,12 @@ page_server = function(id, page) {
 
   for (colname in colnames(msa_df_msa)) {
     if (colname != "Protein") {
-      score_val = as.numeric(score_row[[colname]])
+      score_val =as.numeric(score_row[[colname]])
       color = if (!is.na(score_val)) value_to_color[pmin(100, pmax(1, as.integer(score_val * 99) + 1))] else "#ffffff"
 
       columns_list[[colname]] = colDef(
         html = TRUE,
-        minWidth = 35,
+        minWidth = 45,
         align = "center",
         style = list(background = color, textAlign = "center"),
         cell = function(value) {
