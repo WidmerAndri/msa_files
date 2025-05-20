@@ -174,7 +174,11 @@ page_server = function(id, page) {
         size = ~Score_Sum,
         text = ~Group,
         marker = list(color = ~Avg_Sco_Position, colorscale = "Viridis", showscale = TRUE)
-      )
+      )%>%
+  layout(
+    xaxis = list(title = "Relative Phosphorylated Sites"),
+    yaxis = list(title = "Average Score per P-site")
+  )
     })
 
     output$group_title = renderUI({
@@ -284,6 +288,8 @@ page_server = function(id, page) {
 <p>In both JalviewJS and the Viewer, alignments use uppercase letters (T, S, Y) for confirmed phosphorylation sites, and lowercase (t, s, y) for potential ones. All other amino acids appear in lowercase (a, c, d, ...).</p>
 
 <p>The phosphorylation data comes from EPSD (as of February 26, 2025), and orthologs were derived from OMA (February 17, 2025).</p>
+
+<p>Only orthologous relationships of the types 1:1:n, 1:n:1, and similar constellations between Saccharomyces cerevisiae, Arabidopsis thaliana, and Homo sapiens are shown here. For example, mitogen-activated protein kinases possess multiple orthologs across all three species, and therefore appear exclusively on the respective Yeast–Human or Yeast–Arabidopsis subpages.</p>
 
 <hr>
 <h4>About the Scores</h4>
